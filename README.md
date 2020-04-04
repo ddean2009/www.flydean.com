@@ -15,31 +15,31 @@
 
 ### 系统架构
 
-![](https://img-blog.csdnimg.cn/20200404104031260.png)
+[架构师必须掌握的技术](mindmap/architect.md)
 
 ### java
 
-![](https://img-blog.csdnimg.cn/20200404104308533.png)
+[java必须掌握的技术](mindmap/java.md)
 
 ### 设计模式
 
-![](https://img-blog.csdnimg.cn/20200404104728815.png)
+[必须掌握的设计模式](mindmap/patten.md)
 
 ### 大数据
 
-![](https://img-blog.csdnimg.cn/20200404105052489.png)
+[大数据我们该学点什么](mindmap/bigdata.md)
 
 ### 区块链
 
-![](https://img-blog.csdnimg.cn/2020040410571812.png)
+[区块链技术大合集](mindmap/blockchain.md)
 
 ### golang
 
-![](https://img-blog.csdnimg.cn/2020040410590241.png)
+[golang基础](mindmap/golang.md)
 
 ### 前端
 
-![](https://img-blog.csdnimg.cn/2020040411005491.png)
+[你所不知道的前端技术](mindmap/js.md)
 
 # 已完成的文章
 
