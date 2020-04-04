@@ -11,7 +11,7 @@
 
 那么问题来了这个微博都有神马呢？ 值不值大家点个赞呢？我的博客主要关注于java，并发，多线程，大数据，区块链，架构等方面，一有时间就会更新。
 
-下面分享几个我总结的博客后面的规划脑图，博客的写作会参照这些脑图慢慢的完善，欢迎大家关注和star，感兴趣的朋友也可以一起来完善哦。
+下面分享几个我总结的规划脑图，博客的写作会参照这些脑图慢慢的完善，欢迎大家关注和star，感兴趣的朋友也可以一起来完善哦。
 
 ### 系统架构
 
@@ -210,11 +210,15 @@
 
 ## 我的链接
 
-github: [https://github.com/ddean2009](https://github.com/ddean2009)
-csdn: [https://blog.csdn.net/superfjj](https://blog.csdn.net/superfjj)
-简书:[https://www.jianshu.com/u/00515be99517](https://www.jianshu.com/u/00515be99517)
-微信公众号：![微信公众号](http://www.flydean.com/wp-content/uploads/2019/04/qrcode_for_gh_a93d9f565ae9_258.jpg)
-关注我的公众号回复「资料」近千本资料免费拿，区块链，java，前端，大数据，人工智能，安全，架构，算法，数据库，面试技巧等等方面，应用尽有先到先得！
+* github: [https://github.com/ddean2009](https://github.com/ddean2009/www.flydean.com)
+
+* csdn: [https://blog.csdn.net/superfjj](https://blog.csdn.net/superfjj)
+  
+* 简书:[https://www.jianshu.com/u/00515be99517](https://www.jianshu.com/u/00515be99517)
+  
+* 微信公众号：![微信公众号](http://www.flydean.com/wp-content/uploads/2019/04/qrcode_for_gh_a93d9f565ae9_258.jpg)
+  
+> 关注我的公众号回复「资料」近千本资料免费拿，区块链，java，前端，大数据，人工智能，安全，架构，算法，数据库，面试技巧等等方面，应用尽有先到先得！
 
 
 ## 联系方式
