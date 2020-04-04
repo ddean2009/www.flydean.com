@@ -37,12 +37,12 @@
 * [Libra教程之:数据结构和存储](http://www.flydean.com/libra-data-structures-and-storage/)
 * [Libra教程之:move语言的特点和例子](http://www.flydean.com/libra-move-overview/)
 
-### 以太坊教程
+#### 以太坊教程
 
 * [ERC20 Short Address Attack](http://www.flydean.com/erc20-short-address-attack/)
 * [Solidity的Bytecode和Opcode简介](http://www.flydean.com/solidity-bytecode-and-opcode/)
 
-### 超级账本教程
+#### 超级账本教程
 
 * [Hyperledger Fabric基础知识](http://www.flydean.com/hyperledger-fabric-basics/)
 * [分布式账本简介](http://www.flydean.com/introduction-to-distributed-ledgers/)
@@ -51,7 +51,7 @@
 * [在IBM Cloud中运行Fabric](http://www.flydean.com/run-fabric-on-ibm-cloud/)
 * [使用VSCode连接到IBM Cloud区块链网络](http://www.flydean.com/use-vs-connect-ibc/)
 
-## Spring5
+#### Spring5
 
 * [Spring5参考指南:IOC容器](http://www.flydean.com/spring5-reference-ioc/)
 
@@ -89,7 +89,7 @@
 
 * [Spring MVC 中的http Caching](http://www.flydean.com/spring-mvc-http-caching/)
 
-## Spring Boot
+#### Spring Boot
 
 * [使用Spring Boot搭建你的第一个应用程序](http://www.flydean.com/springboot-a-simple-app/)
 * [如何在Spring boot中修改默认端口](http://www.flydean.com/change-default-port-in-spring-boot/)
@@ -129,7 +129,7 @@
 * [Spring Boot JPA中关联表的使用](http://www.flydean.com/spring-boot-jpa-relation/)
 * [Spring Boot JPA 中transaction的使用](http://www.flydean.com/spring-boot-jpa-transaction/)
 
-## Scala
+#### Scala
 
 * [Scala教程之:面向对象的scala](http://www.flydean.com/scala-object-oriented/)
 * [Scala教程之:Scala基础](http://www.flydean.com/scala-base/)
@@ -147,7 +147,7 @@
 * [scala教程之:可见性规则](http://www.flydean.com/scala-visibility/)
 * [Scala的自定义类型标记](http://www.flydean.com/scala-self-type/)
 
-## 多线程与并发
+#### 多线程与并发
 
 * [java.util.concurrent简介](http://www.flydean.com/java-util-concurrent-overview/)
 * [java并发中的Synchronized关键词](http://www.flydean.com/java-concurrent-synchronized/)
@@ -185,7 +185,7 @@
 * [非阻塞算法（Lock-Free）的实现](http://www.flydean.com/java-lock-free/)
 * [java内存模型(JMM)和happens-before](http://www.flydean.com/java-jmm-happens-before/)
 
-# 我的链接
+## 我的链接
 
 github: [https://github.com/ddean2009](https://github.com/ddean2009)
 csdn: [https://blog.csdn.net/superfjj](https://blog.csdn.net/superfjj)
@@ -194,6 +194,6 @@ csdn: [https://blog.csdn.net/superfjj](https://blog.csdn.net/superfjj)
 关注我的公众号回复「资料」近千本资料免费拿，区块链，java，前端，大数据，人工智能，安全，架构，算法，数据库，面试技巧等等方面，应用尽有先到先得！
 
 
-# 联系方式
+## 联系方式
 
 邮箱： flydean@163.com
