@@ -15,8 +15,31 @@
 
 ### 系统架构
 
-![](https://img-blog.csdnimg.cn/20200404102741423.png)
+![](https://img-blog.csdnimg.cn/20200404104031260.png)
 
+### java
+
+![](https://img-blog.csdnimg.cn/20200404104308533.png)
+
+### 设计模式
+
+![](https://img-blog.csdnimg.cn/20200404104728815.png)
+
+### 大数据
+
+![](https://img-blog.csdnimg.cn/20200404105052489.png)
+
+### 区块链
+
+![](https://img-blog.csdnimg.cn/2020040410571812.png)
+
+### golang
+
+![](https://img-blog.csdnimg.cn/2020040410590241.png)
+
+### 前端
+
+![](https://img-blog.csdnimg.cn/2020040411005491.png)
 
 # 已完成的文章
 
