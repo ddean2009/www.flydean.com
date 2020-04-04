@@ -1,30 +1,30 @@
-# www.flydean.com
+## www.flydean.com
 毕生的收藏都在这了,看得上的小伙伴点个star吧 ![Github stars](https://img.shields.io/github/stars/ddean2009/www.flydean.com.svg)
 
-# 我是谁？
+## 我是谁？
 
 我就是我啦，籍籍无名的小F，工作了很多年，有了很多经验，但是从来没有试着总结一下，就这样无端浪费了很多光阴。
 
 这个博客是去年开设的，最初的想法就是把之前用到的，学到的总结到的知识写出来，分享出来。一方面是对自己知识的总结，另一方面则是希望能够帮到有需要的人。
 
-# 都有神马？
+## 都有神马？
 
 那么问题来了这个微博都有神马呢？ 值不值大家点个赞呢？我的博客主要关注于java，并发，多线程，大数据，区块链，架构等方面，一有时间就会更新。
 
 下面分享几个我总结的博客后面的规划脑图，博客的写作会参照这些脑图慢慢的完善，欢迎大家关注和star，感兴趣的朋友也可以一起来完善哦。
 
-## 系统架构
+### 系统架构
 
 ![](https://img-blog.csdnimg.cn/20200404102741423.png)
 
 
-# 已完成的文章
+## 已完成的文章
 
 写作不容易，也只能抽空来写，目前完成的文章我分明别类一下：
 
-## 区块链
+### 区块链
 
-### Libra教程
+#### Libra教程
 
 * [Libra白皮书解读](http://www.flydean.com/libra-white-paper-interpretation/)
 * [Libra教程之:Libra协议的关键概念](http://www.flydean.com/libra-protocol-key-concepts/)
