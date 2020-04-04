@@ -51,7 +51,7 @@
 * [在IBM Cloud中运行Fabric](http://www.flydean.com/run-fabric-on-ibm-cloud/)
 * [使用VSCode连接到IBM Cloud区块链网络](http://www.flydean.com/use-vs-connect-ibc/)
 
-#### Spring5
+### Spring5
 
 * [Spring5参考指南:IOC容器](http://www.flydean.com/spring5-reference-ioc/)
 
@@ -89,7 +89,7 @@
 
 * [Spring MVC 中的http Caching](http://www.flydean.com/spring-mvc-http-caching/)
 
-#### Spring Boot
+### Spring Boot
 
 * [使用Spring Boot搭建你的第一个应用程序](http://www.flydean.com/springboot-a-simple-app/)
 * [如何在Spring boot中修改默认端口](http://www.flydean.com/change-default-port-in-spring-boot/)
@@ -129,7 +129,7 @@
 * [Spring Boot JPA中关联表的使用](http://www.flydean.com/spring-boot-jpa-relation/)
 * [Spring Boot JPA 中transaction的使用](http://www.flydean.com/spring-boot-jpa-transaction/)
 
-#### Scala
+### Scala
 
 * [Scala教程之:面向对象的scala](http://www.flydean.com/scala-object-oriented/)
 * [Scala教程之:Scala基础](http://www.flydean.com/scala-base/)
@@ -147,7 +147,7 @@
 * [scala教程之:可见性规则](http://www.flydean.com/scala-visibility/)
 * [Scala的自定义类型标记](http://www.flydean.com/scala-self-type/)
 
-#### 多线程与并发
+### 多线程与并发
 
 * [java.util.concurrent简介](http://www.flydean.com/java-util-concurrent-overview/)
 * [java并发中的Synchronized关键词](http://www.flydean.com/java-concurrent-synchronized/)
