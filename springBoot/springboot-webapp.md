@@ -1,4 +1,4 @@
-在Spring Boot中配置web app
+# 在Spring Boot中配置web app
 
 本文将会介绍怎么在Spring Boot中创建和配置一个web应用程序。
 

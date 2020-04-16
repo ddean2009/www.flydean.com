@@ -1,4 +1,4 @@
-Shutdown SpringBoot App
+# Shutdown SpringBoot App
 
 Spring Boot使用ApplicationContext来创建，初始化和销毁所用的bean。本文将会讲解如何shut down一个spring boot应用程序。
 

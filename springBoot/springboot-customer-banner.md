@@ -1,4 +1,4 @@
-Spring Boot 自定义banner
+# Spring Boot 自定义banner
 
 Spring Boot启动的时候会在命令行生成一个banner，其实这个banner是可以自己修改的，本文将会将会讲解如何修改这个banner。
 

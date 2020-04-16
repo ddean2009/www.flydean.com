@@ -1,4 +1,4 @@
-Spring Boot Admin的使用
+# Spring Boot Admin的使用
 
 前面的文章我们讲了Spring Boot的Actuator。但是Spring Boot Actuator只是提供了一个个的接口，需要我们自行集成到监控程序中。今天我们将会讲解一个优秀的监控工具Spring Boot Admin。 它采用图形化的界面，让我们的Spring Boot管理更加简单。
 

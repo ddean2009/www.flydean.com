@@ -1,4 +1,4 @@
-Spring Boot JPA中java 8 的应用
+# Spring Boot JPA中java 8 的应用
 
 上篇文章中我们讲到了如何在Spring Boot中使用JPA。 本文我们将会讲解如何在Spring Boot JPA中使用java 8 中的新特习惯如：Optional, Stream API 和 CompletableFuture的使用。
 

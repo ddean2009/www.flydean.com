@@ -1,4 +1,4 @@
-SpringBoot @ConfigurationProperties详解
+# SpringBoot @ConfigurationProperties详解
 
 ## 简介
 

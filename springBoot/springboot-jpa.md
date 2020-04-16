@@ -1,4 +1,4 @@
-Spring Boot 之Spring data JPA简介
+# Spring Boot 之Spring data JPA简介
 
 JPA的全称是Java Persistence API (JPA)，他是一个存储API的标准，而Spring data JPA就是对JPA的一种实现，可以让我们方便的对数据进行存取。按照约定好的方法命名规则写dao层接口，从而在不实现接口的情况下，实现对数据库的访问和操作。同时提供了很多除了CRUD之外的功能，如分页、排序、复杂查询等等。
 

@@ -1,4 +1,4 @@
-Spring Boot国际化支持
+# Spring Boot国际化支持
 
 国际化支持应该是所有的做国际化网站都需要考虑的一个问题，Spring Boot为国际化提供了强有力的支持，本文将会通过一个例子来讲解Spring Boot的国际化。
 

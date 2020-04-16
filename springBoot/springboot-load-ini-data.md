@@ -1,4 +1,4 @@
-在Spring Boot中加载初始化数据
+# 在Spring Boot中加载初始化数据
 
 在Spring Boot中，Spring Boot会自动搜索映射的Entity，并且创建相应的table，但是有时候我们希望自定义某些内容，这时候我们就需要使用到data.sql和schema.sql。 
 

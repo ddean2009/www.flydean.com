@@ -1,4 +1,4 @@
-Spring Boot JPA 中transaction的使用
+# Spring Boot JPA 中transaction的使用
 
 transaction是我们在做数据库操作的时候不能回避的一个话题，通过transaction，我们可以保证数据库操作的原子性，一致性，隔离性和持久性。
 

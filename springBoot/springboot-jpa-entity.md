@@ -1,4 +1,4 @@
-Spring Boot JPA中使用@Entity和@Table
+# Spring Boot JPA中使用@Entity和@Table
 
 本文中我们会讲解如何在Spring Boot JPA中实现class和数据表格的映射。
 

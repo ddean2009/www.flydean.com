@@ -1,4 +1,4 @@
-Spring Boot中使用@JsonComponent 
+# Spring Boot中使用@JsonComponent 
 
 @JsonComponent 是Spring boot的核心注解，使用@JsonComponent 之后就不需要手动将Jackson的序列化和反序列化手动加入ObjectMapper了。使用这个注解就够了。
 

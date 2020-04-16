@@ -1,4 +1,4 @@
-Spring Boot JPA的查询语句
+# Spring Boot JPA的查询语句
 
 之前的文章中，我们讲解了如何使用Spring Boot JPA， 在Spring Boot JPA中我们可通过构建查询方法或者通过@Query注解来构建查询语句，本文我们将会更详细的讨论查询语句的构建。
 
