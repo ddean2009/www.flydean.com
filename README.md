@@ -214,8 +214,6 @@
 
 * csdn: [https://blog.csdn.net/superfjj](https://blog.csdn.net/superfjj)
   
-* 简书:[https://www.jianshu.com/u/00515be99517](https://www.jianshu.com/u/00515be99517)
-  
 * 微信公众号：![微信公众号](http://www.flydean.com/wp-content/uploads/2019/04/qrcode_for_gh_a93d9f565ae9_258.jpg)
   
 > 关注我的公众号回复「资料」近千本资料免费拿，区块链，java，前端，大数据，人工智能，安全，架构，算法，数据库，面试技巧等等方面，应用尽有先到先得！
