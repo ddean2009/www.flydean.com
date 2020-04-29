@@ -66,7 +66,7 @@ three
 four
 ~~~
 
-可以看到stream中的元素并没有被转换成大写格式，所以peek只作为debug使用。
+可以看到stream中的元素并没有被转换成大写格式。
 
 再看一个map的对比：
 
@@ -109,7 +109,22 @@ FOUR
 
 我们看到如果是对象的话，实际的结果会被改变。
 
+为什么peek和map有这样的区别呢？
 
+我们看下peek和map的定义：
+
+~~~java
+Stream<T> peek(Consumer<? super T> action)
+<R> Stream<R> map(Function<? super T, ? extends R> mapper);
+~~~
+
+peek接收一个Consumer，而map接收一个Function。
+
+Consumer是没有返回值的，它只是对Stream中的元素进行某些操作，但是操作之后的数据并不返回到Stream中，所以Stream中的元素还是原来的元素。
+
+而Function是有返回值的，这意味着对于Stream的元素的所有操作都会作为新的结果返回到Stream中。
+
+这就是为什么peek String不会发生变化而peek Object会发送变化的原因。
 
 # 结论
 
