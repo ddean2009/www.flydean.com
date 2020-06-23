@@ -1,8 +1,10 @@
-JDK 14的新特性:instanceof模式匹配
+JDK14的新特性:instanceof模式匹配
 
 JDK14在2020年的3月正式发布了。可惜的是正式特性只包含了最新的Switch表达式，而Records,patterns,text blocks仍然是预览特性。
 
 本文要讲的就是JDK14的一个预览特性instanceof的pattern matching。 也就是说在instanceof中可以使用模式匹配了。
+
+> 更多内容请访问[www.flydean.com](www.flydean.com)
 
 怎么理解呢？
 
@@ -60,8 +62,7 @@ public class Hippo {
 
 > 注意，如果你使用的最新版的IntelliJ IDEA 2020.1版本的话，语言编译版本一定要选择14(Preview),因为这个功能是preview的。
 
-本文的例子[https://github.com/ddean2009/learn-java-base-9-to-20
-](https://github.com/ddean2009/learn-java-base-9-to-20)
+本文的例子[https://github.com/ddean2009/learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
 > 

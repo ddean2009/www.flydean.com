@@ -4,15 +4,25 @@
 
 String是java中非常常用的一个对象类型。可以说java中使用最多的就是String了。那么String到底有哪些秘密呢？接下来本文将会一一讲解。
 
+> 更多内容请访问[www.flydean.com](www.flydean.com)
+
 # String是不可变的
 
 String是不可变的，官方的说法叫做immutable或者constant。
 
-String的底层其实是一个Char的数组。
+JDK9之前，String的底层其实是一个Char的数组。
 
 ~~~java
 private final char value[];
 ~~~
+
+在JDK9之后，String的底层存储变成了Byte：
+
+~~~java
+ private final byte[] value;
+~~~
+
+这样做的目的是为了进行String压缩，减少内存占用量。
 
 所有的String字面量比如"abc"都是String的实现。
 
