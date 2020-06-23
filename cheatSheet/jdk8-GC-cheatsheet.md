@@ -40,7 +40,7 @@ JDK8中到底有哪些可以使用的GC呢？
 
 同时Parallel Scavenge收集器能够配合自适应调节策略，把内存管理的调优任务交给虚拟机去完成。
 
-> GDK8中默认开启的是ParallelGC。
+> JDK8中默认开启的是ParallelGC。
 
 # 打印GC信息
 
@@ -86,11 +86,11 @@ CMS全称是Concurrent mark sweep。是一个非常非常复杂的GC。
 
 ![](https://img-blog.csdnimg.cn/20200622121812439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-CMS这里就不多讲了，因为在GDK9之后，CMS就已经被废弃了。
+CMS这里就不多讲了，因为在JDK9之后，CMS就已经被废弃了。
 
 主要原因是CMS太过复杂，如果要向下兼容需要巨大的工作量，然后就直接被废弃了。
 
-在GDK9之后，默认的GC是G1。
+在JDK9之后，默认的GC是G1。
 
 # G1参数
 
@@ -109,6 +109,7 @@ G1中的垃圾收集过程：年轻代收集和混合收集交替进行，背后
 
 大家可以通过下面的链接直接下载PDF版本：
 
+[JDK8GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK8GC-cheatsheet.pdf)
 
 
 如果遇到问题可以直接拿过来参考。这种东西英文名字应该叫JDK8 GC cheatsheet，翻译成中文应该就是JDK8 GC调优秘籍！
