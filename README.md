@@ -387,7 +387,7 @@ java.io和java.nio是Java中处理IO的两个包，IO是非常重要的，处理
 
 * [小师妹学JVM之:深入理解编译优化之循环展开和粗化锁](http://www.flydean.com/jvm-jit-loop-unrolling-lock-coarsening/)
 
-* [小师妹学JVM之:JIT的Profile神器JITWatch](http://www.flydean.com/jvm-jit-jitwatch/小师妹学JVM之:cache line对代码性能的影响)
+* [小师妹学JVM之:JIT的Profile神器JITWatch](http://www.flydean.com/jvm-jit-jitwatch)
 
 * [小师妹学JVM之:cache line对代码性能的影响](http://www.flydean.com/jvm-jit-cacheline/)
 
