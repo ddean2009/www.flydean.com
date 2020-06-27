@@ -165,8 +165,17 @@ JVM是java程序运行的基础，JVM中各种事件比如：GC,class loading,JP
 
 千言万语不如一张PDF。我把JDK9的GC参数总结成了一张PDF，下面是PDF的下载链接。
 
+[JDK9GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK9GC-cheatsheet.pdf)
 
+欢迎大家下载。
 
+> 本文作者：flydean程序那些事
+> 
+> 本文链接：[www.flydean.com](www.flydean.com)
+> 
+> 本文来源：flydean的博客
+> 
+> 欢迎关注我的公众号:程序那些事，更多精彩等着您！
 
 
 
