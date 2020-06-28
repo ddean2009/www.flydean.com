@@ -155,7 +155,7 @@ JIT我在之前的文章中介绍过很多次了，为了提升java程序的执�
 
 同样的，为JDK10特意准备了一个PDF，下载链接如下：
 
-[]()
+[JDK10GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK10GC-cheatsheet.pdf)
 
 > 本文作者：flydean程序那些事
 > 
