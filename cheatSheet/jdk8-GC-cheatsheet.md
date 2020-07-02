@@ -58,11 +58,9 @@ JVM分为Heap区和非Heap区，各个区又有更细的划分，下面就是调
 
 # Thread配置
 
-TLAB大家还记得吗？
+TLAB大家还记得吗？TLAB的全称是Thread-Local Allocation Buffers。TLAB是在Eden区间分配的一个一个的连续空间。然后将这些连续的空间分配个各个线程使用。
 
-如果一个对象的分配是在方法内部，并且没有多线程访问的情况下，那么这个对象其实可以看做是一个本地对象，这样的对象不管创建在哪里都只对本线程中的本方法可见，因此可以直接分配在栈空间中。
-
-栈上分配的对象因为不用考虑同步，所以执行速度肯定会更加快速，这也是为什么JVM会引入栈上分配的原因。
+因为每一个线程都有自己的独立空间，所以这里不涉及到同步的概念。
 
 ![](https://img-blog.csdnimg.cn/2020062212135387.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 

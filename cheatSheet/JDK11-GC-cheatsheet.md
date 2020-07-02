@@ -109,3 +109,16 @@ $ java -XX:SharedArchiveFile=shared_archive_file \
     --module-path=path_to_modular_jar -m module_name
 ~~~
 
+# 总结
+
+同样的，为JDK11特意准备了一个PDF，下载链接如下：
+
+[JDK11GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK11GC-cheatsheet.pdf)
+
+> 本文作者：flydean程序那些事
+> 
+> 本文链接：[www.flydean.com](www.flydean.com)
+> 
+> 本文来源：flydean的博客
+> 
+> 欢迎关注我的公众号:程序那些事，更多精彩等着您！
