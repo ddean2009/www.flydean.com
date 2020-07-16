@@ -519,7 +519,8 @@ ORM框架的使用方便我们对数据库的操作，Hibernate和Mybatis是两�
 > 
 > 欢迎关注我的公众号:「程序那些事」,懂技术，更懂你！  
 
-![](https://img-blog.csdnimg.cn/20200709152618916.png)
+<img src="https://img-blog.csdnimg.cn/20200709152618916.png" width="700" alt="contact me"/>
+
 
 
 
