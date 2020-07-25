@@ -6,6 +6,8 @@
 
 今天我们介绍一下怎么自定义一个Collector。
 
+> 更多内容请访问[www.flydean.com](www.flydean.com)
+
 # Collector介绍
 
 我们先看一下Collector的定义：
@@ -22,11 +24,11 @@ Collector接口需要实现supplier(),accumulator(),combiner(),finisher(),charac
 
 * supplier
 
-Supplier是一个函数，用来创建一个新的可变的集合。换句话说Supplier用来创建一个初始的集合。accumulator
+Supplier是一个函数，用来创建一个新的可变的集合。换句话说Supplier用来创建一个初始的集合。
 
 * accumulator
 
-accumulator定义了累加器，用来将原始添加到集合中。
+accumulator定义了累加器，用来将原始元素添加到集合中。
 
 * combiner
 
@@ -39,6 +41,10 @@ finisher将集合转换为最终的集合类型。
 * characteristics
 
 characteristics表示该集合的特征。这个不是必须的参数。
+
+Collector定义了三个参数类型，T是输入元素的类型，A是reduction operation的累加类型也就是Supplier的初始类型，R是最终的返回类型。 我们画个图来看一下这些类型之间的转换关系：
+
+![](https://img-blog.csdnimg.cn/20200430173026607.png)
 
 有了这几个参数，我们接下来看看怎么使用这些参数来构造一个自定义Collector。
 
