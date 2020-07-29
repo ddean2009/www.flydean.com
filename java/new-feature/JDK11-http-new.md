@@ -124,7 +124,7 @@ thenApply的参数是一个Function，thenAccept是一个Consumer。
 
 # 总结
 
-本文讲解了JDK12新创建的HTTP Client操作，并进一步讨论了CompletableFuture的使用。
+本文讲解了JDK11新创建的HTTP Client操作，并进一步讨论了CompletableFuture的使用。
 
 本文的例子[https://github.com/ddean2009/
 learn-java-base-9-to-20](https://github.com/
