@@ -60,7 +60,7 @@ public class CustUser<T> {
         T copy = new T(param);  // compile error
     }
 }
-~~
+~~~
 
 上面操作会编译失败，因为我们并不知道T是什么，也不知道T到底有没有相应的构造函数。
 
@@ -111,8 +111,14 @@ public <T> T cast(T t, Object o) { return (T) o; }
 
 本文的例子[https://github.com/ddean2009/learn-java-collections](https://github.com/ddean2009/learn-java-collections)
 
+> 本文作者：flydean程序那些事
+> 
+> 本文链接：[www.flydean.com](www.flydean.com)
+> 
+> 本文来源：flydean的博客
+> 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+
 
 
 

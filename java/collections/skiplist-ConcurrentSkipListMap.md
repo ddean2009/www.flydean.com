@@ -1,4 +1,4 @@
-SkipLis和java中ConcurrentSkipListMap的实现
+SkipList和java中ConcurrentSkipListMap的实现
 
 # 简介
 

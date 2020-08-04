@@ -76,7 +76,7 @@ ccc
 
 当accessOrder设置成为true的时候，就开启了 access-order。
 
-access order的意思是，将对象安装最老访问到最新访问的顺序排序。我们看个例子：
+access order的意思是，将对象按照最老访问到最新访问的顺序排序。我们看个例子：
 
 ~~~java
     @Test

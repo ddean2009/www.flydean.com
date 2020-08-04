@@ -2,7 +2,7 @@ PriorityQueue和PriorityBlockingQueue
 
 # 简介
 
-Queue一般来说都是FIFO的，当然之前我们也介绍过Deque可以做为栈来使用。今天我们介绍一种PriorityQueue，可以安装对象的自然顺序或者自定义顺序在Queue中进行排序。
+Queue一般来说都是FIFO的，当然之前我们也介绍过Deque可以做为栈来使用。今天我们介绍一种PriorityQueue，可以按照对象的自然顺序或者自定义顺序在Queue中进行排序。
 
 # PriorityQueue
 

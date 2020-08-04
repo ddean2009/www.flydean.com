@@ -54,7 +54,7 @@ public enum Types {
 
 跟EnumMap很类似，EnumSet是一个set，然后set中的元素都是某个Enum类型。
 
-EnumSet是一个interface而不是一个类，要创建EnumSet类可以使用EnumSet提供的两个静态方法，noneOf和allOf。
+EnumSet是一个抽象类，要创建EnumSet类可以使用EnumSet提供的两个静态方法，noneOf和allOf。
 
 先看一个noneOf：
 
