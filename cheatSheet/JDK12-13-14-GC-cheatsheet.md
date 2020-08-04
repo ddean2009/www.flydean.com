@@ -205,7 +205,17 @@ RTM支持主要有4个参数：
 
 好了，就总结这么多。下面是JDK12，13，14的GC调优秘籍，欢迎下载。
 
+* [JDK12GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK12GC-cheatsheet.pdf)
+* [JDK13GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK13GC-cheatsheet.pdf)
+* [JDK14GC-cheatsheet.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/cheatSheet/JDK14GC-cheatsheet.pdf)
 
+> 本文作者：flydean程序那些事
+> 
+> 本文链接：[www.flydean.com](www.flydean.com)
+> 
+> 本文来源：flydean的博客
+> 
+> 欢迎关注我的公众号:程序那些事，更多精彩等着您！
 
 
 

@@ -1,5 +1,4 @@
-# Spring Boot @EnableAutoConfiguration和
-@Configuration的区别
+# Spring Boot @EnableAutoConfiguration和@Configuration的区别
 
 在Spring Boot中，我们会使用@SpringBootApplication来开启Spring Boot程序。在之前的文章中我们讲到了@SpringBootApplication相当于@EnableAutoConfiguration，@ComponentScan，@Configuration三者的集合。
 
