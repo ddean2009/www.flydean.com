@@ -22,8 +22,6 @@ Vert.x是模块化的，里面有Core，web，Data access，Reactive，Microserv
 
 其实java界一直都在向reactive靠近，除了JDK本身的api新特性意外，比如业界有名的Spring也在spring 5中添加了webflux框架，这就是一款reactive的web框架。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
-
 # 什么是响应式系统
 
 在上一节我们提到了Rxjava和Vert.x,里面有一些共同的关键字，比如异步，事件驱动，观察者模式，函数式编程，消息驱动等，所有的一切都是为了让现代系统更加健壮，运行的更快，更加富有弹性，从而更好。
