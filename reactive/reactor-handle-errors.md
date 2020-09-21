@@ -273,7 +273,9 @@ resourceCleanup用来对resource进行收尾操作。
     public void testRetry(){
         Flux.interval(Duration.ofMillis(250))
                 .map(input -> {
-                    if (input < 3) return "tick " + input;
+                    if (input < 3){
+                       return "tick " + input;
+                    } 
                     throw new RuntimeException("boom");
                 })
                 .retry(1)
