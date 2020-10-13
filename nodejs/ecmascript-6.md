@@ -69,7 +69,7 @@ for (var i = 0; i < s.length; i++) {
 console.log(s[i]); 
 } 
 console.log(i); // 5
-~~
+~~~
 
 为了解决上面两个问题，ES6引入了let和const。
 
@@ -136,7 +136,7 @@ let [x = f()] = [1];
 
 上面的例子中，f函数将不会被执行。
 
-除了结构变量之外，还可以结构对象：
+除了解构变量之外，还可以解构对象：
 
 ~~~js
 let { bar, foo } = { foo: "aaa", bar: "bbb" }; 
