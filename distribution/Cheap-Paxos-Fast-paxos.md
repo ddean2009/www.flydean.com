@@ -1,4 +1,4 @@
-在前面一篇文章我们讲到了[理解分布式一致性:Paxos协议之Multi-Paxos](https://www.jianshu.com/p/22fe68fed18d)，本篇文章我会讲解Paxos协议的另外两个变种：Cheap Paxos和Fast Paxos。
+在前面一篇文章我们讲到了[理解分布式一致性:Paxos协议之Multi-Paxos](http://www.flydean.com/understant-paxos-multi-paxos/)，本篇文章我会讲解Paxos协议的另外两个变种：Cheap Paxos和Fast Paxos。
 
 # Cheap Paxos
 Cheap Paxos 是Basic Paxos 的继承版本。其实所有的Paxos变种都来自与Basic Paxos，都是基于它来进行改进的。那么Cheap Paxos有什么特点呢？ 
@@ -9,8 +9,8 @@ Cheap Paxos 是Basic Paxos 的继承版本。其实所有的Paxos变种都来自
 
 ## Message flow: Cheap Multi-Paxos
 下图是3个正常节点+1个辅助节点的流程，如果系统规定的共识节点个数是3个，那么当一个正常节点挂掉之后，辅助节点会起来帮助完成共识工作。
-![](https://upload-images.jianshu.io/upload_images/17266240-6b41a229f56abb1a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](https://upload-images.jianshu.io/upload_images/17266240-95fe3cb4c56b29f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/19338e51b9744daa9e521ea283f5c71b~tplv-k3u1fbpfcp-zoom-1.image)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06f01e9238d0486d960d2cc97bf6002d~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 # Fast Paxos
@@ -22,19 +22,25 @@ Cheap Paxos 是Basic Paxos 的继承版本。其实所有的Paxos变种都来自
 
 ## Message flow: Fast Paxos, non-conflicting
 下图列出了正常运行的情况，没有冲突正常执行。
-![](https://upload-images.jianshu.io/upload_images/17266240-42011289704f0b02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7e24f88d12c047a1b9e7018de42f523c~tplv-k3u1fbpfcp-zoom-1.image)
 
 ## Message flow: Fast Paxos, conflicting proposals
 当有多个Client同时发送Accept请求的时候就有可能产生冲突。这时候有两种解决办法。
 1. Leader检测到冲突之后，根据规定的算法从冲突中选择一个数据，重新发送Accept请求。如下图所示：
-![](https://upload-images.jianshu.io/upload_images/17266240-b3ce7b3c9ebe4619.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](https://upload-images.jianshu.io/upload_images/17266240-bf90e0f3226a0a82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/888db5b5e6b54abc911002cb6832cf5e~tplv-k3u1fbpfcp-zoom-1.image)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0a870a329fd54a08b7df5b5ee226a9fd~tplv-k3u1fbpfcp-zoom-1.image)
 
 2. 当检测到冲突的时候，如果Acceptors自己就能解决冲突，那么就完全不需要Leader再次发送Accept请求了，这样就又减少了一次请求，节省了时间。如下图所示：
-![](https://upload-images.jianshu.io/upload_images/17266240-e39651386258a5ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7ca4e1928929413fa65364512ee64db9~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 ## Message flow: Fast Paxos with uncoordinated recovery, collapsed roles
 下图是所有的角色集合到一个Server的情况，是更加简洁的实现。
 
-![](https://upload-images.jianshu.io/upload_images/17266240-8c582f8403ba882d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4f73d320009247778a97debe213357f4~tplv-k3u1fbpfcp-zoom-1.image)
+
+> 本文已收录于 [www.flydean.com](www.flydean.com)
+>
+> 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
+> 
+> 欢迎关注我的公众号:「程序那些事」,懂技术，更懂你！
