@@ -2162,9 +2162,11 @@ public <T> T cast(T t, Object o) { return (T) o; }
 
 集合是java中一个非常重要的工具类型，希望大家能够熟练掌握。
 
-本文的例子[https://github.com/ddean2009/learn-java-collections](https://github.com/ddean2009/learn-java-collections)
+本文的代码例子[https://github.com/ddean2009/learn-java-collections](https://github.com/ddean2009/learn-java-collections)
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+本文的PDF[java-collection-all-in-one.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/java/collections/java-collection-all-in-one.pdf)
+
+> 本文已收录于 [http://www.flydean.com/java-collection-all-in-one/](http://www.flydean.com/java-collection-all-in-one/)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 
