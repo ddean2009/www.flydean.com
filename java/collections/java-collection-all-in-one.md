@@ -624,13 +624,13 @@ HashMap可以允许一个null key和多个null value。而TreeMap不允许null k
 ~~~java
     @Test
     public void withNull() {
-        Map<String, String> hashmap = new TreeMap<>();
-        hashmap.put(null, null);
-        log.info("{}",hashmap);
+        Map<String, String> treemap = new TreeMap<>();
+        treemap.put(null, null);
+        log.info("{}",treemap);
     }
 ~~~
 
-HashMap会报出： NullPointerException。 
+TreeMap会报出： NullPointerException。 
 
 ### 3.1.4 性能区别 
 
