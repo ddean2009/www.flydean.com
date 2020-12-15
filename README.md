@@ -1,6 +1,8 @@
 ## www.flydean.com
 毕生的收藏都在这了,看得上的小伙伴点个star吧 ![Github stars](https://img.shields.io/github/stars/ddean2009/www.flydean.com.svg)
 
+> 重要！ PDF下载出错的小伙伴可以git clone整个项目即可！ 
+
 ## 我是谁？
 我就是我啦，我叫小F，在互联网和金融行业奋斗多年，别的优点没有，就是善于学习和总结。
 
