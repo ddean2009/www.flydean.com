@@ -80,6 +80,7 @@ ${id}般用于传入数据库对象，例如传入表名。
 
 能用#的时候就不要用$。
 
+
 > 本文作者：flydean程序那些事
 > 
 > 本文链接：[www.flydean.com](www.flydean.com)
