@@ -1,6 +1,6 @@
 [toc]
 
-Python解释器和IPython
+Python基础之:Python解释器和IPython
 
 # 简介
 
@@ -245,6 +245,14 @@ In [27]: !pwd
 ~~~
 
 还可以用变量接收运行的结果，比如 ：  files = !ls  
+
+> 本文已收录于 [www.flydean.com](www.flydean.com)
+>
+> 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
+> 
+> 欢迎关注我的公众号:「程序那些事」,懂技术，更懂你！
+
+
 
 
 
