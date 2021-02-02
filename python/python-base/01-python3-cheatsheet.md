@@ -2,7 +2,7 @@
 
 [toc]
 
-Python3秘籍
+Python基础之:Python3秘籍
 
 # 简介
 
