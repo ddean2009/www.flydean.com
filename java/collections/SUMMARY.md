@@ -1,4 +1,4 @@
-# java集合
+# 深入理解java集合
 
 * [00 Java Collection All In One](00-java-collection-all-in-one.md)
 * [01 As List Arraylist](01-asList-arraylist.md)
