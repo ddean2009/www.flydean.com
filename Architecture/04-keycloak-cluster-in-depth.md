@@ -1,4 +1,4 @@
-keycloak集群化的思考
+架构之:keycloak集群化的思考
 
 # 简介
 
@@ -130,7 +130,7 @@ Memcached的神奇来自两阶段哈希(two-stagehash)。Memcached就像一 个�
                  module="io.undertow.core" />
      </filters>
  </subsystem>
- ~~~
+~~~
 
 ## sticky sessions 和 非sticky sessions
 
