@@ -1,10 +1,10 @@
 小师妹学JVM之:Dirty cards和PLAB
 
-# 简介 
+## 简介 
 
 分代垃圾回收器在进行minor GC的时候会发生什么操作呢？有没有什么提高效率的手段呢？今天我们和小师妹一起来了解一下垃圾回收中的Dirty cards和PLAB
 
-# 分代收集器中的空间划分
+## 分代收集器中的空间划分
 
 小师妹：F师兄，能再讲讲分代垃圾收集器中的空间划分吗？
 
@@ -18,7 +18,7 @@ Young Gen被划分为1个Eden Space和2个Suvivor Space。当对象刚刚被创�
 
 ![](https://img-blog.csdnimg.cn/20200525214231730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# Write barrier和Dirty cards
+## Write barrier和Dirty cards
 
 小师妹：F师兄，minor GC的时候，要将对象从Eden复制到Suvivor Space，从Suvivor Space中复制到Old space。GC是怎么知道哪些对象是要被回收，哪些是不用被回收的呢？
 
@@ -42,7 +42,7 @@ Dirty cards说起来很简单，就是每当有程序对引用进行修改的时
 
 这样在minor GC的时候，当引用的对象被修改了之后，我们会同步修改对应的Dirty cards。这样每次扫描old space的时候，只需要选择那些标记为Dirty cards的对象就可以了，避免了全局扫描。
 
-# PLAB
+## PLAB
 
 小师妹，F师兄，你讲的好像很有道理的样子，上次你讲到我们在Eden空间分配对象的，为了提升分配的效率，使用了TLAB的计算。那么在对象从Eden空间提升到Suvivor Space和old Space的时候有没有同样的技术呢？
 
@@ -52,7 +52,7 @@ Dirty cards说起来很简单，就是每当有程序对引用进行修改的时
 
 我们可以使用-XX:+PrintOldPLAB来输出OldPLAB的信息。
 
-# old space分配对象
+## old space分配对象
 
 小师妹：F师兄，刚刚你讲到新分配的对象可以直接在Old space，一般什么对象可以这样分配呢？
 
@@ -64,7 +64,7 @@ Dirty cards说起来很简单，就是每当有程序对引用进行修改的时
 
 > 注意，如果这个对象的大小比TLPB要小，那么会首先在TLPB中分配。所以使用的时候要注意限制TLPB的大小。
 
-# 总结
+## 总结
 
 GC的运行是一个比较复杂的过程，大家可以细细体会。本文如果有什么谬误之处，欢迎微信我指正。谢谢大家。
 

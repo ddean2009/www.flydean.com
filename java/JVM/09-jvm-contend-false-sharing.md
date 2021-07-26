@@ -1,12 +1,12 @@
 JVM系列之:Contend注解和false-sharing
 
-# 简介
+## 简介
 
 现代CPU为了提升性能都会有自己的缓存结构，而多核CPU为了同时正常工作，引入了MESI，作为CPU缓存之间同步的协议。MESI虽然很好，但是不当的时候用也可能导致性能的退化。
 
 到底怎么回事呢？一起来看看吧。
 
-# false-sharing的由来
+## false-sharing的由来
 
 为了提升处理速度，CPU引入了缓存的概念，我们先看一张CPU缓存的示意图：
 
@@ -47,7 +47,7 @@ public class CacheLine {
 
 大家注意，耗时点就在第4步。 虽然a和b是两个不同的long，但是因为他们被包含在同一个cache line中，最终导致了虽然两个线程没有共享同一个数值对象，但是还是发送了锁的关联情况。
 
-## 怎么解决？
+### 怎么解决？
 
 那怎么解决这个问题呢？
 
@@ -66,7 +66,7 @@ public class CacheLine {
 
 还好，JDK8中引入了sun.misc.Contended注解，使用这个注解会自动帮我们补全字段。
 
-# 使用JOL分析
+## 使用JOL分析
 
 接下来，我们使用JOL工具来分析一下Contended注解的对象和不带Contended注解的对象有什么区别。
 
@@ -114,7 +114,7 @@ Space losses: 132 bytes internal + 0 bytes external = 132 bytes total
 
 我们看到使用了Contended的对象大小是160字节。直接填充了128字节。
 
-# Contended在JDK9中的问题
+## Contended在JDK9中的问题
 
 sun.misc.Contended是在JDK8中引入的，为了解决填充问题。
 
@@ -154,7 +154,7 @@ error: package jdk.internal.vm.annotation is not visible
 
 好了，现在我们可以正常通过编译了。
 
-# padded和unpadded性能对比
+## padded和unpadded性能对比
 
 上面我们看到padded对象大小是160字节，而unpadded对象的大小是32字节。
 
@@ -218,7 +218,7 @@ public class CacheLineBenchMark {
 
 从结果看来虽然padded生成的对象比较大，但是因为A和B在不同的cache line中，所以不会出现不同的线程去主内存取数据的情况，因此要执行的比较快。
 
-# Contended在JDK中的使用
+## Contended在JDK中的使用
 
 其实Contended注解在JDK源码中也有使用，不算广泛，但是都很重要。
 
@@ -234,7 +234,7 @@ public class CacheLineBenchMark {
 
 感兴趣的朋友可以仔细研究一下。
 
-# 总结
+## 总结
 
 Contented从最开始的sun.misc到现在的jdk.internal.vm.annotation，都是JDK内部使用的class，不建议大家在应用程序中使用。
 

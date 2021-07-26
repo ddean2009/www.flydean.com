@@ -1,10 +1,10 @@
 小师妹学JVM之:java的字节码byte code简介
 
-# 简介
+## 简介
 
 Byte Code也叫做字节码，是连接java源代码和JVM的桥梁，源代码编译成为字节码，而字节码又被加载进JVM中运行。字节码怎么生成，怎么查看字节码，隐藏在Byte Code背后的秘密是什么呢？快跟小师妹一起来看看吧。
 
-# Byte Code的作用
+## Byte Code的作用
 
 小师妹：F师兄，为什么Java需要字节码呢？直接编译成为机器码不是更快吗？
 
@@ -32,7 +32,7 @@ Java processor就是用硬件来实现的JVM。因此字节码可以直接在Jav
 
 一般来说Java processor不会实现全部的字节码中的功能，只会提供部分的实现。
 
-# 查看Byte Code字节码
+## 查看Byte Code字节码
 
 小师妹：F师兄，那使用javac编译过后的class文件跟字节码有什么关系呢？
 
@@ -70,7 +70,7 @@ javap -c ByteCodeUsage.class
 
 两个的结果在显示上面可能有细微的差异，但是并不影响我们后面对其的解析。
 
-# java Byte Code是怎么工作的
+## java Byte Code是怎么工作的
 
 小师妹：F师兄，能讲解一下这些byte code到底是怎么工作的吗？
 
@@ -121,7 +121,7 @@ public int testByteCode();
 
 当然我们只介绍了最贱的byte code命令，通过这些简单的命令可以组合成为更加复杂的java命令。
 
-# 总结
+## 总结
 
 本文介绍了java byte code的作用和具体的指令，并分析了一个简单的例子来做说明。希望大家能够掌握。
 

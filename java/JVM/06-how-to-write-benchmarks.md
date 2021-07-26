@@ -1,16 +1,16 @@
 如果你想写自己的Benchmark框架
 
-# 简介
+## 简介
 
 使用过JMH的同学一定会惊叹它的神奇。JMH作为一个优秀的Benchmark框架带给了我们无数的欢乐。作为一个有极客精神的程序员，那么有没有想过去自己实现一个Benchmark框架呢？
 
 在实现Benchmark框架的时候有需要注意些什么问题呢？快来一起看看吧。
 
-# 八条军规
+## 八条军规
 
 这里叫军规实际上不合适，只是借用一下军规的来彰显一下气势！大家不要太介意。
 
-## 第一条军规
+### 第一条军规
 
 工欲善其事，必先利其器。想写好一个JMH当然需要深入了解JVM的运行原理，包括JIT，C1，C2编译器和他们的分层编译原理，JIT运行时的编译优化，包括Loop unrolling, Inlining, Dead Code Elimination,
 Escape analysis, Intrinsics, Branch prediction等等。
@@ -23,7 +23,7 @@ Escape analysis, Intrinsics, Branch prediction等等。
 
 但是，见微知著，使用Benchmark还是可以一窥JVM的秘密的。
 
-## 第二条军规
+### 第二条军规
 
 在JMH中，我们一般需要设置warmup和measurement的次数：
 
@@ -38,7 +38,7 @@ Escape analysis, Intrinsics, Branch prediction等等。
 
 我们检测代码的性能，一般是指代码在稳定运行的环境中的情形。而不是指第一次或者前几次运行的时候，因为这个时候，这些代码可能并没有被编译成机器码。这样的出来的结果往往是和实际不相符的。
 
-## 第三条军规
+### 第三条军规
 
 在编写Benchmark的同时，一定要开启JVM的日志。例如： -XX:+PrintCompilation, -verbose:gc等。
 
@@ -50,7 +50,7 @@ Escape analysis, Intrinsics, Branch prediction等等。
 
 所以开启JVM的日志就是为了做校验。不要在做benchmark的时候有其他操作。
 
-## 第四条军规
+### 第四条军规
 
 注意JIT的分层编译。
 
@@ -86,7 +86,7 @@ Server端的JIT编译也不是立马进行的，它可能需要收集到足够�
 
 Client编译和Server编译，甚至是OSR都是不同的。大家在写Benchmark的时候一定要注意。
 
-## 第五条军规
+### 第五条军规
 
 注意初始化对性能的影响。
 
@@ -94,7 +94,7 @@ Client编译和Server编译，甚至是OSR都是不同的。大家在写Benchmar
 
 同时也不要计算第一次print的时间，因为print也会加载和初始化一些类。
 
-## 第六条军规
+### 第六条军规
 
 要注意反优化和重编译的影响。
 
@@ -120,13 +120,13 @@ JIT在下面的几个特殊的情况下，需要对代码进行返优化：
 
 所以这条规则要求我们warmup的时间要尽可能的长。以便让JIT充分优化。
 
-## 第七条军规
+### 第七条军规
 
 在使用benchMark得出结论之前，一定要去认真的理解JVM的底层代码（Assembly code），找到其现象的本质。
 
 千万不要冲动的下结论。最好是使用可视化的工具来分析。比如说jitwatch。
 
-## 最后一条军规
+### 最后一条军规
 
 在测试的时候一定要避免其他程序的影响 。
 
@@ -134,7 +134,7 @@ JIT在下面的几个特殊的情况下，需要对代码进行返优化：
 
 很显然这两次的结果是不能做比较的。我们需要多运行，剔除噪音结果。
 
-# 总结
+## 总结
 
 掌握上面几条规则，相信大家也能够写出属于自己的Benchmarks。
 

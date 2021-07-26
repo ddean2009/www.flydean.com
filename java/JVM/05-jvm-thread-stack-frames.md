@@ -1,10 +1,10 @@
 小师妹学JVM之:JVM中栈的frames详解
 
-# 简介
+## 简介
 
 我们知道JVM运行时数据区域专门有一个叫做Stack Area的区域，专门用来负责线程的执行调用。那么JVM中的栈到底是怎么工作的呢？快来一起看看吧。
 
-# JVM中的栈
+## JVM中的栈
 
 小师妹:F师兄，JVM为每个线程的运行都分配了一个栈，这个栈到底是怎么工作的呢？
 
@@ -18,7 +18,7 @@
 
 因为是栈的结构，所以这个区域总是LIFO(Last in first out)。我们考虑一个方法的执行，当方法执行的时候，就会在Stack Area中创建一个block，这个block中持有对本地对象和其他对象的引用。一旦方法执行完毕，则这个block就会出栈，供其他方法访问。
 
-# Frame
+## Frame
 
 JVM中的stack area是由一个个的Frame组成的。
 
@@ -42,7 +42,7 @@ Frame是从JVM中的stack area中分配的。
 
 ![](https://img-blog.csdnimg.cn/20200613234100780.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# Local Variables本地变量
+## Local Variables本地变量
 
 每个frame都包含一个称为其本地局部变量的变量数组。frame的局部变量数组的长度是在编译的时候确定的。
 
@@ -70,7 +70,7 @@ Java虚拟机使用局部变量在方法调用时传递参数。
 
 在实例方法调用中，局部变量0始终指向的是该实例对象，也就是this。也就是说真实的参数是从局部变量1开始存储的。
 
-# Operand Stacks
+## Operand Stacks
 
 在每个frame内部，又包含了一个LIFO的栈，这个栈叫做Operand Stack。 
 
@@ -90,7 +90,7 @@ Operand Stack中的任何操作都必须要确保其类型匹配。像之前提�
 
 在任何时间点，操作数堆栈都具有关联的深度，其中long或double类型的值对该深度贡献两个单位，而任何其他类型的值则贡献一个单位深度。
 
-# Dynamic Linking动态链接
+## Dynamic Linking动态链接
 
 什么是动态链接呢？
 
@@ -115,7 +115,7 @@ Operand Stack中的任何操作都必须要确保其类型匹配。像之前提�
 
 动态链接将这些符号方法引用转换为具体的方法引用，根据需要加载类以解析尚未定义的符号，并将变量访问转换为与这些变量的运行时位置关联的存储结构中的适当偏移量。
 
-# 方法执行完毕
+## 方法执行完毕
 
 方法执行完毕有两种形式，一种是正常执行完毕，一种是执行过程中抛出了异常。
 

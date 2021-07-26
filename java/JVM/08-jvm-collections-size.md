@@ -1,10 +1,10 @@
 JVM系列之:String,数组和集合类的内存占用大小
 
-# 简介
+## 简介
 
 之前的文章中，我们使用JOL工具简单的分析过String,数组和集合类的内存占用情况，这里再做一次更详细的分析和介绍，希望大家后面再遇到OOM问题的时候不再抱头痛哭，而是可以有章可循，开始吧。
 
-# 数组
+## 数组
 
 先看下JOL的代码和输出：
 
@@ -38,7 +38,7 @@ Space losses: 0 bytes internal + 1 bytes external = 1 bytes total
 
 > 注意最后面的Object数组，如果数组中存储的不是基础类型，那么实际上存储的是执行该对象的指针，该指针大小是4个字节。
 
-# String
+## String
 
 String是一个非常特殊的对象，它的底层是以byte数组存储的。
 
@@ -84,7 +84,7 @@ Space losses: 0 bytes internal + 2 bytes external = 2 bytes total
 
 String对象的大小+byte数组的大小=24+32=56字节。
 
-# ArrayList
+## ArrayList
 
 我们构建一个非常简单的ArrayList：
 
@@ -114,27 +114,27 @@ Space losses: 0 bytes internal + 0 bytes external = 0 bytes total
 
 这里modCount和size的初始值都是0。
 
-# HashMap
+## HashMap
 
 因为文章篇幅的限制，这里就不把代码列出来了，我只贴个图上来：
 
 ![](https://img-blog.csdnimg.cn/20200618164939825.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# HashSet
+## HashSet
 
 ![](https://img-blog.csdnimg.cn/20200618165613655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# LinkedList
+## LinkedList
 
 ![](https://img-blog.csdnimg.cn/20200618165903442.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# treeMap
+## treeMap
 
 来个比较复杂的TreeMap：
 
 ![](https://img-blog.csdnimg.cn/20200618170359983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# 总结
+## 总结
 
 本文用图形的形式形象的展示了集合对象，数组和String在内存中的使用情况。
 
