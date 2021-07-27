@@ -1,12 +1,12 @@
 JVM系列之:String.intern的性能
 
-# 简介
+## 简介
 
 String对象有个特殊的StringTable字符串常量池，为了减少Heap中生成的字符串的数量，推荐尽量直接使用String Table中的字符串常量池中的元素。
 
 那么String.intern的性能怎么样呢？我们一起来看一下。
 
-# String.intern和G1字符串去重的区别
+## String.intern和G1字符串去重的区别
 
 之前我们提到了，String.intern方法会返回字符串常量池中的字符串对象的引用。
 
@@ -18,7 +18,7 @@ String对象有个特殊的StringTable字符串常量池，为了减少Heap中�
 
 上图中的String1和String2指向的是同一个byte[]数组。
 
-# String.intern的性能
+## String.intern的性能
 
 我们看下intern方法的定义：
 
@@ -35,7 +35,7 @@ public native String intern();
 1. native方法需要调用JDK-JVM接口，实际上是会浪费时间的。
 2. 性能会受到native方法中HashTable实现方法的制约，如果在高并发的情况下，native的HashTable的实现可能成为性能的制约因素。
 
-# 举个例子
+## 举个例子
 
 还是用JMH工具来进行性能分析，我们使用String.intern，HashMap，和ConcurrentHashMap来对比分析，分别调用1次，100次，10000次和1000000。
 

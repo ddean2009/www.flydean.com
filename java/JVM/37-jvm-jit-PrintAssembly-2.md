@@ -1,10 +1,10 @@
 小师妹学JVM之:JIT中的PrintAssembly续集
 
-# 简介
+## 简介
 
 上篇文章和小师妹一起介绍了PrintAssembly和PrintAssembly在命令行的使用，今天本文将会更进一步讲解如何在JDK8和JDK14中分别使用PrintAssembly，并在实际的例子中对其进行进一步的深入理解。
 
-# JDK8和JDK14中的PrintAssembly
+## JDK8和JDK14中的PrintAssembly
 
 小师妹：F师兄，上次你介绍的PrintAssembly的自测命令，怎么在JDK14中不好用呢？
 
@@ -26,7 +26,7 @@ java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
 
 有问题就解决问题，我们先从JDK8开始，来探索一下最原始的PrintAssembly的使用。
 
-# JDK8中使用Assembly
+## JDK8中使用Assembly
 
 在JDK8中如果我们运行Assembly的测试命令，可以得到下面的结果：
 
@@ -74,7 +74,7 @@ sudo cp build/macosx-amd64/hsdis-amd64.dylib /Library/Java/JavaVirtualMachines/j
 
 完美，汇编语言出现了。
 
-# JDK14中的Assembly
+## JDK14中的Assembly
 
 然后我想到，如果把这个dylib文件拷贝到JDK14相应的目录下面，运行一次会怎么样呢？
 
@@ -90,7 +90,7 @@ sudo cp build/macosx-amd64/hsdis-amd64.dylib /Library/Java/JavaVirtualMachines/j
 
 吃一堑，长一智，下次遇到问题千万不能走捷径。抄近路害死人呀！
 
-# 在JMH中使用Assembly
+## 在JMH中使用Assembly
 
 Assembly主要是为了进行代码调优或者理解JVM的运行原理来使用的。
 
@@ -132,7 +132,7 @@ public class PrintAssemblyUsage {
 
 上面的例子中，我们使用了-XX:CompileCommand指定要打印的方法，而不是输出所有的Assembly，方便我们查看和分析结果。
 
-# 总结
+## 总结
 
 本文介绍了JDK8和JDK14中，怎么开启PrintAssembly。并举了一个在JMH中使用的例子。
 

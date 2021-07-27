@@ -1,16 +1,16 @@
 JVM详解之:运行时常量池
 
-# 简介
+## 简介
 
 JVM在运行的时候会对class文件进行加载，链接和初始化的过程。class文件中定义的常量池在JVM加载之后会发生什么神奇的变化呢？快来看一看吧。
 
-# class文件中的常量池
+## class文件中的常量池
 
 之前我们在讲class文件的结构时，提到了每个class文件都有一个常量池，常量池中存了些什么东西呢？
 
 字符串常量，类和接口名字，字段名，和其他一些在class中引用的常量。
 
-# 运行时常量池
+## 运行时常量池
 
 但是只有class文件中的常量池肯定是不够的，因为我们需要在JVM中运行起来。
 
@@ -34,11 +34,11 @@ String site="www.flydean.com"
 
 因为site的值是可以变化的，我们不能在第一时间确定其真正的值，需要在动态运行中进行解析。
 
-## 静态常量详解
+### 静态常量详解
 
 运行时常量池中的静态常量是从class文件中的constant_pool构建的。可以分为两部分：String常量和数字常量。
 
-### String常量
+#### String常量
 
 String常量是对String对象的引用，是从class中的CONSTANT_String_info结构体构建的：
 
@@ -81,11 +81,11 @@ CONSTANT_Utf8_info是啥呢？它就是要创建的String对象的变种UTF-8编
 
 2. 规则二：如果不同的话，那么会创建一个新的String实例，并将运行时String常量指向该String的实例。最后会在这个String实例上调用String的intern方法。调用intern方法主要是将这个String实例加入字符串常量池。
 
-### 数字常量
+#### 数字常量
 
 数字常量是从class文件中的CONSTANT_Integer_info, CONSTANT_Float_info, CONSTANT_Long_info和 CONSTANT_Double_info 构建的。
 
-## 符号引用详解
+### 符号引用详解
 
 符号引用也是从class中的constant_pool中构建的。
 
@@ -105,7 +105,7 @@ interface中方法的引用来自于CONSTANT_InterfaceMethodref_info。
 
 对动态计算的call site的引用来自于CONSTANT_InvokeDynamic_info。
 
-# String Pool字符串常量池
+## String Pool字符串常量池
 
 我们在讲到运行时常量池的时候，有提到String常量是对String对象的引用。那么这些创建的String对象是放在什么地方呢？
 
@@ -125,7 +125,7 @@ String name = new String("www.flydean.com"）;
 
 到底创建了多少个对象呢？
 
-# 总结
+## 总结
 
 class文件中常量池保存的是字符串常量，类和接口名字，字段名，和其他一些在class中引用的常量。每个class都有一份。
 

@@ -1,6 +1,6 @@
 troubleshoot之:使用JFR分析性能问题
 
-# 简介
+## 简介
 
 java程序的性能问题分析是一个很困难的问题。尤其是对于一个非常复杂的程序来说，分析起来更是头疼。
 
@@ -8,7 +8,7 @@ java程序的性能问题分析是一个很困难的问题。尤其是对于一�
 
 今天我们就来介绍一下对java性能分析比较重要的一些JFR事件。
 
-# GC性能事件
+## GC性能事件
 
 一般来说，GC会对java程序的性能操作产生比较重要的影响。我们可以使用jfr监控jdk.GCPhasePause事件。 
 
@@ -45,7 +45,7 @@ jdk.GCPhasePause {
 
 * 减少分配频率。我们可以通过jdk.ThreadAllocationStatistics来分析。
 
-# 同步性能
+## 同步性能
 
 在多线程环境中，因为多线程会竞争共享资源，所以对资源的同步，或者锁的使用都会影响程序的性能。
 
@@ -77,7 +77,7 @@ jdk.JavaMonitorWait {
 
 通过分析JavaMonitorWait事件，我们可以找到竞争最激烈的锁，从而进行更深层次的分析。
 
-# IO性能
+## IO性能
 
 如果应用程序有很多IO操作，那么IO操作也是会影响性能的关键一环。
 
@@ -85,7 +85,7 @@ jdk.JavaMonitorWait {
 
 相对应的事件有：dk.SocketWrite，jdk.SocketRead，jdk.FileWrite，jdk.FileRead。
 
-# 代码执行的性能
+## 代码执行的性能
 
 代码是通过CPU来运行的，如果CPU使用过高，也可能会影响到程序的性能。
 
@@ -110,7 +110,7 @@ jdk.CPULoad {
 
 如果JVM自己的CPU使用就很高的话，那么就需要找到这个占用CPU的线程进行进一步分析。
 
-# 其他有用的event
+## 其他有用的event
 
 除了上面提到的event之外，还有一些其他有用的我们可以关注的event。
 

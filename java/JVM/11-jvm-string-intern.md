@@ -1,12 +1,12 @@
 JVM系列之:String.intern和stringTable
 
-# 简介
+## 简介
 
 StringTable是什么？它和String.intern有什么关系呢？在字符串对象的创建过程中，StringTable有起到了什么作用呢？
 
 一切的答案都在本文中，快来看看吧。
 
-# intern简介
+## intern简介
 
 intern是String类中的一个native方法，所以它底层是用c++来实现的。感兴趣的同学可以去查看下JVM的源码了解更多的内容。
 
@@ -22,7 +22,7 @@ String class维护了一个私有的String pool, 这个String pool也叫StringTa
 
 所以，当且仅当 s.equals(t) 的时候s.intern() == t.intern()。 
 
-# intern和字符串字面量常量
+## intern和字符串字面量常量
 
 我们知道在类文件被编译成class文件时，每个class文件都有一个常量池，常量池中存了些什么东西呢？
 
@@ -78,7 +78,7 @@ Constant pool:
 
 如果是第一次调用，则会创建新的String对象，存放在String Table中，并返回该String对象的引用。
 
-# 分析intern返回的String对象
+## 分析intern返回的String对象
 
 从上面的图中，我们也可以出来String Table中存储的是一个String对象，它和普通的String对象没有什么区别，也分为对象头，底层的byte数组引用，int hash值等。
 
@@ -106,7 +106,7 @@ Space losses: 0 bytes internal + 2 bytes external = 2 bytes total
 
 ~~~
 
-# 分析实际的问题
+## 分析实际的问题
 
 有了上面的知识，让我们分析一下下面的实际问题吧：
 
@@ -144,7 +144,7 @@ JDK6和JDK7有什么不同呢？
 
 在JDK7之后，StringTable已经被转移到了java Heap中了，调用intern方法的时候，StringTable可以直接将该String对象加入StringTable，从而指向的是同一个对象。
 
-# G1中的去重功能
+## G1中的去重功能
 
 如果频繁的进行String的复制，实际上是非常消耗内存空间的。所以在G1垃圾回收器中，可以使用下面的：
 
@@ -170,7 +170,7 @@ JDK6和JDK7有什么不同呢？
 
 来指定StringTable的大小。
 
-# 总结
+## 总结
 
 本文讲了String.intern和String table的关系，如果有什么错误或者遗漏的地方，欢迎大家留言给我！
 

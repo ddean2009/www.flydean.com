@@ -1,10 +1,10 @@
 JVM详解之:HotSpot VM中的Intrinsic methods
 
-# 简介
+## 简介
 
 内置方法是什么呢？它和inline method有什么关系呢？内置方法是怎么实现的呢？所有的问题都可以在本文找到答案。
 
-# 什么是Intrinsic Methods
+## 什么是Intrinsic Methods
 
 什么是内置方法呢？
 
@@ -16,23 +16,23 @@ JVM详解之:HotSpot VM中的Intrinsic methods
 
 所以总结一下，内置方法就是编译器内置的方法实现。
 
-# 内置方法的特点
+## 内置方法的特点
 
 内置方法有什么特点呢？我们在这里总结一下。
 
-## 多样性
+### 多样性
    
 因为内置方法是在编译器内部实现的，所以不同的虚拟机，其内置方法是不一样的。
 
 我们不能直接说哪个方法是内置方法，因为不同的JVM是不同的。
 
-## 兼容性
+### 兼容性
 
 内置方法是在需要的时候才会使用的，如果在不需要的时候则会回退到普通的方法实现，也就是java代码的实现。
 
 所以在java源代码级别来看，内置方法和非内置方法是一样的。他们的区别在于JVM的实现。
 
-## java语义的扩展
+### java语义的扩展
 
 有些方法用普通的java代码是无法实现的。比如sun.misc.Unsafe.compareAndSwapInt()。 
 
@@ -40,7 +40,7 @@ JVM详解之:HotSpot VM中的Intrinsic methods
 
 一般来说，JDK和核心库中，能使用内置方法优化都已经优化了。所以我们在平时的代码调用中，一定要尽可能的使用JDK的公共API和核心库，这样才能充分利用内置方法的特性，从而提升程序效率。
 
-# Hotspot VM中的内置方法
+## Hotspot VM中的内置方法
 
 那么对于Hotspot VM来说，内置的方法有哪些呢？
 
@@ -84,13 +84,13 @@ java  -XX:+UnlockDiagnosticVMOptions  -XX:+PrintCompilation -XX:+PrintInlining  
 
 invokestatic意味着该方法就是intrinsified方法。
 
-# intrinsic方法和内联方法
+## intrinsic方法和内联方法
 
 内联方法就是把调用方函数代码"复制"到调用方函数中，减少因函数调用开销的技术。
 
 intrinsic方法大部分都是内联方法。
 
-# intrinsic方法的实现
+## intrinsic方法的实现
 
 前面我们提到了内置方法是在编译器实现的。
 
@@ -137,7 +137,7 @@ C2级别修改（Example (XS) of adding an intrinsic method to HotSpot C2. Patch
 https://gist.github.com/rednaxelafx/1986224
 ~~~
 
-# Graal
+## Graal
 
 因为Hotspot VM是用C++编写的，如果要添加Intrinsic方法，对于那些不熟悉C++的朋友来说就太难了。
 
@@ -153,7 +153,7 @@ Graal是基于Java的JIT编译器，是JDK 9中引入的实验性Ahead-of-Time�
 
 通过Graal，我们可以用java来实现Intrinsic方法，想想就让人兴奋。
 
-# 总结
+## 总结
 
 Intrinsic方法是一个非常有用的特性，希望大家能够喜欢。
 

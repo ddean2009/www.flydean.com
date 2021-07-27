@@ -1,6 +1,6 @@
 JVM系列之:JIT中的Virtual Call接口
 
-# 简介
+## 简介
 
 上一篇文章我们讲解了Virtual Call的定义并举例分析了Virtual Call在父类和子类中的优化。
 
@@ -8,7 +8,7 @@ JIT对类可以进行优化，那么对于interface可不可以做同样的优�
 
 一起来看看吧。
 
-# 最常用的接口List
+## 最常用的接口List
 
 List应该是大家最最常用的接口了，我想这个大家应该不会反驳。
 
@@ -49,7 +49,7 @@ public class TestVirtualListCall {
 
 然后调用的是invokeinterface，但是其本质还是invokevirtual,并且我们可以看到这个调用是被优化过了：optimized virtual call。
 
-# 多个List的调用
+## 多个List的调用
 
 同样的，我们可以测试一下多个list子类的情况下怎么调用：
 
@@ -80,7 +80,7 @@ public class TestVirtualListCall2 {
 
 结果和我们的父类子类结果是一样的。
 
-# 不一样的List调用
+## 不一样的List调用
 
 上面我们在做多个list调用的时候，是轮循着来调用的，如果我们先调用ArrayList的方法，再调用LinkedList的方法，会有什么不同呢？
 
@@ -131,7 +131,7 @@ public class TestVirtualListCall3 {
 
 > 不同的JVM版本可能优化方式不一样。大家可以自行实验。
 
-# 总结
+## 总结
 
 本文用实例展示了Virtual Call在interface上面的优化使用。
 

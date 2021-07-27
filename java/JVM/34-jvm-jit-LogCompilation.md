@@ -1,10 +1,10 @@
 小师妹学JVM之:JIT中的LogCompilation
 
-# 简介
+## 简介
 
 我们知道在JVM中为了加快编译速度，引入了JIT即时编译的功能。那么JIT什么时候开始编译的，又是怎么编译的，作为一个高傲的程序员，有没有办法去探究JIT编译的秘密呢？答案是有的，今天和小师妹一起带大家来看一看这个编译背后的秘密。
 
-# LogCompilation简介
+## LogCompilation简介
 
 小师妹：F师兄，JIT这么神器，但是好像就是一个黑盒子，有没有办法可以探寻到其内部的本质呢？
 
@@ -20,7 +20,7 @@ JIT的编译日志输出很简单，使用 -XX:+LogCompilation就够了。
 -XX:+UnlockDiagnosticVMOptions -XX:+LogCompilation -XX:LogFile=www.flydean.com.log
 ~~~
 
-# LogCompilation的使用
+## LogCompilation的使用
 
 根据上面的介绍，我们现场来生成一个JIT的编译日志，为了体现出专业性，这里我们需要使用到JMH来做性能测试。
 
@@ -57,7 +57,7 @@ JMH的全称是Java Microbenchmark Harness，是一个open JDK中用来做性能
 
 运行之后，你就可以得到输出的编译日志文件。
 
-# 解析LogCompilation文件
+## 解析LogCompilation文件
 
 小师妹：F师兄，我看了一下生成的文件好复杂啊，用肉眼能看得明白吗？
 
@@ -179,7 +179,7 @@ dependency分析的是类的依赖关系，type表示的是什么类型的依赖
 
 call的意思是，在该代码中将会调用其他的方法。count是执行次数。
 
-# 总结
+## 总结
 
 复杂的编译日志终于讲完了，可能讲的并不是很全，还有一些其他情况这里并没有列出来，后面如果遇到了，我再添加进去。
 

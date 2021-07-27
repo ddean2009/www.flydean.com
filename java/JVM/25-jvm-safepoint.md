@@ -1,11 +1,11 @@
 小师妹学JVM之:JVM中的Safepoints
 
-# 简介
+## 简介
 
 java程序员都听说过GC，大家也都知道GC的目的是扫描堆空间，然后将那些标记为删除的对象从堆空间释放，以提升可用的堆空间。今天我们会来探讨一下隐藏在GC背后的一个小秘密Safepoints。
 
 
-# GC的垃圾回收器
+## GC的垃圾回收器
 
 小师妹：F师兄，GC的垃圾回收器的种类为什么会有这么多呀？使用起来不是很麻烦。并且我听说CMS在JDK9zhong已经被废弃了。
 
@@ -35,7 +35,7 @@ Z Garbage Collection，ZGC是一个可扩展的，低延迟的GC。ZGC是并发�
 
 当然还有正在研发中的其他GC。
 
-# 分代回收器中的问题
+## 分代回收器中的问题
 
 小师妹：F师兄，分代回收器不好吗？为什么还有新的ZGC等基于非分代技术的回收器？
 
@@ -49,7 +49,7 @@ JVM定义了一些Root对象，从这些对象开始，找出他们引用的对�
 
 这些Root对象包括：正在执行的方法中的本地对象和输入参数。活动的线程，加载类中的static字段和JNI引用。
 
-# safepoints
+## safepoints
 
 为了实现STW的功能，JVM需要提供一个机制，让所有的线程可以在某一个时刻同时停下来。这个停下来的时刻就叫做safepoints。
 
@@ -80,7 +80,7 @@ JVM中的代码执行其实有两种方式，一种是JIT编译成为机器码�
 
 如果是解释执行的话，JVM保存了两个字节码的调度table，当需要safepoint的时候，JVM就进行table的切换，从而开启safepoint。
 
-# safepoint一般用在什么地方
+## safepoint一般用在什么地方
 
 一般情况下，GC，JIT的反代码优化，刷新code cache,类重定义 ,偏向锁撤销和其他的一些debug操作。
 
@@ -88,7 +88,7 @@ JVM中的代码执行其实有两种方式，一种是JIT编译成为机器码�
 
 -XX:+PrintSafepointStatistics –XX:PrintSafepointStatisticsCount=1这两个参数可以强制JVM打印safepoint的一些统计信息。
 
-# 总结
+## 总结
 
 Safepoint是垃圾回收中一个非常重要的概念，希望大家能够有所了解。
 

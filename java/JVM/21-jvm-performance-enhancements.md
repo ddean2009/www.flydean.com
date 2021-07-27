@@ -1,10 +1,10 @@
 小师妹学JVM之:JDK14中JVM的性能优化
 
-# 简介
+## 简介
 
 上一篇文章我们讲到了JVM为了提升解释的性能，引入了JIT编译器，今天我们再来从整体的角度，带小师妹看看JDK14中的JVM有哪些优化的方面，并且能够从中间得到那些启发。
 
-# String压缩
+## String压缩
 
 小师妹:F师兄，上次你给我讲的JIT真的是受益匪浅，原来JVM中还有这么多不为人知的小故事。不知道除了JIT之外，JVM还有没有其他的性能提升的姿势呢？
 
@@ -28,7 +28,7 @@ LATIN1需要用一个字节来存储。而UTF16需要使用2个字节或者4个�
 
 来控制它。
 
-# 分层编译（Tiered Compilation）
+## 分层编译（Tiered Compilation）
 
 为了提升JIT的编译效率，并且满足不同层次的编译需求，引入了分层编译的概念。
 
@@ -46,7 +46,7 @@ LATIN1需要用一个字节来存储。而UTF16需要使用2个字节或者4个�
 
 而在JDK8之后，恭喜你，分层编译已经是默认的选项了，不用再手动开启。
 
-# Code Cache分层
+## Code Cache分层
 
 Code Cache就是用来存储编译过的机器码的内存空间。也就说JIT编译产生的机器码，都是存放在Code Cache中的。
 
@@ -62,7 +62,7 @@ Code Cache是以单个heap形式组织起来的连续的内存空间。
 
 ![](https://img-blog.csdnimg.cn/20200528225431671.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-# 新的JIT编译器Graal
+## 新的JIT编译器Graal
 
 之前的文章我们介绍JIT编译器，讲的是JIT编译器是用C/C++来编写的。
 
@@ -76,7 +76,7 @@ Graal和JVM是通过JVMCI（JVM Compiler Interface）来进行通信的。其中
 
 > 注意，Graal只在Linux-64版的JVM中支持，你需要使用 -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler 来开启Graal特性。
 
-# 前置编译
+## 前置编译
 
 我们知道在JIT中，通常为了找到热点代码，JVM是需要等待代码执行一定的时间之后，才开始进行本地代码的编译。这样做的缺点就是需要比较长的时间。
 
@@ -110,7 +110,7 @@ java -XX:AOTLibrary=./libHelloWorld.so,./libjava.base.so HelloWorld
 
 > 注意，AOT是一个 Linux-x64上面的体验功能。
 
-# 压缩对象指针
+## 压缩对象指针
 
 对象指针用来指向一个对象，表示对该对象的引用。通常来说在64位机子上面，一个指针占用64位，也就是8个字节。而在32位机子上面，一个指针占用32位，也就是4个字节。
 
@@ -124,11 +124,11 @@ java -XX:AOTLibrary=./libHelloWorld.so,./libjava.base.so HelloWorld
 
 对象指针压缩在Java SE 6u23 默认开启。在此之前，可以使用-XX:+UseCompressedOops来开启。
 
-# Zero-Based 压缩指针
+## Zero-Based 压缩指针
 
 刚刚讲到了压缩过的32位地址是基于64位的heap base地址的。而在Zero-Based 压缩指针中，64位的heap base地址是重新分配的虚拟地址0。这样就可以不用存储64位的heap base地址了。
 
-# Escape analysis逃逸分析
+## Escape analysis逃逸分析
 
 最后，要讲的是逃逸分析。什么叫逃逸分析呢？简单点讲就是分析这个线程中的对象，有没有可能会被其他对象或者线程所访问，如果有的话，那么这个对象应该在Heap中分配，这样才能让对其他的对象可见。
 

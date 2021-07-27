@@ -1,12 +1,12 @@
 JVM系列之:从汇编角度分析Volatile
 
-# 简介
+## 简介
 
 Volatile关键字对熟悉java多线程的朋友来说，应该很熟悉了。Volatile是JMM(Java Memory Model)的一个非常重要的关键词。通过是用Volatile可以实现禁止重排序和变量值线程之间可见两个主要特性。
 
 今天我们从汇编的角度来分析一下Volatile关键字到底是怎么工作的。
 
-# 重排序
+## 重排序
 
 这个世界上有两种重排序的方式。
 
@@ -93,7 +93,7 @@ public class TestVolatile {
 
 这也说明了不同的编译器可能对重排序的理解程度是不一样的。
 
-# 写的内存屏障
+## 写的内存屏障
 
 再来分析一下上面的putstatic int2:
 
@@ -111,7 +111,7 @@ lock addl $0x0,-0x40(%rsp)  ;*putstatic int2 {reexecute=0 rethrow=0 return_oop=0
 
 当然，因为使用lock，可能对性能会有影响。
 
-# 非lock和LazySet
+## 非lock和LazySet
 
 上面我们提到了volatile会导致生成lock指令。
 
@@ -152,7 +152,7 @@ public class TestVolatile2 {
 
 > 注意，上面的最后一个红框表示的是putstatic int4。
 
-# 读的性能
+## 读的性能
 
 最后，我们看下使用volatile关键字对读的性能影响：
 
@@ -184,7 +184,7 @@ public class TestVolatile3 {
 
 所以volatile对读的性能不会产生影响。
 
-# 总结
+## 总结
 
 本文从汇编语言的角度再次深入探讨了volatile关键字和JMM模型的影响，希望大家能够喜欢。
 

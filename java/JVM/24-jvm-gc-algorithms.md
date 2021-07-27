@@ -1,12 +1,12 @@
 小师妹学JVM之:GC的垃圾回收算法
 
-# 简介
+## 简介
 
 JVM的重要性不言而喻了，如果把java的应用程序比作一辆跑车，那么JVM就是这辆车的发动机，没有它，java程序就成了空中楼阁，无根浮萍。而在JVM中有一块内存区域叫做运行时数据区域，存储了运行时所需要的所有对象，而Heap Area则是其中最大的一块。
 
 内存毕竟不是无限的，所以就需要一种机制来将不再使用的对象进行回收，这种机制就是今天我们要讲的GC。
 
-# 对象的生命周期
+## 对象的生命周期
 
 小师妹:F师兄，你相信这个世界有轮回吗？
 
@@ -40,7 +40,7 @@ Object obj = new Object();
 
 当一个对象没有被其他对象引用的时候，我们就称为该对象可以被回收了。在Java中，对象的回收是由GC来负责的。
 
-# 垃圾回收算法
+## 垃圾回收算法
 
 小师妹：F师兄，我觉得垃圾回收好像挺简单的，我们为每个对象维持一个指针计数器，每引用一次就加一，这样不就可以实现垃圾回收器了吗？
 
@@ -48,7 +48,7 @@ Object obj = new Object();
 
 接下来我们将会介绍一下，在JVM中比较常用几个垃圾回收算法：
 
-## Mark and sweep
+### Mark and sweep
 
  Mark and sweep是最最简单的垃圾回收算法，简单点讲，它可以分为两个步骤：
 
@@ -70,7 +70,7 @@ JVM定义了一些Root对象，从这些对象开始，找出他们引用的对�
 
 删除有三种方式，第一种方式是正常删除。但是正常删除会导致内存碎片的产生。所以第二种方式就是删除之后进行压缩，以减少内存碎片。还有一种方式叫做删除拷贝，也就是说将alive的对象拷贝到新的内存区域，这样同样可以解决内存碎片的问题。
 
-## Concurrent mark sweep (CMS) 
+### Concurrent mark sweep (CMS) 
 
 在讲CMS之前，我们先讲一下垃圾回收器中的Eden，Old和Survivor space几个大家应该都很熟悉的分代技术。
 
@@ -96,7 +96,7 @@ CMS在Young Generation中使用的是mark-copy，而在Old Generation主要使�
 
 上面是列出的一些CMS的调优参数。
 
-## Serial garbage collection
+### Serial garbage collection
 
 Serial garbage collection使用单一的线程来进行垃圾回收操作，其好处就是不需要和其他的线程进行交互。如果你是单核的CPU，那么最好就是选择Serial garbage collection，因为你不能充分利用多核的好处。同样的它也常常用在比较小型的项目中。
 
@@ -108,7 +108,7 @@ Serial garbage collection在Young Generation中使用的是mark-copy，而在Old
 -XX:+UseSerialGC
 ~~~
 
-## Parallel garbage collection
+### Parallel garbage collection
 
 和serial GC类似，它在Young Generation中使用的是mark-copy，而在Old Generation主要使用的是 mark-sweep-compact。不同的是它是并行的。
 
@@ -128,7 +128,7 @@ Serial garbage collection在Young Generation中使用的是mark-copy，而在Old
 -XX:+UseParallelGC
 ~~~
 
-## G1 garbage collection
+### G1 garbage collection
 
 为什么叫G1呢，G1=Garbage First，它是为替换CMS而生的，最早出现在java7中。
 
@@ -140,7 +140,7 @@ G1将heap区域划分成为多个更小的区域，每个小区域都被标记�
 -XX:+UseG1GC 
 ~~~
 
-##  Z Garbage Collection
+###  Z Garbage Collection
 
 ZGC是一个可扩展的，低延迟的GC。ZGC是并发的，而且不需要停止正在运行的线程。
 
@@ -152,7 +152,7 @@ ZGC是一个可扩展的，低延迟的GC。ZGC是并发的，而且不需要停
 
 ZGC是在JDK11中被引入的。
 
-# 怎么选择
+## 怎么选择
 
 小师妹：F师兄，你讲了这么多个GC，到底我该用哪个呢？
 
@@ -168,7 +168,7 @@ ZGC是在JDK11中被引入的。
 
 5. 如果响应时间非常重要，并且你在使用大容量的heap空间，那么可以考虑使用ZGC： -XX:UseZGC。
 
-# 总结
+## 总结
 
 本文介绍了几种GC的算法，大家可以根据需要选用。
 

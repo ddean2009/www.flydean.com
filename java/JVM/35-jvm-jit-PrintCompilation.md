@@ -1,10 +1,10 @@
 小师妹学JVM之:JIT中的PrintCompilation
 
-# 简介
+## 简介
 
 上篇文章我们讲到了JIT中的LogCompilation，将编译的日志都收集起来，存到日志文件里面，并且详细的解释了LogCompilation日志文件中的内容定义。今天我们再和小师妹一起学习LogCompilation的姊妹篇PrintCompilation，看看都有什么妙用吧。
 
-# PrintCompilation
+## PrintCompilation
 
 小师妹：F师兄，上次你给讲的LogCompilation实在是太复杂了，生成的日志文件又多，完全看不了，我其实只是想知道有哪些方法被编译成了机器码，有没有什么更加简单的办法呢？
 
@@ -50,7 +50,7 @@
 
 PrintCompilation将会输出被编译方法的统计信息，因此使用PrintCompilation可以很方法的看出哪些是热点代码。热点代码也就意味着存在着被优化的可能性。
 
-# 分析PrintCompilation的结果
+## 分析PrintCompilation的结果
 
 小师妹：F师兄，我照着你的例子运行了一下，结果果然清爽了很多。可是我还是看不懂。
 
@@ -99,7 +99,7 @@ made zombie         code is not in use and ready for GC
 
 如果字节码被编译成为机器码，长度会增加很多倍。
 
-# 总结
+## 总结
 
 本文介绍了JIT中PrintCompilation的使用，并再次复习了JIT中的分层编译架构。希望大家能够喜欢。
 

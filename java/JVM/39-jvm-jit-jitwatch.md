@@ -1,10 +1,10 @@
 小师妹学JVM之:JIT的Profile神器JITWatch
 
-# 简介
+## 简介
 
 老是使用命令行工具在现代化社会好像已经跟不上节奏了，尤其是在做JIT分析时，使用LogCompilation输出的日志实在是太大了，让人望而生畏。有没有什么更加简便的方法来分析JIT日志呢？快来和小师妹一起来学习JITWatch吧。
 
-# 什么是JIT
+## 什么是JIT
 
 小师妹，F师兄，JIT就是Just In Time compilers。能不能再总结一下JIT到底是做什么的呢？
 
@@ -20,7 +20,7 @@ JIT中有两种编译器，C1代表的是Client Compiler,C2代表的是Server Co
 
 JDK8中会默认启动分层编译。你也可以使用-XX:+TieredCompilation来手动启动它。
 
-# JITWatch简介
+## JITWatch简介
 
 小师妹：F师兄，上次你讲的LogCompilation和PrintCompilation输出结果还是太复杂了，尤其是LogCompilation，输出的结果有十几M，分析起来好难。有没有更简单一点的办法，让我的工作效率加倍呢？
 
@@ -28,7 +28,7 @@ JDK8中会默认启动分层编译。你也可以使用-XX:+TieredCompilation来
 
 JITWatch是一个大神做的JIT日志的可视化分析工具。在使用它之前你可能觉得它有点强大，在使用后你就会觉得它真的是强大。
 
-# 运行JITWatch
+## 运行JITWatch
 
 小师妹：F师兄，这么强大的工具，快快介绍我使用吧。
 
@@ -42,7 +42,7 @@ mvn clean compile test exec:java
 
 就可以开启JITWatch之旅了。
 
-# JITWatch详解
+## JITWatch详解
 
 小师妹：F师兄，这么好用的工具为什么不打个包出来让大家直接用呢？还要下载源码这么麻烦。
 
@@ -139,7 +139,7 @@ Suggestion是对代码的一些优化建议。
 
 从上图我们可以看到在调用String的hashMap方法时候无法inlined,因为被调用的方法太大了，超出了最大inlining size。
 
-# 总结
+## 总结
 
 所以，我们通过JITWatch可以学到什么呢？最最重要的是我们可以通过JITWatch来分析JIT的运行原理和本质。然后inlined的方法不要太大了，否则影响执行效率。
 

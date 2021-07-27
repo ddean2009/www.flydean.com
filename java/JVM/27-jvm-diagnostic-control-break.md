@@ -1,12 +1,12 @@
 troubleshoot之:用control+break解决线程死锁问题
 
-# 简介
+## 简介
 
 如果我们在程序中遇到线程死锁的时候，该怎么去解决呢？
 
 本文将会从一个实际的例子出发，一步一步的揭开java问题解决的面纱。
 
-# 死锁的代码
+## 死锁的代码
 
 写过java多线程程序的人应该都知道，多线程中一个很重要的事情就是状态的同步，但是在状态同步的过程中，一不小心就有可能会导致死锁的问题。
 
@@ -68,7 +68,7 @@ Lock2 lock obj2
 
 发送了锁循环等待的情况，程序执行不下去了，发送了死锁。
 
-# control+break命令
+## control+break命令
 
 在代码很简单的情况下，我们很容易就能分析出来死锁的原因，但是如果是在一个非常庞大的线上项目的时候，分析代码就没有那么容易了。
 
@@ -90,7 +90,7 @@ kill -QUIT pid命令。
 
 输出的内容比较多，我们一部分一部分的讲解。
 
-## Full thread dump
+### Full thread dump
 
 日志的第一部分就是Full thread dump，包含了JVM中的所有线程的状态信息。
 
@@ -123,7 +123,7 @@ kill -QUIT pid命令。
 
 ![](https://img-blog.csdnimg.cn/20200704111005149.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
-## 死锁检测
+### 死锁检测
 
 接下来的部分就是我们最关心的死锁检测了。
 
@@ -163,7 +163,7 @@ Found 1 deadlock.
 
 > 如果我们添加了参数-XX:+PrintConcurrentLocks，还会输出各个线程的获得的concurrent lock信息。
 
-## Heap信息
+### Heap信息
 
 最后一部分是Heap的统计信息：
 
@@ -177,7 +177,7 @@ Heap
 
 > 如果我们添加了-XX:+PrintClassHistogram命令，还可以额外的输出class直方图统计信息。
 
-# 总结
+## 总结
 
 上面就是使用Control+Break命令来分析java死锁问题的具体例子，希望大家能够喜欢。
 

@@ -1,12 +1,12 @@
 troubleshoot之:分析OutOfMemoryError异常
 
-# 简介
+## 简介
 
 java.lang.OutOfMemoryError应该java应用程序中非常常见的一个的错误了。
 
 那么OutOfMemoryError产生的原因是什么呢？我们怎么去查找相应的错误呢？一起来看看吧。
 
-# OutOfMemoryError
+## OutOfMemoryError
 
 先看一下OutOfMemoryError的定义，OutOfMemoryError继承自
 VirtualMachineError，它是Error的一种，表示的是应用程序无法处理的异常，一般情况下会导致虚拟机退出。
@@ -45,7 +45,7 @@ public class OutOfMemoryError extends VirtualMachineError {
 
 下面我们分析一下各个不同的OutOfMemoryError。
 
-# java.lang.OutOfMemoryError: Java heap space
+## java.lang.OutOfMemoryError: Java heap space
 
 Java heap space表示的是新对象不能在java heap中分配。
 
@@ -59,7 +59,7 @@ Java heap space表示的是新对象不能在java heap中分配。
 
 如果应用程序创建了高优先级的线程，那么高优先级的线程将有可能会导致对象被放入finalization队列的速度比终结器守护线程的处理速度慢。
 
-# java.lang.OutOfMemoryError: GC Overhead limit exceeded
+## java.lang.OutOfMemoryError: GC Overhead limit exceeded
 
 GC overhead limit exceeded表示的是GC一直都在运行，从而导致java程序本身执行非常慢。
 
@@ -71,23 +71,23 @@ GC overhead limit exceeded表示的是GC一直都在运行，从而导致java程
 -XX:-UseGCOverheadLimit
 ~~~
 
-# java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+## java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 
 这个错误的意思是，要分配的array比heap size大。
 
 比如说设置的最大heap大小是256M，但是分配了一个300M的数组，就会出现这个问题。
 
-# java.lang.OutOfMemoryError: Metaspace
+## java.lang.OutOfMemoryError: Metaspace
 
 从JDK8之后，Metaspace已经移到了java的本地内存空间中。如果Metaspace超出了限制的大小，那么java.lang.OutOfMemoryError也会抛出。
 
 Metaspace的空间大小可以通过MaxMetaSpaceSize来设置。
 
-# java.lang.OutOfMemoryError: request size bytes for reason. Out of swap space?
+## java.lang.OutOfMemoryError: request size bytes for reason. Out of swap space?
 
 当本地堆分配失败并且本地堆即将耗尽的时候就会报这个异常。
 
-# java.lang.OutOfMemoryError: Compressed class space
+## java.lang.OutOfMemoryError: Compressed class space
 
 在64位的平台，对象指针可以用32位表示（对象指针压缩）。
 
@@ -103,13 +103,13 @@ UseCompressedClassPointers
 
 > 注意，只有klass元信息是存放在CompressedClassSpaceSize设置的空间中的，而其他的元信息都是存放在Metaspace中的。
 
-# OutOfMemoryError: reason stack_trace_with_native_method
+## OutOfMemoryError: reason stack_trace_with_native_method
 
 这个错误表示本地方法遇到分配失败。
 
 遇到这种问题可能需要操作系统的本地调试工具来解决。
 
-# 总结
+## 总结
 
 本文介绍了OutOfMemoryError的不同种类，希望大家能够有所收获。
 

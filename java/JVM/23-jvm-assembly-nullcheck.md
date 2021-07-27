@@ -1,6 +1,6 @@
 JVM系列之:从汇编角度分析NullCheck
 
-# 简介
+## 简介
 
 之前我们在讲Virtual call的时候有提到，virtual call方法会根据传递的参数实例的不同而进行优化，从而优化成为classic call,从而提升执行效率。
 
@@ -8,7 +8,7 @@ JVM系列之:从汇编角度分析NullCheck
 
 一起来看看吧。
 
-# 一个普通的virtual call
+## 一个普通的virtual call
 
 我们来分析一下在方法中调用list.add方法的例子：
 
@@ -47,7 +47,7 @@ public class TestNull {
 
 第四个红框就是这地址，表示的是异常处理的代码。
 
-# 普通方法中的null check
+## 普通方法中的null check
 
 我们在上面的普通方法里面加上一个null check：
 
@@ -83,7 +83,7 @@ public class TestNull1 {
 
 那么null check到底在什么地方呢？ 看我标红的第二个框，这里是之前的异常处理区域，我们可以看到里面有一个ifnull，表明这里做了null check。
 
-# 反优化的例子
+## 反优化的例子
 
 上面的两个例子，我们可以看出在virtual method中，JIT对null check进行了优化。接下来我们再看一个例子，在这个例子中，我们显示的传递一个null给testMethod，然后再次循环testMethod，如下所示。
 
@@ -109,7 +109,7 @@ for (int i = 0; i < 10000; i++)
 第一，ifnull现在是显示调用的，并不包含在隐式异常中。
 第二，隐式异常也不见了，因为使用显示的ifnull。
 
-# 总结
+## 总结
 
 JIT会根据不同的情况，对代码进行不同程度的优化，希望大家能够喜欢。
 

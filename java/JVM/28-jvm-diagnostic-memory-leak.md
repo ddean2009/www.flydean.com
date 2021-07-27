@@ -1,6 +1,6 @@
 troubleshoot之:使用JFR解决内存泄露
 
-# 简介
+## 简介
 
 虽然java有自动化的GC，但是还会有内存泄露的情况。当然java中的内存泄露跟C++中的泄露不同。
 
@@ -10,7 +10,7 @@ troubleshoot之:使用JFR解决内存泄露
 
 内存泄露的主要原因就是java中的对象生命周期有长有短。如果长生命周期的对象引用了短生命周期的对象，就有可能造成事实上的内存泄露。
 
-# 一个内存泄露的例子
+## 一个内存泄露的例子
 
 我们举一个内存泄露的例子，先定义一个大对象：
 
@@ -48,7 +48,7 @@ public class TestMemoryLeak {
 > 注意，最后一行我们加了一个hashSet.remove的代码，来使用类变量hashSet。
 > 为什么要这样做呢？这样做是为了防止JIT对代码进行优化，从而影响我们对内存泄露的分析。
 
-# 使用JFR和JMC来分析内存泄露
+## 使用JFR和JMC来分析内存泄露
 
 Flight Recorder(JFR)主要用来记录JVM的事件，我们可以从这些事件中分析出内存泄露。
 
@@ -80,7 +80,7 @@ jcmd pid JFR.dump filename=recording.jfr path-to-gc-roots=true
 
 接下来我们通过JVM的OldObjectSample事件来分析一下。
 
-# OldObjectSample
+## OldObjectSample
 
 OldObjectSample就是对生命周期比较长的对象进行取样，我们可以通过研究这些对象，来检查潜在的内存泄露。
 
@@ -132,7 +132,7 @@ stackTrace表示的是这个对象被分配的stack信息。
 
 从而我们可以进行更深层次的分析，最终找到内存泄露的原因。
 
-# 总结
+## 总结
 
 本文通过JFR和JMC的使用，介绍了如何分析内存泄露。希望大家能够喜欢。
 

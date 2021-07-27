@@ -1,12 +1,12 @@
 JVM系列之:JIT中的Virtual Call
 
-# 简介
+## 简介
 
 什么是Virtual Call？Virtual Call在java中的实现是怎么样的？Virtual Call在JIT中有没有优化？
 
 所有的答案看完这篇文章就明白了。
 
-# Virtual Call和它的本质
+## Virtual Call和它的本质
 
 有用过PrintAssembly的朋友，可能会在反编译的汇编代码中发现有些方法调用的说明是invokevirtual，实际上这个invokevirtual就是Virtual Call。
 
@@ -58,7 +58,7 @@ public static void doWithVMethod(CustObj obj)
 
 程序运行的时候首先加载实例对象，然后通过实例对象找到VMT，通过VMT再找到对应的方法地址。
 
-## Virtual Call和classic call
+### Virtual Call和classic call
 
 Virtual Call意思是调用方法的时候需要依赖不同的实例对象。而classic call就是直接指向方法的地址，而不需要通过VMT表的转换。
 
@@ -68,7 +68,7 @@ Virtual Call意思是调用方法的时候需要依赖不同的实例对象。�
 
 在java中除了static, private和构造函数之外，其他的默认都是Virtual Call。
 
-# Virtual Call优化单实现方法的例子
+## Virtual Call优化单实现方法的例子
 
 有些朋友可能会有疑问了，java中其他方法默认都是Virtual Call，那么如果只有一个方法的实现，性能不会受影响吗？
 
@@ -133,7 +133,7 @@ obj.methodCall相对应的byteCode中，大家可以看到第二行就是invokev
 
 因为内联只会发生在classic calls中，所以也侧面说明了methodCall方法已经被优化了。
 
-# Virtual Call优化多实现方法的例子
+## Virtual Call优化多实现方法的例子
 
 上面我们讲了一个方法的实现，现在我们测试一下两个方法的实现：
 
@@ -252,7 +252,7 @@ public class TestVirtualCall4 {
 
 > 具体未进行优化的原因我也不清楚，猜想可能跟code cache的大小有关？ 有知道的朋友可以告诉我。
 
-# 总结
+## 总结
 
 本文介绍了Virtual Call和它在java代码中的使用，并在汇编语言的角度对其进行了一定程度的分析，有不对的地方还请大家不吝指教！
 

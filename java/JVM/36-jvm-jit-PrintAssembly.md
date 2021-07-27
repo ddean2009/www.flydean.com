@@ -1,12 +1,12 @@
 小师妹学JVM之:JIT中的PrintAssembly
 
-# 简介
+## 简介
 
 想不想了解JVM最最底层的运行机制？想不想从本质上理解java代码的执行过程？想不想对你的代码进行进一步的优化和性能提升？
 
 如果你的回答是yes。那么这篇文章非常适合你，因为本文将会站在离机器码最近的地方来观看JVM的运行原理：Assembly。
 
-# 使用PrintAssembly
+## 使用PrintAssembly
 
 小师妹：F师兄，上次你给我介绍了java中的字节码，还有JIT中的LogCompilation和PrintCompilation的用法。虽然都非常有用，但是能不能更进一步，让我能以机器的眼光来看待JVM的执行？
 
@@ -48,7 +48,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
 
 > 注意，上面的说法并没有验证过，如果我说错了，请指正。
 
-# 输出过滤
+## 输出过滤
 
 默认情况下，PrintAssembly输出的是所有的信息，但是JDK内部的代码我们不可能进行修改，一般来说并不关心他们的assembly输出，如果要指定我们自己编写的方法，可以使用CompileCommand：
 
@@ -69,7 +69,7 @@ CompileCommand=option,*MyClass.myMethod,PrintNMethods produces method dumps
 ![](https://img-blog.csdnimg.cn/20200530194133803.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
 
 
-# 总结
+## 总结
 
 本文讲解了怎么使用PrintAssembly来输出JVM的汇编日志。我们会在后面继续讲解这些Assembly code到底有什么用。
 

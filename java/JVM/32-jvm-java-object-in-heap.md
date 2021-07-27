@@ -1,12 +1,12 @@
 JVM系列之:详解java object对象在heap中的结构
 
-# 简介
+## 简介
 
 在之前的文章中，我们介绍了使用JOL这一神器来解析java类或者java实例在内存中占用的空间地址。
 
 今天，我们会更进一步，剖析一下在之前文章中没有讲解到的更深层次的细节。一起来看看吧。
 
-# 对象和其隐藏的秘密
+## 对象和其隐藏的秘密
 
 java.lang.Object大家应该都很熟悉了，Object是java中一切对象的鼻祖。
 
@@ -32,15 +32,15 @@ public class JolUsage {
 看下输出：
 
 ~~~java
-[main] INFO com.flydean.JolUsage - # Running 64-bit HotSpot VM.
-# Using compressed oop with 3-bit shift.
-# Using compressed klass with 3-bit shift.
-# WARNING | Compressed references base/shifts are guessed by the experiment!
-# WARNING | Therefore, computed addresses are just guesses, and ARE NOT RELIABLE.
-# WARNING | Make sure to attach Serviceability Agent to get the reliable addresses.
-# Objects are 8 bytes aligned.
-# Field sizes by type: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
-# Array element sizes: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
+[main] INFO com.flydean.JolUsage - ## Running 64-bit HotSpot VM.
+## Using compressed oop with 3-bit shift.
+## Using compressed klass with 3-bit shift.
+## WARNING | Compressed references base/shifts are guessed by the experiment!
+## WARNING | Therefore, computed addresses are just guesses, and ARE NOT RELIABLE.
+## WARNING | Make sure to attach Serviceability Agent to get the reliable addresses.
+## Objects are 8 bytes aligned.
+## Field sizes by type: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
+## Array element sizes: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
 
 10:27:32.311 [main] INFO com.flydean.JolUsage - java.lang.Object object internals:
  OFFSET  SIZE   TYPE DESCRIPTION                               VALUE
@@ -63,7 +63,7 @@ Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
 
 因为Object对象中并没有其他对象的引用，所以我们看到Object对象只有一个12字节的对象头。剩下的4个字节是填充位。
 
-# Object对象头
+## Object对象头
 
 那么这12字节的对象头是做什么用的呢？
 
@@ -105,7 +105,7 @@ COOPs就是压缩对象指针技术。
 
 对象指针压缩在Java SE 6u23 默认开启。在此之前，可以使用-XX:+UseCompressedOops来开启。
 
-# 数组对象头
+## 数组对象头
 
 java中有一个非常特别的对象叫做数组，数组的对象头和Object有什么区别吗？
 
@@ -141,7 +141,7 @@ Space losses: 0 bytes internal + 1 bytes external = 1 bytes total
 
 看到区别了吗？我们发现数组的对象头是16字节，比普通对象的对象头多出了4个字节。这4个字节就是数组的长度。
 
-# 整个对象的结构
+## 整个对象的结构
 
 好了，写到这里我们来总结一下，java对象的结构可以分为普通java对象和数组对象两种：
 
