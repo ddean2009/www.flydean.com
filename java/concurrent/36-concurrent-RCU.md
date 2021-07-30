@@ -1,6 +1,6 @@
 并发和Read-copy update(RCU)
 
-# 简介
+## 简介
 
 在上一篇文章中的并发和ABA问题的介绍中，我们提到了要解决ABA中的memory reclamation问题，有一个办法就是使用RCU。
 
@@ -16,7 +16,7 @@ RCU可以支持一个写操作和多个读操作同时进行。
 
 > 更多内容请访问[www.flydean.com](www.flydean.com)
 
-# Copy on Write和RCU
+## Copy on Write和RCU
 
 什么是Copy on Write? 它和read copy update有什么关系呢？
 
@@ -38,7 +38,7 @@ CopyOnWriteArrayList和CopyOnWriteArraySet中的COW使用在遍历的时候。
 
 因为java中有自动垃圾回收功能，我们并不需要考虑拷贝对象的生命周期问题，所以在java中我们一般只看到COW，看不到RCU。
 
-# RCU的流程和API
+## RCU的流程和API
 
 我们将RCU和排它锁和读写锁进行比较。
 
@@ -85,13 +85,13 @@ Thread4中rcu_read_lock虽然在synchronize_rcu启动之后才开始执行的，
 
 Thread5中，rcu_read_lock在synchronize_rcu返回之后才执行的，所以a=1一定可见。
 
-# RCU要注意的事项
+## RCU要注意的事项
 
 RCU虽然没有提供锁的机制，但允许同时多个线程进行读操作。注意，RCU同时只允许一个synchronize_rcu操作，所以需要我们自己来实现synchronize_rcu的排它锁操作。
 
 所以对于RCU来说，它是一个写多个读的同步机制，而不是多个写多个读的同步机制。
 
-# RCU的java实现
+## RCU的java实现
 
 最后放上一段大神的RCU的java实现代码：
 
@@ -146,7 +146,7 @@ reclaimerVersion存储的是修改的数据，它的值将会在synchronize_rcu�
 
 为什么要读取两次呢？因为虽然reclaimerVersion和readersVersion都是原子性操作，但是在多线程环境中，并不能保证reclaimerVersion一定就在readersVersion之前执行，所以我们需要添加一个内存屏障：memory barrier来实现这个功能。
 
-# 总结
+## 总结
 
 本文介绍了RCU算法和应用。希望大家能够喜欢。
 

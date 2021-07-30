@@ -1,12 +1,12 @@
 java并发Exchanger的使用
 
-# 简介
+## 简介
 
 Exchanger是java 5引入的并发类，Exchanger顾名思义就是用来做交换的。这里主要是两个线程之间交换持有的对象。当Exchanger在一个线程中调用exchange方法之后，会等待另外的线程调用同样的exchange方法。
 
 两个线程都调用exchange方法之后，传入的参数就会交换。
 
-# 类定义
+## 类定义
 
 ~~~java
 public class Exchanger<V>
@@ -14,7 +14,7 @@ public class Exchanger<V>
 
 其中V表示需要交换的对象类型。
 
-# 类继承
+## 类继承
 
 ~~~java
 java.lang.Object
@@ -23,7 +23,7 @@ java.lang.Object
 
 Exchanger直接继承自Object。
 
-# 构造函数
+## 构造函数
 
 ~~~java
 Exchanger() 
@@ -31,7 +31,7 @@ Exchanger()
 
 Exchanger提供一个无参构造函数。
 
-# 两个主要方法
+## 两个主要方法
 
 1. public V exchange(V x) throws InterruptedException 
 
@@ -43,7 +43,7 @@ Exchanger提供一个无参构造函数。
 
 和第一个方法类似，区别是多了一个timeout时间。如果在timeout时间之内没有其他线程调用exchange方法，则会抛出TimeoutException。 
 
-# 具体的例子
+## 具体的例子
 
 我们先定义一个带交换的类：
 
@@ -130,7 +130,7 @@ public class ExchangerUsage {
 
 可以看到对象已经被交换了。
 
-# 结语
+## 结语
 
 Exchanger在两个线程需要交换对象的时候非常好用。大家可以在实际工作生活中使用。
 
