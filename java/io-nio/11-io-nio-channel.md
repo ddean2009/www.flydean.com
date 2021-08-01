@@ -1,6 +1,6 @@
 小师妹学JavaIO之:NIO中Channel的妙用
 
-# 简介
+## 简介
 
 小师妹，你还记得我们使用IO和NIO的初心吗？
 
@@ -20,7 +20,7 @@
 
 IO按源头来分，可以分为两种，从文件来的File IO，从Stream来的Stream IO。不管哪种IO，都可以通过channel来运送数据。
 
-# Channel的分类
+## Channel的分类
 
 虽然数据的来源只有两种，但是JDK中Channel的分类可不少，如下图所示：
 
@@ -48,7 +48,7 @@ public interface Channel extends Closeable {
 
 最最底层的Channel有5大类型，分别是：
 
-## FileChannel
+### FileChannel
 
 这5大channel中，和文件File有关的就是这个FileChannel了。
 
@@ -106,7 +106,7 @@ public long read(ByteBuffer[] dsts, int offset, int length)
         throws IOException;
 ~~~
 
-## Selector和Channel
+### Selector和Channel
 
 在讲其他几个Channel之前，我们看一个和下面几个channel相关的Selector：
 
@@ -116,7 +116,7 @@ public long read(ByteBuffer[] dsts, int offset, int length)
 
 SelectableChannel通过注册不同的SelectionKey，实现对多个Channel的监听。后面我们会具体的讲解Selector的使用，敬请期待。
 
-## DatagramChannel
+### DatagramChannel
 
 DatagramChannel是用来处理UDP的Channel。它自带了Open方法来创建实例。
 
@@ -132,7 +132,7 @@ ByteChannel表示它同时是ReadableByteChannel也是WritableByteChannel，可�
 
 MulticastChannel代表的是一种多播协议。正好和UDP对应。
 
-## SocketChannel
+### SocketChannel
 
 SocketChannel是用来处理TCP的channel。它也是通过Open方法来创建的。
 
@@ -146,7 +146,7 @@ SocketChannel跟DatagramChannel的唯一不同之处就是实现的是NetworkCha
 
 NetworkChannel提供了一些network socket的操作，比如绑定地址等。
 
-## ServerSocketChannel
+### ServerSocketChannel
 
 ServerSocketChannel也是一个NetworkChannel，它主要用在服务器端的监听。
 
@@ -156,7 +156,7 @@ public abstract class ServerSocketChannel
     implements NetworkChannel
 ~~~
 
-## AsynchronousSocketChannel
+### AsynchronousSocketChannel
 
 最后AsynchronousSocketChannel是一种异步的Channel：
 
@@ -173,7 +173,7 @@ public abstract Future<Integer> read(ByteBuffer dst);
 
 可以看到返回值是一个Future，所以read方法可以立刻返回，只在我们需要的时候从Future中取值即可。
 
-# 使用Channel
+## 使用Channel
 
 小师妹：F师兄，讲了这么多种类的Channel，看得我眼花缭乱，能不能讲一个Channel的具体例子呢？
 
@@ -203,7 +203,7 @@ public void useChannelCopy() throws IOException {
 
 上面的例子中我们从InputStream中读取Buffer，然后写入到FileOutputStream。
 
-# 总结
+## 总结
 
 今天讲解了Channel的具体分类，和一个简单的例子，后面我们会再体验一下Channel的其他例子，敬请期待。
 

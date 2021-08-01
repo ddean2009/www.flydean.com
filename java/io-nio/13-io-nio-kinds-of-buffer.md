@@ -1,10 +1,10 @@
 小师妹学JavaIO之:NIO中那些奇怪的Buffer
 
-# 简介
+## 简介
 
 妖魔鬼怪快快显形，今天F师兄帮助小师妹来斩妖除魔啦，什么BufferB，BufferL，BufferRB，BufferRL，BufferS，BufferU，BufferRS，BufferRU统统给你剖析个清清楚楚明明白白。
 
-# Buffer的分类
+## Buffer的分类
 
 小师妹：F师兄不都说JDK源码是最好的java老师吗？为程不识源码，就称牛人也枉然。但是我最近在学习NIO的时候竟然发现有些Buffer类居然没有注释，就那么突兀的写在哪里，让人好生心烦。
 
@@ -32,7 +32,7 @@ ByteBufferAsXXXBuffer主要将ByteBuffer转换成为特定类型的Buffer，比�
 
 最后HeapXXXBuffer是在堆空间上面创建的Buffer。
 
-# Big Endian 和 Little Endian
+## Big Endian 和 Little Endian
 
 小师妹，F师兄，你刚刚讲的都不重要，我就想知道类后面的B，L，R，S，U是做什么的。
 
@@ -77,7 +77,7 @@ java的设计初衷就是一次编写处处运行，所以自然也做了设计�
 
 而BufferRB，BufferRL表示的是两种只读Buffer。
 
-# aligned内存对齐
+## aligned内存对齐
 
 小师妹：F师兄，那这几个又是做什么用的呢？ BufferS，BufferU，BufferRS，BufferRU。
 
@@ -92,15 +92,15 @@ log.info("{}", VM.current().details());
 输出结果：
 
 ~~~java
-# Running 64-bit HotSpot VM.
-# Using compressed oop with 3-bit shift.
-# Using compressed klass with 3-bit shift.
-# WARNING | Compressed references base/shifts are guessed by the experiment!
-# WARNING | Therefore, computed addresses are just guesses, and ARE NOT RELIABLE.
-# WARNING | Make sure to attach Serviceability Agent to get the reliable addresses.
-# Objects are 8 bytes aligned.
-# Field sizes by type: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
-# Array element sizes: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
+## Running 64-bit HotSpot VM.
+## Using compressed oop with 3-bit shift.
+## Using compressed klass with 3-bit shift.
+## WARNING | Compressed references base/shifts are guessed by the experiment!
+## WARNING | Therefore, computed addresses are just guesses, and ARE NOT RELIABLE.
+## WARNING | Make sure to attach Serviceability Agent to get the reliable addresses.
+## Objects are 8 bytes aligned.
+## Field sizes by type: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
+## Array element sizes: 4, 1, 1, 2, 2, 4, 4, 8, 8 [bytes]
 ~~~
 
 上面的输出中，我们可以看到：Objects are 8 bytes aligned，这意味着所有的对象分配的字节都是8的整数倍。
@@ -188,7 +188,7 @@ public short get() {
 
 所以BufferS表示的是swap过后的Buffer，和BufferRS表示的是只读的swap过后的Buffer。
 
-# 总结
+## 总结
 
 不写注释实在是害死人啊！尤其是JDK自己也不写注释的情况下！
 

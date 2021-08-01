@@ -1,10 +1,10 @@
 小师妹学JavaIO之:文件File和路径Path
 
-# 简介
+## 简介
 
 文件和路径有什么关系？文件和路径又隐藏了什么秘密？在文件系统的管理下，创建路径的方式又有哪些？今天F师兄带小师妹再给大家来一场精彩的表演。
 
-# 文件和路径
+## 文件和路径
 
 小师妹：F师兄我有一个问题，java中的文件File是一个类可以理解，因为文件里面包含了很多其他的信息，但是路径Path为什么也要单独一个类出来？只用一个String表示不是更简单？
 
@@ -36,7 +36,7 @@ File中包含了Path，小师妹你且看，Path是一个interface,为什么是�
 
 Path继承Comparable，表示可以被排序。继承Iterable表示可以被遍历，可以被遍历是因为Path可以表示目录。继承Watchable，表示可以被注册到WatchService中，进行监控。
 
-# 文件中的不同路径
+## 文件中的不同路径
 
 小师妹：F师兄，File中有好几个关于Path的get方法，能讲一下他们的不同之处吗？
 
@@ -70,7 +70,7 @@ getCanonicalPath返回的是精简后的AbsolutePath，就是去掉了.或者..�
  INFO com.flydean.FilePathUsage - canonicalPath is : /Users/flydean/www.flydean.com.txt
 ~~~
 
-# 构建不同的Path
+## 构建不同的Path
 
 小师妹：F师兄，我记得路径有相对路径，绝对路径等，是不是也有相应的创建Path的方法呢？
 
@@ -117,7 +117,7 @@ public void getPathWithFileSystem(){
         }
 ~~~
 
-# 总结
+## 总结
 
 好多好多Path的创建方法，总有一款适合你。快来挑选吧。
 

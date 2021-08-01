@@ -1,10 +1,10 @@
 小师妹学JavaIO之:文件读取那些事
 
-# 简介
+## 简介
 
 小师妹最新对java IO中的reader和stream产生了一点点困惑，不知道到底该用哪一个才对，怎么读取文件才是正确的姿势呢？今天F师兄现场为她解答。
 
-# 字符和字节
+## 字符和字节
 
 小师妹最近很迷糊：F师兄，上次你讲到IO的读取分为两大类，分别是Reader，InputStream，这两大类有什么区别吗？为什么我看到有些类即是Reader又是Stream？比如：InputStreamReader?
 
@@ -48,7 +48,7 @@ byte翻译成中文就是字节，字节是java中存储的基本单位。
 
 孺子可教，小师妹进步的很快。
 
-# 按字符读取的方式
+## 按字符读取的方式
 
 小师妹，接下来F师兄给你讲下按字符读取文件的几种方式，第一种就是使用FileReader来读取File，但是FileReader本身并没有提供任何读取数据的方法，想要真正的读取数据，我们还是要用到BufferedReader来连接FileReader，BufferedReader提供了读取的缓存，可以一次读取一行：
 
@@ -93,7 +93,7 @@ public void withScanner() throws FileNotFoundException {
     }
 ~~~
 
-# 按字节读取的方式
+## 按字节读取的方式
 
 小师妹听得很满足，连忙催促我：F师兄，字符读取方式我都懂了，快将字节读取吧。
 
@@ -166,7 +166,7 @@ public void copyWithMap() throws IOException{
     }
 ~~~
 
-# 寻找出错的行数
+## 寻找出错的行数
 
 小师妹：好赞！F师兄你讲得真好，小师妹我还有一个问题：最近在做文件解析，有些文件格式不规范，解析到一半就解析失败了，但是也没有个错误提示到底错在哪一行，很难定位问题呀，有没有什么好的解决办法？
 
@@ -192,7 +192,7 @@ public void useLineNumberReader() throws IOException {
     }
 ~~~
 
-# 总结
+## 总结
 
 今天给小师妹讲解了字符流和字节流，还讲解了文件读取的基本方法，不虚此行。
 

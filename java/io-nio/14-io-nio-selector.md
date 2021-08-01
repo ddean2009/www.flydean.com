@@ -1,10 +1,10 @@
 小师妹学JavaIO之:用Selector来说再见
 
-# 简介
+## 简介
 
 NIO有三宝:Buffer,Channel，Selector少不了。本文将会介绍NIO三件套中的最后一套Selector，并在理解Selector的基础上，协助小师妹发一张好人卡。我们开始吧。
 
-# Selector介绍
+## Selector介绍
 
 小师妹：F师兄，最近我的桃花有点旺，好几个师兄莫名其妙的跟我打招呼，可是我一心向着工作，不想谈论这些事情。毕竟先有事业才有家嘛。我又不好直接拒绝，有没有什么比较隐晦的方法来让他们放弃这个想法？
 
@@ -30,7 +30,7 @@ NIO有三宝:Buffer,Channel，Selector少不了。本文将会介绍NIO三件�
 
 从上面的图可以看出，Selector监听三个不同的channel，然后交给一个processor来处理，从而节约了资源。
 
-# 创建Selector
+## 创建Selector
 
 先看下selector的定义：
 
@@ -78,7 +78,7 @@ open方法调用的是SelectorProvider中的openSelector方法。
 
 关于ServiceLoader的用法，我们后面会有专门的文章来讲述。这里先不做多的解释。
 
-# 注册Selector到Channel中
+## 注册Selector到Channel中
 
 ~~~java
 ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
@@ -97,7 +97,7 @@ ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 
 最后我们将创建好的Selector注册到channel中去。
 
-# SelectionKey
+## SelectionKey
 
 SelectionKey表示的是我们希望监听到的事件。
 
@@ -134,7 +134,7 @@ object可以在register的时候传入，也可以调用attach方法。
 
 最后，我们可以通过key的attachment方法，获得该对象。
 
-# selector 和 SelectionKey
+## selector 和 SelectionKey
 
 我们通过selector.select()这个一个blocking操作，来获取一个ready的channel。
 
@@ -142,7 +142,7 @@ object可以在register的时候传入，也可以调用attach方法。
 
 在SelectionKey对象中，我们通过判断ready的event来处理相应的消息。
 
-# 总的例子
+## 总的例子
 
 接下来，我们把之前将的串联起来，先建立一个小师妹的ChatServer：
 
@@ -267,7 +267,7 @@ client收到： INFO com.flydean.ChatClient - response is 再见
 
 解释一下整个流程：志伟跟小师妹建立了一个连接，志伟向小师妹打了一个招呼，小师妹给志伟发了一张好人卡。志伟不死心，想继续纠缠，小师妹回复再见，然后自己关闭了通道。
 
-# 总结
+## 总结
 
 本文介绍了Selector和channel在发好人卡的过程中的作用。
 

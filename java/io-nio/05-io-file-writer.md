@@ -1,10 +1,10 @@
 小师妹学JavaIO之:文件写入那些事
 
-# 简介
+## 简介
 
 小师妹又对F师兄提了一大堆奇奇怪怪的需求，要格式化输出，要特定的编码输出，要自己定位输出，什么？还要阅后即焚？大家看F师兄怎么一一接招吧。
 
-# 字符输出和字节输出
+## 字符输出和字节输出
 
 小师妹：F师兄，上次你的IO讲到了一半，文件读取是基本上讲完了，但是文件的写入还没有讲，什么时候给小师妹我再科普科普？
 
@@ -91,7 +91,7 @@ public synchronized void write(byte b[], int off, int len)
 
 第一个write方法传入int参数也是需要进行截取的，不过这次是从int转换成byte。
 
-# 格式化输出
+## 格式化输出
 
 小师妹：F师兄，我们经常用的System.out.println可以直接向标准输出中输出格式化过后的字符串，文件的写入是不是也有类似的功能呢？
 
@@ -107,7 +107,7 @@ public void usePrintWriter() throws IOException {
     }
 ~~~
 
-# 输出其他对象 
+## 输出其他对象 
 
 小师妹：F师兄，我们看到可以输出String，char还有Byte，那可不可以输出Integer,Long等基础类型呢？
 
@@ -126,7 +126,7 @@ public void useDataOutPutStream()
 
 DataOutputStream提供了writeLong,writeDouble,writeFloat等等方法，还可以writeUTF！
 
-# 在特定的位置写入
+## 在特定的位置写入
 
 小师妹：F师兄，有时候我们不需要每次都从头开始写入到文件，能不能自定义在什么位置写入呢？
 
@@ -143,7 +143,7 @@ public void useRandomAccess() throws IOException {
 
 RandomAccessFile可以通过seek来定位，然后通过write方法从指定的位置写入。
 
-# 给文件加锁
+## 给文件加锁
 
 小师妹：F师兄，最后还有一个问题，怎么保证我在进行文件写的时候别人不会覆盖我写的内容，不会产生冲突呢？
 
@@ -167,7 +167,7 @@ public void useFileLock()
     }
 ~~~
 
-# 总结
+## 总结
 
 今天给小师妹将了好多种文件的写的方法，够她学习一阵子了。
 

@@ -1,10 +1,10 @@
 小师妹学JavaIO之:File copy和File filter
 
-# 简介
+## 简介
 
 一个linux命令的事情，小师妹非要让我教她怎么用java来实现，哎，摊上个这么杠精的小师妹，我也是深感无力，做一个师兄真的好难。
 
-# 使用java拷贝文件
+## 使用java拷贝文件
 
 今天小师妹找到我了：F师兄，能告诉怎么拷贝文件吗？
 
@@ -78,7 +78,7 @@ public  void copyWithNIOFiles() throws IOException
 
 直接使用工具类Files提供的copy方法即可。
 
-# 使用File filter
+## 使用File filter
 
 太棒了，小师妹一脸崇拜：F师兄，我还有一个需求，就是想删除某个目录里面的以.log结尾的日志文件，这个需求是不是很常见？F师兄一般是怎么操作的？
 
@@ -144,7 +144,7 @@ public void useFileNameFilter()
 
 最后，我们将过滤之后的文件删除。实现了目标。
 
-# 总结
+## 总结
 
 小师妹的两个问题解决了，希望今天可以不要再见到她。
 

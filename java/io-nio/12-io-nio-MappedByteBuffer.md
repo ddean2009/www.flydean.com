@@ -1,10 +1,10 @@
 小师妹学JavaIO之:MappedByteBuffer多大的文件我都装得下
 
-# 简介
+## 简介
 
 大大大，我要大！小师妹要读取的文件越来越大，该怎么帮帮她，让程序在性能和速度上面得到平衡呢？快来跟F师兄一起看看吧。
 
-# 虚拟地址空间
+## 虚拟地址空间
 
 小师妹：F师兄，你有没有发现，最近硬盘的价格真的是好便宜好便宜，1T的硬盘大概要500块，平均1M五毛钱。现在下个电影都1G起步，这是不是意味着我们买入了大数据时代？
 
@@ -38,7 +38,7 @@
 
 这样物理内存实际上可以看做虚拟空间地址的缓存。
 
-# 详解MappedByteBuffer
+## 详解MappedByteBuffer
 
 小师妹：MappedByteBuffer听起来好神奇，怎么使用它呢？
 
@@ -77,7 +77,7 @@ R代表的是ReadOnly的意思，可能是因为本身是个类的名字就够�
 
 MapMode代表的是映射的模式，position表示是map开始的地址，size表示是ByteBuffer的大小。
 
-## MapMode
+### MapMode
 
 小师妹：F师兄，文件有只读，读写两种模式，是不是MapMode也包含这两类？
 
@@ -92,7 +92,7 @@ MapMode代表的是映射的模式，position表示是map开始的地址，size�
 * ExtendedMapMode.READ_ONLY_SYNC 同步的读
 * ExtendedMapMode.READ_WRITE_SYNC 同步的读写
 
-# MappedByteBuffer的最大值
+## MappedByteBuffer的最大值
 
 小师妹：F师兄，既然可以映射到虚拟内存空间，那么这个MappedByteBuffer是不是可以无限大？
 
@@ -100,7 +100,7 @@ MapMode代表的是映射的模式，position表示是map开始的地址，size�
 
 另外我们看下map方法中size的类型是long，在java中long能够表示的最大值是0x7fffffff，也就是2147483647字节，换算一下大概是2G。也就是说MappedByteBuffer的最大值是2G，一次最多只能map 2G的数据。
 
-# MappedByteBuffer的使用
+## MappedByteBuffer的使用
 
 小师妹，F师兄我们来举两个使用MappedByteBuffer读写的例子吧。
 
@@ -147,13 +147,13 @@ public void writeWithMap() throws IOException {
     }
 ~~~
 
-# MappedByteBuffer要注意的事项
+## MappedByteBuffer要注意的事项
 
 小师妹：F师兄，MappedByteBuffer因为使用了内存映射，所以读写的速度都会有所提升。那么我们在使用中应该注意哪些问题呢？
 
 MappedByteBuffer是没有close方法的，即使它的FileChannel被close了，MappedByteBuffer仍然处于打开状态，只有JVM进行垃圾回收的时候才会被关闭。而这个时间是不确定的。
 
-# 总结
+## 总结
 
 本文再次介绍了虚拟地址空间和MappedByteBuffer的使用。
 

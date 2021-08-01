@@ -1,10 +1,10 @@
 小师妹学JavaIO之:文件系统和WatchService
 
-# 简介
+## 简介
 
 小师妹这次遇到了监控文件变化的问题，F师兄给小师妹介绍了JDK7 nio中引入的WatchService，没想到又顺道普及了一下文件系统的概念，万万没想到。
 
-# 监控的痛点
+## 监控的痛点
 
 小师妹：F师兄最近你有没有感觉到呼吸有点困难，后领有点凉飕飕的，说话有点不顺畅的那种？
 
@@ -24,7 +24,7 @@
 
 就知道你要这样问，还好我准备的比较充分，今天给你介绍一个JDK7在nio中引入的类WatchService。
 
-# WatchService和文件系统
+## WatchService和文件系统
 
 WatchService是JDK7在nio中引入的接口：
 
@@ -109,7 +109,7 @@ jrt:/java.base/java/lang/Object.class
 WatchService watchService = FileSystems.getDefault().newWatchService();
 ~~~
 
-# WatchSerice的使用和实现本质
+## WatchSerice的使用和实现本质
 
 小师妹：F师兄，WatchSerice是咋实现的呀？这么神奇，为我们省了这么多工作。
 
@@ -172,7 +172,7 @@ private void startWatcher(String dirPath, String file) throws IOException {
 
 然后使用watchService.take来获取生成的WatchEvent，最后根据WatchEvent来处理文件。
 
-# 总结
+## 总结
 
 道生一，一生二，二生三，三生万物。一个简简单单的功能其实背后隐藏着...道德经，哦，不对，背后隐藏着道的哲学。
 
