@@ -183,7 +183,7 @@ cwnd是server端目前可以接受的最大的窗口大小。
 
 # UDP
 
-UDP（ User Datagram Protocol，用户数据报协议。
+UDP（ User Datagram Protocol )，也叫用户数据报协议。
 
 UDP 的主要功能和亮点并不在于它引入了什么特性，而在于它忽略的那些特性：不保证消息交付，不保证交付顺序，不跟踪连接状态，不需要拥塞控制。
 
