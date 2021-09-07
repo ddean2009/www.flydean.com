@@ -1,8 +1,10 @@
-高质量并发系列详解
+10W字高质量java并发系列详解教程-附PDF下载
 
 [toc]
 
 并发是java高级程序员必须要深入研究的话题，从Synchronized到Lock，JDK本身提供了很多优秀的并发类和锁控制器，灵活使用这些类，可以写出优秀的并发程序，而这些类基本上都是在java.util.concurrent包中的，本文将会从具体的例子出发，一步一步带领大家进入java高质量并发的世界。
+
+本文PDF下载链接[concurrent-all-in-one.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/java/concurrent/concurrent-all-in-one.pdf)
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/](https://github.com/ddean2009/learn-java-concurrency/)
 
@@ -5688,6 +5690,8 @@ public class ExchangerUsage {
 Exchanger在两个线程需要交换对象的时候非常好用。大家可以在实际工作生活中使用。
 
 本文的例子[https://github.com/ddean2009/learn-java-concurrency/](https://github.com/ddean2009/learn-java-concurrency/)
+
+本文PDF下载链接[concurrent-all-in-one.pdf](https://github.com/ddean2009/www.flydean.com/blob/master/java/concurrent/concurrent-all-in-one.pdf)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
 > 更多内容请访问 [www.flydean.com](www.flydean.com)
