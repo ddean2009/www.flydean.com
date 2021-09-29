@@ -146,7 +146,7 @@ netty系列之:中国加油
 
 事实上，当你执行上面代码你会发现，客户端确实将”中国“ 消息写入了channel，但是服务器端的channelRead并没有被触发。为什么呢？
 
-研究发下，如果写入的对象是一个String，程序内部会有这样的错误，但是这个错误是隐藏的，你并不会在运行的程序输出中看到，所以对新手小伙伴还是很不友好的。这个错误就是：
+研究发现，如果写入的对象是一个String，程序内部会有这样的错误，但是这个错误是隐藏的，你并不会在运行的程序输出中看到，所以对新手小伙伴还是很不友好的。这个错误就是：
 
 ```
 DefaultChannelPromise@57f5c075(failure: java.lang.UnsupportedOperationException: unsupported message type: String (expected: ByteBuf, FileRegion))
