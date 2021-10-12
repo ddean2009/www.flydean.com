@@ -6,7 +6,7 @@
 > 小技巧： 如何更有效率的查看github上的文件
 > 小伙伴可以下载一个插件叫做：Octotree,可以在左侧以树状的形式展示github中目录结构和文件列表，非常好用！
 
-![](https://img-blog.csdnimg.cn/20210303092036426.png)
+<img src="https://img-blog.csdnimg.cn/20210303092036426.png" style="zoom:50%;" />
 
 > 重要！ PDF下载出错的小伙伴可以git clone整个项目即可！ 
 
