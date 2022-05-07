@@ -128,7 +128,7 @@ var students1 = studentList.where((e) => e is String);
 var students2 = studentList.whereType<String>();
 ```
 
-看上去两者没有太大的区别，都可以得到应有的结果。但是两者事实上还是有区别的，因为对应where来说，返回的是一个Iterable<Object>,所以上面的例子中，如果我们真的需要返回String，还需要对返回结果进行case：
+看上去两者没有太大的区别，都可以得到应有的结果。但是两者事实上还是有区别的，因为对应where来说，返回的是一个`Iterable<Object>`,所以上面的例子中，如果我们真的需要返回String，还需要对返回结果进行cast
 
 ```
 var students1 = studentList.where((e) => e is String).cast<String>();;
