@@ -1,4 +1,4 @@
-在nginx中使用proxy protocol
+在nginx中使用proxy protocol协议
 
 [toc]
 
