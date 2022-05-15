@@ -11,15 +11,13 @@
 
 因为NIO是按Block来读取数据的，这个一个Block就可以看做是一个Buffer。我们在Buffer中存储要读取的数据和要写入的数据，通过Buffer来提高读取和写入的效率。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
-
 还记得java对象的底层存储单位是什么吗？
 
 小师妹：这个我知道，java对象的底层存储单位是字节Byte。
 
 对，我们看下Buffer的继承图：
 
-![](https://img-blog.csdnimg.cn/20200514142719108.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
+![](https://img-blog.csdnimg.cn/20200514142719108.png)
 
 Buffer是一个接口，它下面有诸多实现，包括最基本的ByteBuffer和其他的基本类型封装的其他Buffer。
 
@@ -31,11 +29,11 @@ ByteBuffer虽然好用，但是它毕竟是最小的单位，在它之上我们�
 
 ## Buffer进阶
 
-小师妹：F师兄，既然Buffer是这些基础类型的集合，为什么不直接用结合来表示呢？给他们封装成一个对象，好像有点多余。
+小师妹：F师兄，既然Buffer是这些基础类型的集合，为什么不直接用集合来表示呢？给他们封装成一个对象，好像有点多余。
 
 我们既然在面向对象的世界，从表面来看自然是使用Object比较合乎情理，从底层的本质上看，这些封装的Buffer包含了一些额外的元数据信息，并且还提供了一些意想不到的功能。
 
-![](https://img-blog.csdnimg.cn/20200519142644525.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
+![](https://img-blog.csdnimg.cn/20200519142644525.png)
 
 上图列出了Buffer中的几个关键的概念，分别是Capacity，Limit，Position和Mark。Buffer底层的本质是数组，我们以ByteBuffer为例，它的底层是：
 
@@ -93,7 +91,7 @@ hasArray用来判断该Buffer的底层是不是数组实现的，可以看到，
 
 小师妹：Direct和非Direct有什么区别呢？
 
-![](https://img-blog.csdnimg.cn/20200513225239404.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
+![](https://img-blog.csdnimg.cn/20200513225239404.png)
 
 Direct Buffer就是说，不需要在用户空间再复制拷贝一份数据，直接在虚拟地址映射空间中进行操作。这叫Direct。这样做的好处就是快。缺点就是在分配和销毁的时候会占用更多的资源，并且因为Direct Buffer不在用户空间之内，所以也不受垃圾回收机制的管辖。
 
@@ -266,11 +264,3 @@ INFO com.flydean.BufferUsage - java.nio.HeapIntBuffer[pos=0 lim=7 cap=7]
 今天给小师妹介绍了Buffer的原理和基本操作。
 
 本文的例子[https://github.com/ddean2009/learn-java-io-nio](https://github.com/ddean2009/learn-java-io-nio)
-
-> 本文作者：flydean程序那些事
-> 
-> 本文链接：[www.flydean.com](www.flydean.com)
-> 
-> 本文来源：flydean的博客
-> 
-> 欢迎关注我的公众号:程序那些事，更多精彩等着您！
