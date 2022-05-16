@@ -66,8 +66,8 @@ TLS主要分为两层，底层的是TLS记录协议，主要负责使用对称�
    如果第三步的证书信息不足，则可以发送ServerKeyExchange用来构建加密通道。
 
    ServerKeyExchange的内容可能包含两种形式：
-   * 如果选择的是RSA协议，那么传递的就是RSA构建公钥密码的参数（E，N）。我们回想一下RSA中构建公钥的公式：$密文=明文^E\ mod\ N$， 只要知道了E和N，那么就知道了RSA的公钥，这里传递的就是E，N两个数字。具体内容可以参考[RSA算法详解](http://www.flydean.com/rsa/)
-   * 如果选择的是Diff-Hellman密钥交换协议，那么传递的就是密钥交换的参数，具体内容可以参考[更加安全的密钥生成方法Diffie-Hellman](http://www.flydean.com/diffie-hellman/)
+   * 如果选择的是RSA协议，那么传递的就是RSA构建公钥密码的参数（E，N）。我们回想一下RSA中构建公钥的公式：$密文=明文^E\ mod\ N$， 只要知道了E和N，那么就知道了RSA的公钥，这里传递的就是E，N两个数字。
+   * 如果选择的是Diff-Hellman密钥交换协议，那么传递的就是密钥交换的参数.
 
 5. 可选步骤:CertificateRequest
    
@@ -85,7 +85,7 @@ TLS主要分为两层，底层的是TLS记录协议，主要负责使用对称�
    
    还是分两种情况：
    * 如果是公钥或者RSA模式情况下，客户端将根据客户端生成的随机数和服务器端生成的随机数，生成预备主密码，通过该公钥进行加密，返送给服务器端。
-   * 如果使用的是Diff-Hellman密钥交换协议，则客户端会发送自己这一方要生成Diff-Hellman密钥而需要公开的值。具体内容可以参考[更加安全的密钥生成方法Diffie-Hellman](http://www.flydean.com/diffie-hellman/)，这样服务器端可以根据这个公开值计算出预备主密码。
+   * 如果使用的是Diff-Hellman密钥交换协议，则客户端会发送自己这一方要生成Diff-Hellman密钥而需要公开的值，这样服务器端可以根据这个公开值计算出预备主密码。
 
 9. 可选步骤:CertificateVerify
     
