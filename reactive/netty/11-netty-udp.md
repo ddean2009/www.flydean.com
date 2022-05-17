@@ -4,7 +4,7 @@ netty系列之:使用UDP协议
 
 # 简介
 
-在之前的系列文章中，我们到了使用netty做聊天服务器，聊天服务器使用的SocketChannel，也就是说底层的协议使用的是Scoket。今天我们将会给大家介绍如何在netty中使用UDP协议。
+在之前的系列文章中，我们到了使用netty做聊天服务器，聊天服务器使用的SocketChannel，也就是说底层的协议使用的是基于TCP的Socket协议。今天我们将会给大家介绍如何在netty中使用UDP协议。
 
 # UDP协议
 
