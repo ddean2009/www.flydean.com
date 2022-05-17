@@ -106,7 +106,7 @@ Writable bytes是一个未确定的区域，等待被填充。可以通过调用
 
 Discardable bytes是已经被读取过的bytes，初始情况下它的值=0，每当readerIndex右移的时候，Discardable bytes的空间就会增加。如果想要完全删除或重置Discardable bytes，则可以调用discardReadBytes()方法，该方法会将Discardable bytes空间删除，将多余的空间放到writable bytes中，如下所示：
 
-    调用 discardReadBytes() 之前：
+调用 discardReadBytes() 之前：
   
         +-------------------+------------------+------------------+
         | discardable bytes |  readable bytes  |  writable bytes  |
@@ -115,19 +115,19 @@ Discardable bytes是已经被读取过的bytes，初始情况下它的值=0，�
         0      <=      readerIndex   <=   writerIndex    <=    capacity
   
   
-    调用 discardReadBytes()之后：
+调用 discardReadBytes()之后：
   
         +------------------+--------------------------------------+
         |  readable bytes  |    writable bytes (got more space)   |
         +------------------+--------------------------------------+
         |                  |                                      |
-   readerIndex (0) <= writerIndex (decreased)        <=        capacity
+    readerIndex (0) <= writerIndex (decreased)        <=        capacity
 
 > 注意，虽然writable bytes变多了，但是其内容是不可控的，并不能保证里面的内容是空的或者不变。
 
 调用clear()方法会将readerIndex 和 writerIndex 清零，注意clear方法只会设置readerIndex 和 writerIndex 的值，并不会清空content，看下面的示意图：
 
-    调用 clear()之前：
+调用 clear()之前：
   
         +-------------------+------------------+------------------+
         | discardable bytes |  readable bytes  |  writable bytes  |
@@ -136,7 +136,7 @@ Discardable bytes是已经被读取过的bytes，初始情况下它的值=0，�
         0      <=      readerIndex   <=   writerIndex    <=    capacity
   
   
-    调用 clear()之后：
+调用 clear()之后：
   
         +---------------------------------------------------------+
         |             writable bytes (got more space)             |
