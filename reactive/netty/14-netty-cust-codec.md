@@ -12,7 +12,7 @@ netty系列之:自定义编码和解码器要注意的问题
 
 netty中所有的编码器和解码器都是从ChannelInboundHandlerAdapter和ChannelOutboundHandlerAdapter衍生而来的。
 
-对于ChannelOutboundHandlerAdapter来说，最重要的两个类是MessageToByteEncoder<I> 和 MessageToMessageEncoder<I> 。
+对于ChannelOutboundHandlerAdapter来说，最重要的两个类是`MessageToByteEncoder<I>` 和 `MessageToMessageEncoder<I> `。
 
 MessageToByteEncoder是将消息编码成为ByteBuf，这个类也是我们自定义编码最常用的类，直接继承这个类并实现encode方法即可。注意到这个类有一个泛型，这个泛型指定的就是消息的对象类型。
 
@@ -44,7 +44,7 @@ MessageToMessageEncoder是在消息和消息之间进行转换，因为消息并
        }
 ```
 
-对于ChannelInboundHandlerAdapter来说，最重要的两个类是ByteToMessageDecoder和MessageToMessageDecoder<I> 。
+对于ChannelInboundHandlerAdapter来说，最重要的两个类是ByteToMessageDecoder和`MessageToMessageDecoder<I> `。
 
 ByteToMessageDecoder是将ByteBuf转换成对应的消息类型，我们需要继承这个类，并实现decode方法，下面是一个从ByteBuf中读取所有可读的字节，并将结果放到一个新的ByteBuf中，
 
