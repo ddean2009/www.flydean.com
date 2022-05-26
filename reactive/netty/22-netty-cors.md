@@ -140,7 +140,7 @@ CorsHandler的主要工作原理就是在channelRead的时候，对responseHeade
 
 # 总结
 
-cors比较简单，netty也为其提供了住够的方法支持。大家可以直接使用。
+cors比较简单，netty也为其提供了足够的方法支持。大家可以直接使用。
 
 本文的例子可以参考：[learn-netty4](https://github.com/ddean2009/learn-netty4)
 
