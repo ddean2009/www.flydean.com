@@ -160,7 +160,7 @@ websocket的消息处理比较简单，将接收到的消息转换成为WebSocke
 
 # 总结
 
-本文讲解了netty提供的websocket客户端的支持和具体的对接流程，大家可以再次基础上进行扩展，以实现自己的业务逻辑。
+本文讲解了netty提供的websocket客户端的支持和具体的对接流程，大家可以在此基础上进行扩展，以实现自己的业务逻辑。
 
 本文的例子可以参考：[learn-netty4](https://github.com/ddean2009/learn-netty4)
 
