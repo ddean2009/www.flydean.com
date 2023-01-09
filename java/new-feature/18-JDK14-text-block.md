@@ -94,7 +94,7 @@ String html = """
 
 如果我们把“”“向左移动四位，就会发现最终的输出结果每行前面都有四个空格。
 
-这个功能是和String添加的新的String::stripIndent()对于的。
+这个功能是和String添加的新的String::stripIndent()对应的。
 
 # Escaping转义
 
