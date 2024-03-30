@@ -3,6 +3,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+node_modules
+.docusaurus
 
 ### STS ###
 .apt_generated

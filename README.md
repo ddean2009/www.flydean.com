@@ -1,4 +1,7 @@
 ## www.flydean.com
+
+最近网站做了升级，把之前基于wordpress的网站升级成了基于docusaurus的网站，以提供更好的扩展性支持。
+
 毕生的收藏都在这了,看得上的小伙伴点个star吧 ![Github stars](https://img.shields.io/github/stars/ddean2009/www.flydean.com.svg)
 
 要想更好的阅读本站的文章，可以访问：[www.flydean.com](http://www.flydean.com) 或者 [https://docs.flydean.com/www.flydean.com/](https://docs.flydean.com/www.flydean.com/)
