@@ -1,0 +1,13 @@
+{
+  "label": "8. JAVA新特性",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "JAVA新特性"
+  },
+  "customProps": {
+    "description": "JAVA新特性"
+  }
+}

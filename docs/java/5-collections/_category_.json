@@ -1,0 +1,13 @@
+{
+  "label": "5. JAVA集合",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "JAVA集合"
+  },
+  "customProps": {
+    "description": "JAVA集合教程"
+  }
+}

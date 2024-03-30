@@ -1,0 +1,13 @@
+{
+  "label": "3. JAVA并发",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "JAVA中的并发操作"
+  },
+  "customProps": {
+    "description": "JAVA并发教程"
+  }
+}

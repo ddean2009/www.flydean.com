@@ -1,0 +1,13 @@
+{
+  "label": "6. JAVA虚拟机",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "JAVA虚拟机"
+  },
+  "customProps": {
+    "description": "JAVA虚拟机"
+  }
+}
