@@ -1,7 +1,8 @@
-理解分布式一致性:Paxos协议之Basic Paxos
+---
+slug: /basic-paxos
+---
 
-[toc]
-
+# 1. 理解分布式一致性:Paxos协议之Basic Paxos
 
 
 在[理解分布式一致性:Raft协议](http://www.flydean.com/understand-raft-protocol/)中，我们详细分析了什么是分布式一致性和实现分布式一致性的Raft协议，本文我们主要讲一下分布式一致性的Paxos协议。    
@@ -59,7 +60,7 @@ Paxos协议有很多变种，这里我们首先介绍一下Basis Paxos，后面�
 ## Basic Paxos without failures ##  
 
 在该序列图中，有1个Client，3个Acceptors和1个Learner，该图表示的是在第一轮执行过程中就成功的例子。    
-![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb8a4ebe028341c6994d70b31a840732~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb8a4ebe028341c6994d70b31a840732~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 在第一轮就成功只是Paxos协议中一部分情况，其实在真实的世界中由于网络，系统等各种原因会造成多种情况的意外，最后导致协议往往并不能在第一轮就成功，往往需要经历好几轮。    
@@ -68,27 +69,22 @@ Paxos协议有很多变种，这里我们首先介绍一下Basis Paxos，后面�
 
 如果有一个Acceptor因为各种原因挂掉了，3个Acceptors变成了2个Acceptors，还是满足>n/2 的要求，所以还是会成功。  
 
-![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/26c0eab073344967a8c8065ec0f2fad1~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/26c0eab073344967a8c8065ec0f2fad1~tplv-k3u1fbpfcp-zoom-1.image)
 
 ## Basic Paxos when an Proposer fails ##  
 
 如果Proposer 在发送了一条Accept消息之后，但是还没收到Accepted消息之前就挂掉了，只有一个Acceptor接收到了Accept消息。那么整个Paxos协议就没法进行下去了，这时一个新的Leader（Proposer）会被选举出来，重新开始一轮新的共识。      
 
-![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/52d86813443d406b811f51b0f98e7549~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/52d86813443d406b811f51b0f98e7549~tplv-k3u1fbpfcp-zoom-1.image)
 
 ## Basic Paxos when multiple Proposers conflict ##  
 
 最后再描述一个最复杂的情况，即有多个Proposers认为他们是Leaders，并不断的发送Prepare请求。为什么会有多个Leaders呢？ 有可能一个Proposer当了一段时间Leader之后挂掉了，新的Proposer被选为Leader继续新的一轮共识。后面挂掉的Proposer又恢复了，它认为自己还是Leader，所以继续发送Prepare请求。    
-![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aaf1ecdbe422457caadf8118b9d23a41~tplv-k3u1fbpfcp-zoom-1.image)
-![](//p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/346f7a4b19734b39aff5166813111ac4~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aaf1ecdbe422457caadf8118b9d23a41~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/346f7a4b19734b39aff5166813111ac4~tplv-k3u1fbpfcp-zoom-1.image)
 
 
 本次的Basic Paxos协议就介绍到这里。后面我们会继续介绍Paxos的其他变种。  
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
->
-> 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
-> 
-> 欢迎关注我的公众号:「程序那些事」,懂技术，更懂你！
 
 

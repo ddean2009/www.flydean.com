@@ -1,4 +1,8 @@
-网络协议之:还在用HTTP代理?弱爆了!快试试SOCKS5
+---
+slug: /10-SOCKS5-more
+---
+
+# 10. 网络协议之:还在用HTTP代理?弱爆了!快试试SOCKS5
 
 [toc]
 

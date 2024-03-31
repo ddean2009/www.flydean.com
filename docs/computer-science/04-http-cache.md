@@ -1,4 +1,8 @@
-HTTP系列之:HTTP缓存
+---
+slug: /04-http-cache
+---
+
+# 4. HTTP系列之:HTTP缓存
 
 [toc]
 

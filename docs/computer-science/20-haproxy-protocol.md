@@ -1,4 +1,8 @@
-网络协议之:haproxy的Proxy Protocol代理协议
+---
+slug: /20-haproxy-protocol
+---
+
+# 20. 网络协议之:haproxy的Proxy Protocol代理协议
 
 [toc]
 

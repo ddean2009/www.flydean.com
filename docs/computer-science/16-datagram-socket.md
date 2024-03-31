@@ -1,4 +1,8 @@
-网络协议之:socket协议详解之Datagram Socket
+---
+slug: /16-datagram-socket
+---
+
+# 16. 网络协议之:socket协议详解之Datagram Socket
 
 [toc]
 

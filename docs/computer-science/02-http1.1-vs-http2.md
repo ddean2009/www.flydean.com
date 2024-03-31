@@ -1,4 +1,8 @@
-HTTP协议之:HTTP/1.1和HTTP/2
+---
+slug: /02-http1.1-vs-http2
+---
+
+# 2. HTTP协议之:HTTP/1.1和HTTP/2
 
 [toc]
 

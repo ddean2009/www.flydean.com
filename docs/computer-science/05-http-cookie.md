@@ -1,4 +1,8 @@
-HTTP系列之:HTTP中的cookies
+---
+slug: /05-http-cookie
+---
+
+# 5. HTTP系列之:HTTP中的cookies
 
 [toc]
 
