@@ -1,6 +1,8 @@
-Java并发Map的全面指南：线程安全数据结构的奥秘
+---
+slug: /0002-java-do-you-know-map
+---
 
-[toc]
+# 5. Java并发Map的全面指南
 
 ## 简介
 

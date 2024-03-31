@@ -1,4 +1,8 @@
-杰哥教你面试之一百问系列:java中高级多线程concurrent的使用
+---
+slug: /002-java-thread-concurrent
+---
+
+# 2. java中高级多线程concurrent的使用
 
 [toc]
 

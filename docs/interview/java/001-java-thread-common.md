@@ -1,4 +1,8 @@
-杰哥教你面试之一百问系列:java多线程
+---
+slug: /001-java-thread-common
+---
+
+# 1. java多线程
 
 [toc]
 
