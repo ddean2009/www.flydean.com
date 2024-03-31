@@ -1,6 +1,10 @@
-密码学系列之:memory-hard函数
+---
+slug: /memory-hard
+---
 
-[toc]
+# 27. 密码学系列之:memory-hard函数
+
+
 
 # 简介
 

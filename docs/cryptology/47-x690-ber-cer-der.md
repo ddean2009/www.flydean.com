@@ -1,6 +1,10 @@
-密码学系列之:X.690和对应的BER CER DER编码
+---
+slug: /x690-ber-cer-der
+---
 
-[toc]
+# 49. 密码学系列之:X.690和对应的BER CER DER编码
+
+
 
 # 简介
 

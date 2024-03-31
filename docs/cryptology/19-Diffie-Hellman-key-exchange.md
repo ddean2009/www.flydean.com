@@ -1,4 +1,8 @@
-更加安全的密钥生成方法Diffie-Hellman
+---
+slug: /Diffie-Hellman-key-exchange
+---
+
+# 19. 更加安全的密钥生成方法Diffie-Hellman
 
 之前我们谈到了密钥配送的问题，这个世界是如此的危险， 一不小心通信线路就会被监听，那么我们怎么在这种不安全的线路中传递密钥呢？
 

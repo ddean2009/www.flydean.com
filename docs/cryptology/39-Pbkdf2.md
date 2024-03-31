@@ -1,6 +1,10 @@
-密码学系列之:1Password的加密基础PBKDF2
+---
+slug: /Pbkdf2
+---
 
-[toc]
+# 41. 密码学系列之:1Password的加密基础PBKDF2
+
+
 
 # 简介
 

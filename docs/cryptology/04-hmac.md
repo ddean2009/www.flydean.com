@@ -1,4 +1,8 @@
-[toc]
+---
+slug: /hmac
+---
+
+# 4. HMAC算法
 
 # MAC
 在现代的网络中，身份认证是一个经常会用到的功能，在身份认证过程中，有很多种方式可以保证用户信息的安全，而MAC(message authentication code)就是一种常用的方法。

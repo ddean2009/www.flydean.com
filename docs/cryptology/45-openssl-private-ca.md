@@ -1,6 +1,10 @@
-密码学系列之:使用openssl创建私有CA
+---
+slug: /openssl-private-ca
+---
 
-[toc]
+# 47. 密码学系列之:使用openssl创建私有CA
+
+
 
 # 简介
 

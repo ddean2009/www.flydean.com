@@ -1,6 +1,10 @@
-密码学系列之:海绵函数sponge function
+---
+slug: /Sponge-function
+---
 
-[toc]
+# 38. 密码学系列之:海绵函数sponge function
+
+
 
 # 简介
 

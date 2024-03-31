@@ -1,4 +1,8 @@
-[toc]
+---
+slug: /des
+---
+
+# 8. DES
 
 ##  什么是DES
 

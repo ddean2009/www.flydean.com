@@ -1,4 +1,8 @@
-密码学系列之:blowfish对称密钥分组算法
+---
+slug: /blowfish
+---
+
+# 34. 密码学系列之:blowfish对称密钥分组算法
 
 # 简介
 

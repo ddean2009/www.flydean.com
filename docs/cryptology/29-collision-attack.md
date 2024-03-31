@@ -1,4 +1,8 @@
-密码学系列之:碰撞抵御和碰撞攻击collision attack
+---
+slug: /collision-attack
+---
+
+# 30. 密码学系列之:碰撞抵御和碰撞攻击collision attack
 
 # 简介
 

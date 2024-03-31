@@ -1,6 +1,8 @@
-[toc]
+---
+slug: /one-time-password
+---
 
-# 一次性密码本
+# 7. 一次性密码本
 
 一次性密码本即Vernam Cipher，是由Gilbert Vernam在1917年， 开发的一种加密算法。
 

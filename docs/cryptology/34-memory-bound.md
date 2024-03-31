@@ -1,6 +1,10 @@
-密码学系列之:memory-bound函数
+---
+slug: /memory-bound
+---
 
-[toc]
+# 36. 密码学系列之:memory-bound函数
+
+
 
 # 简介
 

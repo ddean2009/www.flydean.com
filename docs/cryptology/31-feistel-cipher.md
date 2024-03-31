@@ -1,4 +1,8 @@
-密码学系列之:feistel cipher
+---
+slug: /feistel-cipher
+---
+
+# 33. 密码学系列之:feistel cipher
 
 # 简介
 

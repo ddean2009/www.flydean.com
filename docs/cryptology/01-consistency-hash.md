@@ -1,4 +1,8 @@
-[toc]
+---
+slug: /consistency-hash
+---
+
+# 1. 一致性hash算法
  
 Hash 算法也叫做散列算法，他可以让任意长度的数据M映射成为长度固定的值H。
 

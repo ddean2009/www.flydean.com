@@ -1,6 +1,10 @@
-密码学系列之:使用openssl检测网站是否支持ocsp
+---
+slug: /openssl-ocsp
+---
 
-[toc]
+# 46. 密码学系列之:使用openssl检测网站是否支持ocsp
+
+
 
 # 简介
 

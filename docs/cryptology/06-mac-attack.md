@@ -1,4 +1,8 @@
-[toc]
+---
+slug: /mac-attack
+---
+
+# 6. MAC攻击
 
 前面我们在讲HMAC的时候简单讲过了什么是MAC消息认证码。
 

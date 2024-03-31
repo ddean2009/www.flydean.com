@@ -1,4 +1,8 @@
-密码学系列之:明文攻击和Bletchley Park
+---
+slug: /known-plaintext-attack
+---
+
+# 22. 密码学系列之:明文攻击和Bletchley Park
 
 # 简介
 

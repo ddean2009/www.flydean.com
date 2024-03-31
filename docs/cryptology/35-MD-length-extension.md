@@ -1,4 +1,8 @@
-密码学系列之:Merkle–Damgård结构和长度延展攻击
+---
+slug: /MD-length-extension
+---
+
+# 37. 密码学系列之:Merkle–Damgård结构和长度延展攻击
 
 # 简介
 
