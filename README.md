@@ -28,31 +28,31 @@
 
 ### 系统架构
 
-[架构师必须掌握的技术](mindmap/architect.md)
+[架构师必须掌握的技术](docs/cheatSheet/mindmap/architect.md)
 
 ### java
 
-[java必须掌握的技术](mindmap/java.md)
+[java必须掌握的技术](docs/cheatSheet/mindmap/java.md)
 
 ### 设计模式
 
-[必须掌握的设计模式](mindmap/patten.md)
+[必须掌握的设计模式](docs/cheatSheet/mindmap/patten.md)
 
 ### 大数据
 
-[大数据我们该学点什么](mindmap/bigdata.md)
+[大数据我们该学点什么](docs/cheatSheet/mindmap/bigdata.md)
 
 ### 区块链
 
-[区块链技术大合集](mindmap/blockchain.md)
+[区块链技术大合集](docs/cheatSheet/mindmap/blockchain.md)
 
 ### golang
 
-[golang基础](mindmap/golang.md)
+[golang基础](docs/cheatSheet/mindmap/golang.md)
 
 ### 前端
 
-[你所不知道的前端技术](mindmap/js.md)
+[你所不知道的前端技术](docs/cheatSheet/mindmap/js.md)
 
 # java从小工到专家
 

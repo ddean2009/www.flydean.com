@@ -2,7 +2,7 @@
 slug: /0002-java-do-you-know-map
 ---
 
-# 5. Java并发Map的全面指南
+# 5. 并发Map
 
 ## 简介
 

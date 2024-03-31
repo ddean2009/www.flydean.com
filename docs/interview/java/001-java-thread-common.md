@@ -4,7 +4,7 @@ slug: /001-java-thread-common
 
 # 1. java多线程
 
-[toc]
+
 
 java多线程是java面试中的高频问题，如何才能在面试中脱颖而出呢？熟读这里的一百个java多线程面试问题即可。
 

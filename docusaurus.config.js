@@ -100,7 +100,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: false,
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
         },
       },
       // Replace with your project's social card
@@ -114,6 +114,12 @@ const config = {
         items: [
           {
             type: 'docSidebar',
+            sidebarId: 'aiSidebar',
+            label: 'AI',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'javaSidebar',
             position: 'left',
             label: 'JAVA',
@@ -124,10 +130,108 @@ const config = {
             label: 'SCALA',
             position: 'left',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'springSidebar',
+            label: 'SPRING',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'blockchainSidebar',
+            label: '区块链',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'flutterSidebar',
+            label: 'FLUTTER',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'algorithmSidebar',
+            label: '算法动画',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'pythonSidebar',
+            label: 'PYTHON',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'reactiveSidebar',
+            label: '响应式框架',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'jsSidebar',
+            label: 'JS',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'cryptologySidebar',
+            label: '密码学',
+            position: 'left',
+          },
+
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'search',
             position: 'right',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'interviewSidebar',
+            label: '面试秘籍',
+            position: 'right',
+          },
+          {
+            label: '其他',
+            position: 'right',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'architSidebar',
+                label: '系统架构',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'cheatSidebar',
+                label: '秘诀和小贴士',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'csSidebar',
+                label: 'CS解密',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'toolsSidebar',
+                label: '服务器和工具',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'linuxSidebar',
+                label: 'linux实战',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'dbSidebar',
+                label: '数据库集锦',
+              },
+              // {
+              //   href: 'https://forum.ionicframework.com/',
+              //   label: 'Forum',
+              //   target: '_blank',
+              //   rel: null,
+              // },
+            ],
+            // className: 'navbar__link--community',
           },
           {
             href: 'https://github.com/ddean2009/www.flydean.com',
@@ -140,33 +244,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '关注我',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'GitHub',
+                href: 'https://github.com/ddean2009/www.flydean.com',
+              },
+              {
+                label: 'CSDN',
+                href: 'https://blog.csdn.net/superfjj',
+              },
+              {
+                label: '掘金',
+                href: 'https://juejin.cn/user/3913917124584142',
+              },
+              {
+                label: '知乎',
+                href: 'https://www.zhihu.com/people/flydean2020',
+              },
+
+            ],
+          },
+          {
+            title: '联系我',
+            items: [
+              {
+                html: `
+                 <h4>flydean@163.com</h4>
+              `,
+              },
+              {
+                html: `
+                 <img src="/img/qrcode.jpg" alt="关注公众号" width="55" height="55" />
+                 <img src="/img/qrcode2.jpeg" alt="加我好友" width="55" height="55" />
+              `,
               },
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
+            title: '资源下载',
             items: [
               {
                 label: 'Blog',
@@ -179,6 +295,13 @@ const config = {
             ],
           },
         ],
+        // logo: {
+        //   alt: '加我好友',
+        //   src: 'img/qrcode.jpg',
+        //   // href: 'https://opensource.fb.com',
+        //   width: 55,
+        //   height: 55,
+        // },
         copyright: `Copyright © ${new Date().getFullYear()} 程序那些事.<a target="_blank" rel="noopener noreferrer" href="http://www.beian.miit.gov.cn/">粤ICP备19017836号</a>.`,
       },
 

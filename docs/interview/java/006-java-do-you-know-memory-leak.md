@@ -2,7 +2,7 @@
 slug: /0003-java-do-you-know-memory-leak
 ---
 
-# 6. java中的内存泄露
+# 6. 内存泄露
 
 ## 引言
 

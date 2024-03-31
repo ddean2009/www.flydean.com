@@ -2,7 +2,7 @@
 slug: /0001-java-do-you-know-list
 ---
 
-# 4. java中有哪些并发的List
+# 4. 并发的List
 
 
 java中有很多list，但是原生支持并发的并不多，我们在多线程的环境中如果想同时操作同一个list的时候，就涉及到了一个并发的过程，这时候我们就需要选择自带有并发属性的list，那么java中的并发list到底有哪些呢？今天要给大家介绍的是`ArrayList`、`CopyOnWriteArrayList`、`ConcurrentLinkedDeque`这几个。

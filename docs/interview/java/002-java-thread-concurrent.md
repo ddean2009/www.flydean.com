@@ -2,9 +2,9 @@
 slug: /002-java-thread-concurrent
 ---
 
-# 2. java中高级多线程concurrent的使用
+# 2. concurrent的高级用法
 
-[toc]
+
 
 提到多线程，当然要熟悉java提供的各种多线程相关的并发包了，而java.util.concurrent就是最最经常会使用到的，那么关于concurrent的面试题目有哪些呢？一起来看看吧。
 
