@@ -1,4 +1,8 @@
-在onelogin中使用OpenId Connect Authentication Flow
+---
+slug: /05-openid-connnect-with-onelogin
+---
+
+# 5. 在onelogin中使用OpenId Connect Authentication Flow
 
 # 简介
 

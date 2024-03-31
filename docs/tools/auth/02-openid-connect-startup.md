@@ -1,4 +1,8 @@
-SSO的通用标准OpenID Connect
+---
+slug: /02-openid-connect-startup
+---
+
+# 2. SSO的通用标准OpenID Connect
 
 # 简介
 

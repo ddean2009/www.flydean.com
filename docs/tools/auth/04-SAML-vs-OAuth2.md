@@ -1,14 +1,18 @@
-安全声明标记语言SAML2.0初探
+---
+slug: /04-SAML-vs-OAuth2
+---
+
+# 4. SAML和OAuth2这两种SSO协议的区别
 
 # 简介
+
+SSO是单点登录的简称，常用的SSO的协议有两种，分别是SAML和OAuth2。本文将会介绍两种协议的不同之处，从而让读者对这两种协议有更加深入的理解。
+
+# SAML
 
 SAML的全称是Security Assertion Markup Language， 是由OASIS制定的一套基于XML格式的开放标准，用在身份提供者（IdP）和服务提供者 (SP)之间交换身份验证和授权数据。
 
 SAML的一个非常重要的应用就是基于Web的单点登录（SSO）。
-
-接下来我们一起来看看SAML是怎么工作的。
-
-# SAML的构成
 
 在SAML协议中定义了三个角色，分别是principal：代表主体通常表示人类用户。identity provider (IdP)身份提供者和service provider (SP)服务提供者。
 
@@ -16,23 +20,7 @@ IdP的作用就是进行身份认证，并且将用户的认证信息和授权�
 
 SP的作用就是进行用户认证信息的验证，并且授权用户访问指定的资源信息。
 
-# SAML的优势
-
-为什么要使用SAML呢？
-
-第一可以提升用户体验，如果系统使用SAML，那么可以在登录一次的情况下，访问多个不同的系统服务。这实际上也是SSO的优势，用户不需要分别记住多个系统的用户名和密码，只用一个就够了。
-
-第二可以提升系统的安全性，使用SAML，我们只需要向IdP提供用户名密码即可，
-
-第三用户的认证信息不需要保存在所有的资源服务器上面，只需要在在IdP中存储一份就够了。
-
-# SAML是怎么工作的
-
 接下来，我们通过一个用SAML进行SSO认证的流程图，来分析一下SAML是怎么工作的。
-
-根据请求方式有redirect和post的不同，使用SAML来进行SSO认证有通常有三种方式，我们一一道来。
-
-## SP redirect request; IdP POST response
 
 ![](https://img-blog.csdnimg.cn/20200917121937112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_25,color_8F8F8F,t_70)
 
@@ -171,112 +159,71 @@ IdP收到这个AuthnRequest请求之后，将会进行安全验证，如果是�
 
 如果为了提高安全性，也可以使用引用消息。也就是说IdP返回的不是直接的SAML assertion，而是一个SAML assertion的引用。SP收到这个引用之后，可以从后台再去查询真实的SAML assertion，从而提高了安全性。
 
-## SP POST Request; IdP POST Response
+## SAML的缺点
 
-刚刚讲的是SP redirect Request,这里我们看一下SP POST request是怎么做的：
+SAML协议是2005年制定的，在制定协议的时候基本上是针对于web应用程序来说的，但是那时候的web应用程序还是比较简单的，更别提对App的支持。
 
-![](https://img-blog.csdnimg.cn/20200917153700878.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_25,color_8F8F8F,t_70)
+SAML需要通过HTTP Redect和HTTP POST协议来传递用户信息，并且通常是通过HTML FORM的格式来进行数据的提交的。如果应用程序并不是web应用，比如说是一个手机App应用。
 
-和第一种方式的不同之处在于第二步和第三步。
+这个手机APP应用的启动链接是 my-photos://authenticate ， 但是手机app可能并不能获取到Http POST的body内容。他们只能够通过URL来进行参数的传递。
 
-第二步：SP不再进行redirect了，而是返回一个XHTML form给User agent：
+这就意味着，在手机APP中不能够使用SAML。
 
-~~~xml
-  <form method="post" action="https://idp.flydean.com/SAML2/SSO/POST" ...>
-    <input type="hidden" name="SAMLRequest" value="request" />
-    <input type="hidden" name="RelayState" value="token" />
-    ...
-    <input type="submit" value="Submit" />
-  </form>
-~~~
+当然，要想工作也可以，不过需要进行一些改造。比如通过第三方应用对POST消息进行解析，然后将解析出来的SAMLRequest以URL参数的形式传递给APP。
 
-第三步：拿到第二步的XHTML form之后，User agent将该form post到IdP SSO server。
+另一种方法就是使用OAuth2.
 
-从第四步开始就和第一种方式是一样的了。
+# OAuth2
 
-## SP redirect artifact; IdP redirect artifact
+因为Oauth2是在2012年才产生的。所以并没有那么多的使用限制。我们可以在不同的场合中使用OAuth2。
 
-第三种方式，SP和IdP都用的是redirect，但是redirect的内容都是artifact。
+我们先来看一下OAuth2中授权的流程图：
 
-之前我们讲了SAML message可以以值的方式也可以以引用的方式来进行传递。
+![](https://img-blog.csdnimg.cn/20200914225501505.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_25,color_8F8F8F,t_70)
 
-而这种以引用的传递方式就是artifact。
+一般来说OAuth2中有4个角色。
 
-收到artifact的receiver会发送一个&lt;samlp:ArtifactResolve> 给issuer，从而获得真正的message。
+resource owner： 代表的是资源的所有者，可以通过提供用户名密码或者其他方式来进行授权。通常来是一个人。
 
-下面是一个向IdP请求message的例子：
+resource server：代表的是最终需要访问到资源的服务器。比如github授权之后获取到的用户信息。
 
-~~~xml
-  <samlp:ArtifactResolve
-    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
-    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-    ID="_cce4ee769ed970b501d680f697989d14"
-    Version="2.0"
-    IssueInstant="2020-09-05T09:21:58Z">
-    <saml:Issuer>https://idp.flydean.com/SAML2</saml:Issuer>
-    <!-- an ArtifactResolve message SHOULD be signed -->
-    <ds:Signature
-      xmlns:ds="http://www.w3.org/2000/09/xmldsig#">...</ds:Signature>
-    <samlp:Artifact>AAQAAMh48/1oXIM+sDo7Dh2qMp1HM4IF5DaRNmDj6RdUmllwn9jJHyEgIi8=</samlp:Artifact>
-  </samlp:ArtifactResolve>
-~~~
+client： 用来替代resource owner来进行交互的客户端。
 
-相应的server会返回一个包含&lt;samlp:AuthnRequest>的&lt;samlp:ArtifactResponse>：
+authorization server： 用来进行授权的服务器，可以生成相应的Access Token。
 
-~~~xml
-<samlp:ArtifactResponse
-    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
-    ID="_d84a49e5958803dedcff4c984c2b0d95"
-    InResponseTo="_cce4ee769ed970b501d680f697989d14"
-    Version="2.0"
-    IssueInstant="2020-09-05T09:21:59Z">
-    <!-- an ArtifactResponse message SHOULD be signed -->
-    <ds:Signature
-      xmlns:ds="http://www.w3.org/2000/09/xmldsig#">...</ds:Signature>
-    <samlp:Status>
-      <samlp:StatusCode
-        Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
-    </samlp:Status>
-    <samlp:AuthnRequest
-      xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
-      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-      ID="_306f8ec5b618f361c70b6ffb1480eade"
-      Version="2.0"
-      IssueInstant="2020-09-05T09:21:59Z"
-      Destination="https://idp.flydean.com/SAML2/SSO/Artifact"
-      ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
-      AssertionConsumerServiceURL="https://sp.flydean.com/SAML2/SSO/Artifact">
-      <saml:Issuer>https://sp.flydean.com/SAML2</saml:Issuer>
-      <samlp:NameIDPolicy
-        AllowCreate="false"
-        Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"/>
-    </samlp:AuthnRequest>
-  </samlp:ArtifactResponse>
-~~~
+整个流程是这样的：
 
-看下第三种方式的流程图：
+Client向resource owner发起一个授权请求，resource owner输入相应的认证信息，将authorization grant返回给client。
 
-![](https://img-blog.csdnimg.cn/20200917165041746.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_25,color_8F8F8F,t_70)
+client再将获取到的authorization grant请求授权服务器，并返回access token。
 
-可以看到这种方式和前面两种方式的区别就是多了一个请求真实message的步骤。
+client然后就可以拿着这个access token去请求resource server，最后获取到受限资源。
 
-以第三，四，五步为例：
+## OAuth2的缺点
 
-第三步user agent请求IdP的SSO server：
+OAuth2并没有指定Resource Server怎么和Authorization Server进行交互。也没有规定返回用户信息的内容和格式。这些都需要实现方自己去决定。
 
-~~~java
- https://idp.example.org/SAML2/SSO/Artifact?SAMLart=artifact_1&RelayState=token
-~~~
+OAuth2默认是在HTTPS环境下工作的，所以并没有约定信息的加密方式。我们需要自己去实现。
 
-注意这里请求的参数变成了SAMLart。
+最后，OAuth2是一个授权协议，而不是认证协议。对于这个问题，其实我们可以考虑使用OpenID Connect协议。因为OpenID Connect就是基于OAuth2实现的，并且添加了认证协议。
 
-第四步，IdP需要发送一个&lt;samlp:ArtifactResolve>到SP来请求真正的samlp:AuthnRequest。
+OpenID Connect简称为OIDC，已成为Internet上单点登录和身份管理的通用标准。 它在OAuth2上构建了一个身份层，是一个基于OAuth2协议的身份认证标准协议。
 
-第五步，SP返回一个&lt;samlp:ArtifactResponse> 包含samlp:AuthnRequest。
+OAuth2实际上只做了授权，而OpenID Connect在授权的基础上又加上了认证。
 
-# 总结
+OIDC的优点是：简单的基于JSON的身份令牌（JWT），并且完全兼容OAuth2协议。
 
-SAML协议和它的基本用法就是上面这样。下面的文章我们会举一个具体的例子，来讲解如何应用SAML协议。
+# 两者的对比
+
+在SAML协议中，SAML token中已经包含了用户身份信息，但是在OAuth2，在拿到token之后，需要额外再做一次对该token的校验。
+
+但是另一方面，OAuth2因为需要再做一次认证，所以可以在 Authorization Server 端对token进行无效处理。
+
+# CAS简介
+
+做过SSO的应该都听说过CAS。CAS的全称是Central Authentication Service，是一个企业级的开源的SSO认证框架。
+
+CAS内部集成了CAS1,2,3，SAML1,2，OAuth2,OpenID和OpenID Connect协议，非常的强大。我们会在后面的文章中介绍CAS的使用。
 
 > 本文作者：flydean程序那些事
 > 
@@ -285,18 +232,3 @@ SAML协议和它的基本用法就是上面这样。下面的文章我们会举�
 > 本文来源：flydean的博客
 > 
 > 欢迎关注我的公众号:「程序那些事」最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

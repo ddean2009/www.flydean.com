@@ -8,7 +8,7 @@ find . -type f -name "*.md" | while read -r file; do
 
     # 去除文件名开头的数字和短横线，并获取不带后缀的文件名
 #    filename=$(echo "$filename_with_ext" | sed -E 's/^[0-9-]+//')
-    filename=$(echo "$filename_with_ext" )
+    filename=$(echo "$filename_with_ext")
     filename="${filename%.md}"  # 去除.md后缀
 
     # 构造要插入的三行代码

@@ -1,3 +1,7 @@
+---
+slug: /jdk8-GC-cheatsheet
+---
+
 # 八张图彻底了解JDK8 GC调优秘籍-附PDF下载
 
 # 简介

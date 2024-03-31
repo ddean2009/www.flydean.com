@@ -1,3 +1,7 @@
+---
+slug: /JDK11-GC-cheatsheet
+---
+
 # 一张PDF了解JDK11 GC调优秘籍-附PDF下载
 
 # 简介

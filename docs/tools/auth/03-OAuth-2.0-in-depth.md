@@ -1,4 +1,8 @@
-OAuth 2.0授权框架详解
+---
+slug: /03-OAuth-2.0-in-depth
+---
+
+# 3. OAuth 2.0授权框架详解
 
 # 简介
 

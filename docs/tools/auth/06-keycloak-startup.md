@@ -1,4 +1,8 @@
-开源认证和访问控制的利器keycloak使用简介
+---
+slug: /06-keycloak-startup
+---
+
+# 6. 开源认证和访问控制的利器keycloak使用简介
 
 # 简介
 

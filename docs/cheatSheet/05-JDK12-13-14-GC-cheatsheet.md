@@ -1,3 +1,7 @@
+---
+slug: /JDK12-13-14-GC-cheatsheet
+---
+
 # 一文了解JDK12 13 14 GC调优秘籍-附PDF下载
 
 # 简介

@@ -1,4 +1,8 @@
-在wildfly中使用SAML协议连接keycloak
+---
+slug: /07-keycloak-saml-wildfly
+---
+
+# 7. 在wildfly中使用SAML协议连接keycloak
 
 # 简介
 

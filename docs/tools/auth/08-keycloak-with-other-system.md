@@ -1,4 +1,8 @@
-keycloak和自研系统的集成
+---
+slug: /08-keycloak-with-other-system
+---
+
+# 8. keycloak和自研系统的集成
 
 # 简介
 

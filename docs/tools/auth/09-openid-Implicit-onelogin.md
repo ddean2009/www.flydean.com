@@ -1,4 +1,8 @@
-在onelogin中使用OpenId Connect Implicit Flow
+---
+slug: /09-openid-Implicit-onelogin
+---
+
+# 9. 在onelogin中使用OpenId Connect Implicit Flow
 
 # 简介
 
