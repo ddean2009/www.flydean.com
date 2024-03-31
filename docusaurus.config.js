@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import mermaid from "mermaid";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -73,6 +74,25 @@ const config = {
       }),
     ],
   ],
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    format: 'detect',
+    mermaid: true,
+    // preprocessor: ({filePath, fileContent}) => {
+    //   return fileContent.replaceAll('{{MY_VAR}}', 'MY_VALUE');
+    // },
+    // parseFrontMatter: async (params) => {
+    //   const result = await params.defaultParseFrontMatter(params);
+    //   result.frontMatter.description =
+    //       result.frontMatter.description?.replaceAll('{{MY_VAR}}', 'MY_VALUE');
+    //   return result;
+    // },
+    // mdx1Compat: {
+    //   comments: true,
+    //   admonitions: true,
+    //   headingIds: true,
+    // },
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -110,7 +130,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ddean2009/www.flydean.com',
             label: 'GitHub',
             position: 'right',
           },
@@ -159,30 +179,53 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 程序那些事,粤ICP备19017836号.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 程序那些事.<a target="_blank" rel="noopener noreferrer" href="http://www.beian.miit.gov.cn/">粤ICP备19017836号</a>.`,
       },
+
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'YOUR_APP_ID',
+
+        // Public API key: it is safe to commit it
+        apiKey: 'YOUR_SEARCH_API_KEY',
+
+        indexName: 'YOUR_INDEX_NAME',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|flydean\\.com',
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // or as RegExp: /\/docs\//
+        //   to: '/',
+        // },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+        //... other Algolia params
+      },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        defaultLanguage: 'java',
       },
-      markdown: {
-        format: 'detect',
-        mermaid: true,
-        // preprocessor: ({filePath, fileContent}) => {
-        //   return fileContent.replaceAll('{{MY_VAR}}', 'MY_VALUE');
-        // },
-        // parseFrontMatter: async (params) => {
-        //   const result = await params.defaultParseFrontMatter(params);
-        //   result.frontMatter.description =
-        //       result.frontMatter.description?.replaceAll('{{MY_VAR}}', 'MY_VALUE');
-        //   return result;
-        // },
-        // mdx1Compat: {
-        //   comments: true,
-        //   admonitions: true,
-        //   headingIds: true,
-        // },
+      announcementBar: {
+        id: 'support_us',
+        content:
+            '觉得这个网站对你有帮助的话，给我点个赞吧! <a target="_blank" rel="noopener noreferrer" href="https://github.com/ddean2009/www.flydean.com">github</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
       },
+      metadata: [{name: 'referrer',content:'no-referrer'}]
+      ,
     }),
 };
 
