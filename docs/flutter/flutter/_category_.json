@@ -1,0 +1,14 @@
+{
+  "position": 1,
+  "label": "2. flutter教程",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "flutter教程"
+  },
+  "customProps": {
+    "description": "flutter教程"
+  }
+}
