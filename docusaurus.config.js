@@ -285,15 +285,42 @@ const config = {
             title: '资源下载',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/ddean2009/www.flydean.com',
+                label: '各类秘籍',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook',
               },
             ],
           },
+          {
+            title: '电子小册',
+            items: [
+              {
+                label: 'Spring Boot 2.X实战教程',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook/SpringBoot2.X-in-action.pdf',
+              },
+              {
+                label: 'Stream和Lambda表达式最佳实践',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook/java-stream-lambda-all-in-one.pdf',
+              },
+              {
+                label: '深入理解java集合',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook/java-collection-all-in-one.pdf',
+              },
+              {
+                label: '小师妹学IO/NIO',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook/java-io-all-in-one.pdf',
+              },
+              {
+                label: '深入理解java并发和多线程',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook/concurrent-all-in-one.pdf',
+              },
+              {
+                label: 'Spring5中文参考指南',
+                href: 'https://github.com/ddean2009/www.flydean.com/tree/master/static/ebook/Spring5-framework-reference.pdf',
+              },
+            ],
+          },
+
+
         ],
         // logo: {
         //   alt: '加我好友',
