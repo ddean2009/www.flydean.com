@@ -1,4 +1,8 @@
-wildfly 21的配置文件和资源管理 
+---
+slug: /wildfly-config-resource
+---
+
+# 2. wildfly 21的配置文件和资源管理 
 
 # 简介
 

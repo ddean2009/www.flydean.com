@@ -1,4 +1,8 @@
-wildfly 21中应用程序的部署
+---
+slug: /wildfly-app-deployment
+---
+
+# 4. wildfly 21中应用程序的部署
 
 # 简介
 

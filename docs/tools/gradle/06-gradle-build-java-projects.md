@@ -1,4 +1,8 @@
-在gradle中构建java项目
+---
+slug: /gradle-build-java-projects
+---
+
+# 6. 在gradle中构建java项目
 
 # 简介
 

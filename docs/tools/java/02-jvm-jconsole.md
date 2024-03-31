@@ -1,4 +1,8 @@
-JDK14性能管理工具:Jconsole详解
+---
+slug: /jvm-jconsole
+---
+
+# 2. JDK14性能管理工具:Jconsole详解
 
 # 简介
 

@@ -1,4 +1,8 @@
-深入理解gradle中的task
+---
+slug: /gradle-task-in-depth
+---
+
+# 4. 深入理解gradle中的task
 
 # 简介
 

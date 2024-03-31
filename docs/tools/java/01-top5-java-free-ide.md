@@ -1,4 +1,8 @@
-5个2020年你不能不知道的java IDE神器
+---
+slug: /top5-java-free-ide
+---
+
+# 1. 5个2020年你不能不知道的java IDE神器
 
 ![](https://img-blog.csdnimg.cn/20200406231636921.png)
 

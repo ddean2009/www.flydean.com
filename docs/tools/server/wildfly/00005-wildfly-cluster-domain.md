@@ -1,4 +1,8 @@
-在wildfly 21中搭建cluster集群
+---
+slug: /wildfly-cluster-domain
+---
+
+# 5. 在wildfly 21中搭建cluster集群
 
 # 简介
 

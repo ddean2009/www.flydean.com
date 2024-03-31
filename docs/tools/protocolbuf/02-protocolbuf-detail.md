@@ -1,6 +1,10 @@
-protocol buffer没那么难,不信你看这篇
+---
+slug: /02-protocolbuf-detail
+---
 
-[toc]
+# 2. protocol buffer没那么难,不信你看这篇
+
+
 
 # 简介
 

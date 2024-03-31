@@ -1,4 +1,8 @@
-使用site-maven-plugin在github上搭建公有仓库
+---
+slug: /apache-maven-git-repository
+---
+
+# 3. 使用site-maven-plugin在github上搭建公有仓库
 # 简介
 
 Maven是我们在开发java程序中经常使用的构建工具，在团队合作开发过程中，如果我们想要将自己写好的jar包共享给别人使用，通常需要自己搭建maven仓库，然后将写好的jar包上传到maven仓库中，以供其他用户使用。

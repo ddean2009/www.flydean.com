@@ -1,6 +1,10 @@
-使用gradle插件发布项目到nexus中央仓库
+---
+slug: /07-Gradle-Nexus-Publish-Plugin
+---
 
-[toc]
+# 7. 使用gradle插件发布项目到nexus中央仓库
+
+
 
 # 简介
 

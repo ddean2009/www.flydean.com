@@ -1,6 +1,10 @@
-在nginx中使用proxy protocol协议
+---
+slug: /02-nginx-proxy-protocol
+---
 
-[toc]
+# 在nginx中使用proxy protocol协议
+
+
 
 # 简介
 

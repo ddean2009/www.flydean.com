@@ -1,4 +1,8 @@
-wildfly 21的domain配置
+---
+slug: /wildfly-domain
+---
+
+# 3. wildfly 21的domain配置
 
 # 简介
 

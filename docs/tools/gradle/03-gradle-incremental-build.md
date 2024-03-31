@@ -1,4 +1,8 @@
-gradle中的增量构建
+---
+slug: /gradle-incremental-build
+---
+
+# 3. gradle中的增量构建
 
 # 简介
 

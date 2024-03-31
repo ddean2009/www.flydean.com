@@ -1,4 +1,8 @@
-Maven的build生命周期和常用plugin
+---
+slug: /apache-maven-lifecycle
+---
+
+# 1. Maven的build生命周期和常用plugin
 
 # 简介
 

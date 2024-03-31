@@ -1,4 +1,8 @@
-深入了解gradle和maven的区别
+---
+slug: /gradle-vs-maven
+---
+
+# 5. 深入了解gradle和maven的区别
 
 # 简介
 

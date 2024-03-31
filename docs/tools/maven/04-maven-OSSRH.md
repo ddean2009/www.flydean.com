@@ -1,6 +1,10 @@
-maven中心仓库OSSRH使用简介
+---
+slug: /04-maven-OSSRH
+---
 
-[toc]
+# 4. maven中心仓库OSSRH使用简介
+
+
 
 # 简介
 

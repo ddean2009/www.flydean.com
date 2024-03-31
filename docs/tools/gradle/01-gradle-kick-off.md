@@ -1,4 +1,8 @@
-最新版gradle安装使用简介
+---
+slug: /gradle-kick-off
+---
+
+# 1. 最新版gradle安装使用简介
 
 # 简介
 

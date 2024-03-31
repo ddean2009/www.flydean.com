@@ -1,4 +1,8 @@
-JDK14性能管理工具:jmap和jhat使用介绍
+---
+slug: /jvm-jmap-jhat
+---
+
+# 3. JDK14性能管理工具:jmap和jhat使用介绍
 
 # 简介
 

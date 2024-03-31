@@ -1,0 +1,14 @@
+{
+  "position": 3,
+  "label": "java中有用的工具",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "java中有用的工具"
+  },
+  "customProps": {
+    "description": "java中有用的工具"
+  }
+}

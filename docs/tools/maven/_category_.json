@@ -1,0 +1,14 @@
+{
+  "position": 2,
+  "label": "maven构建工具",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "maven构建工具"
+  },
+  "customProps": {
+    "description": "maven构建工具"
+  }
+}

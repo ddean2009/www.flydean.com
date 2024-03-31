@@ -1,4 +1,8 @@
-gradle中的build script详解
+---
+slug: /gradle-build-script
+---
+
+# 2. gradle中的build script详解
 
 # 简介
 

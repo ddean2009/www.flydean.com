@@ -1,4 +1,8 @@
-wildfly 21使用指南
+---
+slug: /wildfly-startup
+---
+
+# 1. wildfly 21使用指南
 
 # 简介
 
