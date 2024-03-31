@@ -1,6 +1,8 @@
-开发小技巧之:unicode的排序和正则匹配
+---
+slug: /04-unicode-sorting
+---
 
-[toc]
+# 7. 开发小技巧之:unicode的排序和正则匹配
 
 # 简介
 

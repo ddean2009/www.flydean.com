@@ -1,4 +1,8 @@
-怎么将swagger API导出为HTML或者PDF
+---
+slug: /03-swagger-to-html-pdf
+---
+
+# 6. 怎么将swagger API导出为HTML或者PDF
 
 ## 将swagger API导出为HTML或者PDF
 

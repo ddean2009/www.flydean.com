@@ -1,3 +1,9 @@
+---
+slug: /02-new-gitbook-to-pdf
+---
+
+# 4. 把gitbook转换成pdf
+
 最近想把自己写的一个gitbook转成pdf分享出去，突然发现最新的gitbook版本已经不支持导出PDF了。于是在网上找了好久终于被我发现了三个将gitbook转换成pdf的方式，现分享给大家。我使用的是mac系统，如果是其他系统大家可以查找相应的方案。
 
 ##  gitbook自带的npm模块gitbook

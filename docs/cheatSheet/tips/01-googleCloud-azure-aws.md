@@ -1,4 +1,8 @@
-12个月大厂主机免费领AWS Azure Google-Cloud还不快到碗里来
+---
+slug: /01-googleCloud-azure-aws
+---
+
+# 2. 12个月大厂主机免费领AWS Azure Google-Cloud还不快到碗里来
 
 # 简介
 

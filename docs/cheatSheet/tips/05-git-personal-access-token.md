@@ -1,6 +1,8 @@
-使用账号密码来操作github? NO!
+---
+slug: /05-git-personal-access-token
+---
 
-[toc]
+# 8. 使用账号密码来操作github? NO!
 
 # 简介
 

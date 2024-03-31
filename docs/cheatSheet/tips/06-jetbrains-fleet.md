@@ -1,6 +1,8 @@
-JetBrains又出神器啦!Fleet,体验飞一般的感觉
+---
+slug: /06-jetbrains-fleet
+---
 
-[toc]
+# 9. JetBrains又出神器啦!Fleet,体验飞一般的感觉
 
 # 简介
 
