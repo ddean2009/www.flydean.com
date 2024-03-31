@@ -4,7 +4,7 @@ slug: /algorithm-suffix-array
 
 # 21. 后缀数组suffix array
 
-[toc]
+
 
 # 简介
 

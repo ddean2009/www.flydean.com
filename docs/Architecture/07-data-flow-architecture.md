@@ -1,6 +1,10 @@
-架构之:数据流架构
+---
+slug: /07-data-flow-architecture
+---
 
-[toc]
+# 7. 架构之:数据流架构
+
+
 
 # 简介
 

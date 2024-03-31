@@ -1,6 +1,10 @@
-架构之:REST和RESTful
+---
+slug: /01-REST-RESTful
+---
 
-[toc]
+# 架构之:REST和RESTful
+
+
 
 # 简介
 

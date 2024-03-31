@@ -1,4 +1,8 @@
-架构之:keycloak集群化的思考
+---
+slug: /keycloak-cluster-in-depth
+---
+
+# 4. 架构之:keycloak集群化的思考
 
 # 简介
 

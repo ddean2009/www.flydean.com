@@ -1,6 +1,10 @@
-架构之:REST和HATEOAS
+---
+slug: /03-REST-HATEOAS
+---
 
-[toc]
+# 架构之:REST和HATEOAS
+
+
 
 # 简介
 

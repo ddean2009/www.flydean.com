@@ -4,7 +4,7 @@ slug: /14-algorithm-hashtable
 
 # 14. hashtable
 
-[toc]
+
 
 # 简介
 

@@ -1,6 +1,10 @@
-架构之:并发和并行
+---
+slug: /05-concurrency-parallelism
+---
 
-[toc]
+# 5. 架构之:并发和并行
+
+
 
 # 简介
 

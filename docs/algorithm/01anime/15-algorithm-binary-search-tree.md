@@ -4,7 +4,7 @@ slug: /15-algorithm-binary-search-tree
 
 # 15. 二叉搜索树BST
 
-[toc]
+
 
 # 简介
 

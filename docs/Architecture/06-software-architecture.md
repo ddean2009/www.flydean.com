@@ -1,6 +1,10 @@
-架构之:软件架构漫谈
+---
+slug: /06-software-architecture
+---
 
-[toc]
+# 6. 架构之:软件架构漫谈
+
+
 
 # 简介
 

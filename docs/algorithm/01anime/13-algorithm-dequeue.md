@@ -4,7 +4,7 @@ slug: /13-algorithm-dequeue
 
 # 13. 双向队列dequeue
 
-[toc]
+
 
 # 简介
 

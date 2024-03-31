@@ -1,4 +1,8 @@
-架构之:reactive stream协议详解
+---
+slug: /reactive-stream
+---
+
+# 2. 架构之:reactive stream协议详解
 
 # 背景
 

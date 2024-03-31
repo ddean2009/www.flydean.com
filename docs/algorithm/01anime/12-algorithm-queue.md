@@ -4,7 +4,7 @@ slug: /12-algorithm-queue
 
 # 12. 队列queue
 
-[toc]
+
 
 # 简介
 

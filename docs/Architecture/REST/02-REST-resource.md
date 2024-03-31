@@ -1,7 +1,11 @@
+---
+slug: /02-REST-resource
+---
 
-架构之:REST中的资源定义
 
-[toc]
+# 架构之:REST中的资源定义
+
+
 
 # 简介
 

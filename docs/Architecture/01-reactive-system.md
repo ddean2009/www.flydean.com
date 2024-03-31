@@ -1,4 +1,8 @@
-架构之:响应式系统reactive system初探
+---
+slug: /reactive-system
+---
+
+# 1. 架构之:响应式系统reactive system初探
 
 # 初识响应式系统
 
