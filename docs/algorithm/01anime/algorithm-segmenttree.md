@@ -1,4 +1,8 @@
-看动画学算法之:线段树-segmentTree
+---
+slug: /algorithm-segmenttree
+---
+
+# 20. 线段树-segmentTree
 
 # 简介
 

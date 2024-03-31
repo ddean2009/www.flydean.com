@@ -1,4 +1,8 @@
-看动画学算法之:排序-count排序
+---
+slug: /algorithm-count-sort
+---
+
+# 6. 排序-count排序
 
 # 简介
 

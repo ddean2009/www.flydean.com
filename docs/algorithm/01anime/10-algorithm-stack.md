@@ -1,4 +1,8 @@
-看动画学算法之:栈stack
+---
+slug: /10-algorithm-stack
+---
+
+# 10. 栈stack
 
 # 简介
 

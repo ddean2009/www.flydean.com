@@ -1,4 +1,8 @@
-看动画学算法之:排序-插入排序
+---
+slug: /algorithm-insertion-sort
+---
+
+# 2. 排序-插入排序
 
 # 简介
 

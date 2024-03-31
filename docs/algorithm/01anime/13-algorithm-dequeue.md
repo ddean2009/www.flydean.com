@@ -1,4 +1,8 @@
-看动画学算法之:双向队列dequeue
+---
+slug: /13-algorithm-dequeue
+---
+
+# 13. 双向队列dequeue
 
 [toc]
 

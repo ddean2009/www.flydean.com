@@ -1,4 +1,8 @@
-看动画学算法之:linkedList
+---
+slug: /algorithm-linked-list
+---
+
+# 8. linkedList
 
 # 简介
 

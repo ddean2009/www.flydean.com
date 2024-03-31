@@ -1,4 +1,8 @@
-看动画学算法之:hashtable
+---
+slug: /14-algorithm-hashtable
+---
+
+# 14. hashtable
 
 [toc]
 

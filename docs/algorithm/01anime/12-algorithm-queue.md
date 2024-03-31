@@ -1,4 +1,8 @@
-看动画学算法之:队列queue
+---
+slug: /12-algorithm-queue
+---
+
+# 12. 队列queue
 
 [toc]
 

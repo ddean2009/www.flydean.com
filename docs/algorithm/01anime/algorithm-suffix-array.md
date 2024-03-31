@@ -1,4 +1,8 @@
-看动画学算法系列之:后缀数组suffix array
+---
+slug: /algorithm-suffix-array
+---
+
+# 21. 后缀数组suffix array
 
 [toc]
 

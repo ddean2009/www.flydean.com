@@ -1,4 +1,8 @@
-看动画学算法之:二叉堆Binary Heap
+---
+slug: /algorithm-binary-heap
+---
+
+# 16. 二叉堆Binary Heap
 
 # 简介
 

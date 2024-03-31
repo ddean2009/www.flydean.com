@@ -1,4 +1,8 @@
-看动画学算法之:二叉搜索树BST
+---
+slug: /15-algorithm-binary-search-tree
+---
+
+# 15. 二叉搜索树BST
 
 [toc]
 

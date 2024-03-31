@@ -1,4 +1,8 @@
-看动画学算法之:平衡二叉搜索树AVL Tree
+---
+slug: /11-algorithm-AVL-tree
+---
+
+# 11. 平衡二叉搜索树AVL Tree
 
 # 简介
 

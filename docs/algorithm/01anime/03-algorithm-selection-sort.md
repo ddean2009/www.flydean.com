@@ -1,4 +1,8 @@
-看动画学算法之:排序-选择排序
+---
+slug: /algorithm-selection-sort
+---
+
+# 3. 排序-选择排序
 
 # 简介
 

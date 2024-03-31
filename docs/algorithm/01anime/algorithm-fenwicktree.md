@@ -1,4 +1,8 @@
-看动画学算法之:树状数组-BIT-Fenwick Tree
+---
+slug: /algorithm-fenwicktree
+---
+
+# 18. 树状数组-BIT-Fenwick Tree
 
 # 简介
 

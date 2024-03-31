@@ -1,4 +1,8 @@
-看动画学算法之:doublyLinkedList
+---
+slug: /algorithm-doubly-linked-list
+---
+
+# 9. doublyLinkedList
 
 # 简介
 
