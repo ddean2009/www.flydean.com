@@ -4,7 +4,7 @@ slug: /22-sctp-package-in-detail
 
 # 22. 网络协议之:sctp流控制传输协议的协议消息包详解
 
-[toc]
+
 
 # 简介
 

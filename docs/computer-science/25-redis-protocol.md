@@ -4,7 +4,7 @@ slug: /25-redis-protocol
 
 # 25. 网络协议之:redis protocol详解
 
-[toc]
+
 
 # 简介
 

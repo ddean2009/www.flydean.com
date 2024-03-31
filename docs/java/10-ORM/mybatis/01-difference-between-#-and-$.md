@@ -1,4 +1,8 @@
-从印度兵力分布聊聊Mybatis中#和$的区别
+---
+slug: /difference-in-sql
+---
+
+# 从印度兵力分布聊聊Mybatis中#和$的区别
 
 # 简介
 

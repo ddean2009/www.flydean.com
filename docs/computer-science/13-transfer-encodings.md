@@ -4,7 +4,7 @@ slug: /13-transfer-encodings
 
 # 13. 网络标准之:IANA定义的传输编码
 
-[toc]
+
 
 # 简介
 

@@ -4,7 +4,7 @@ slug: /18-base64-encoding
 
 # 18. 计算机编码规则之:Base64编码
 
-[toc]
+
 
 # 简介
 

@@ -4,7 +4,7 @@ slug: /06-WebSocket
 
 # 6. 小学生都能读懂的网络协议之:WebSocket
 
-[toc]
+
 
 # 简介
 

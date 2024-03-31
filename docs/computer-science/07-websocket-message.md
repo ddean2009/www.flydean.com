@@ -4,7 +4,7 @@ slug: /07-websocket-message
 
 # 7. 网络协议之:WebSocket的消息格式
 
-[toc]
+
 
 # 简介
 

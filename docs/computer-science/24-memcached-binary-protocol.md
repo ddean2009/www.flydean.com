@@ -4,7 +4,7 @@ slug: /24-memcached-binary-protocol
 
 # 24. 网络协议之:memcached binary protocol详解
 
-[toc]
+
 
 # 简介
 
