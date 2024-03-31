@@ -4,7 +4,7 @@ slug: /springboot-HATEOAS
 
 # 42. SpringBoot之:SpringBoot中使用HATEOAS
 
-[toc]
+
 
 # 简介
 

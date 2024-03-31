@@ -4,7 +4,7 @@ slug: /springboot-HATEOAS-Fundamentals
 
 # 43. SpringBoot之:SpringBoot的HATEOAS基础
 
-[toc]
+
 
 # 简介
 
