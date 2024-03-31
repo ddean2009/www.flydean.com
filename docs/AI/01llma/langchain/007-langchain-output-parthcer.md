@@ -1,4 +1,8 @@
-如何在langchain中对大模型的输出进行格式化
+---
+slug: /007-langchain-output-parthcer
+---
+
+# 7. 如何在langchain中对大模型的输出进行格式化
 
 # 简介
 

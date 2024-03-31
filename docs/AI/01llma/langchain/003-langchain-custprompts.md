@@ -1,4 +1,8 @@
-在langchain中使用带简短知识内容的prompt template
+---
+slug: /003-langchain-custprompts
+---
+
+# 3. 在langchain中使用带简短知识内容的prompt template
 
 # 简介
 

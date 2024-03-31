@@ -1,4 +1,8 @@
-如何在langchain中使用外部数据
+---
+slug: /008-langchain-retrieval-overview
+---
+
+# 8. 如何在langchain中使用外部数据
 
 # 简介
 

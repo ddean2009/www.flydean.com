@@ -12,10 +12,10 @@ java多线程是java面试中的高频问题，如何才能在面试中脱颖而
 
 ### 2. **如何在Java中创建线程？**
 
-**回答：** 有两种方式可以创建线程：继承`Thread`类或实现`Runnable`接口。
+**回答：** 有两种方式可以创建线程：继承Thread类或实现Runnable接口。
 
 **代码示例：**
-```java
+```
 // 通过继承Thread类
 class MyThread extends Thread {
     public void run() {
@@ -38,40 +38,40 @@ thread.start();
 ### 3. **sleep() 和 wait() 方法的区别是什么？**
 
 **回答：** 
-- `sleep()` 方法是`Thread`类的静态方法，使当前线程暂停执行一段时间。在此期间，线程不会释放对象锁。
-- `wait()` 方法是`Object`类的方法，使当前线程等待，直到其他线程调用相同对象的`notify()` 或 `notifyAll()` 方法来唤醒它。在等待期间，线程会释放对象锁。
+- sleep() 方法是Thread类的静态方法，使当前线程暂停执行一段时间。在此期间，线程不会释放对象锁。
+- wait() 方法是Object类的方法，使当前线程等待，直到其他线程调用相同对象的notify() 或 notifyAll() 方法来唤醒它。在等待期间，线程会释放对象锁。
 
 ### 4. **什么是线程安全？如何实现线程安全？**
 
 **回答：** 线程安全指多个线程访问共享资源时不会导致数据不一致或错误的状态。实现线程安全的方法包括：
-- 使用`synchronized`关键字来保护共享资源的访问。
-- 使用`ReentrantLock`显示锁实现同步。
-- 使用线程安全的数据结构，如`ConcurrentHashMap`。
+- 使用synchronized关键字来保护共享资源的访问。
+- 使用ReentrantLock显示锁实现同步。
+- 使用线程安全的数据结构，如ConcurrentHashMap。
 
 ### 5. **什么是死锁？如何避免死锁？**
 
 **回答：** 死锁是多个线程相互等待彼此持有的资源，导致所有线程无法继续执行的情况。为避免死锁，可以采取以下策略：
 - 按相同的顺序获取锁，避免循环等待条件。
-- 使用`tryLock()` 来避免一直等待锁，设定超时时间。
-- 使用`ExecutorService` 线程池来控制线程数量。
+- 使用tryLock() 来避免一直等待锁，设定超时时间。
+- 使用ExecutorService 线程池来控制线程数量。
 
 ### 6. **什么是线程池？如何创建线程池？**
 
-**回答：** 线程池是一组预先创建的线程，用于执行多个任务，以减少线程创建和销毁的开销。可以使用`java.util.concurrent.Executors` 类来创建线程池。
+**回答：** 线程池是一组预先创建的线程，用于执行多个任务，以减少线程创建和销毁的开销。可以使用java.util.concurrent.Executors 类来创建线程池。
 
 **代码示例：**
-```java
+```
 ExecutorService executor = Executors.newFixedThreadPool(5);
 ```
 
 ### 7. **什么是Callable和Runnable？有什么区别？**
 
-**回答：** `Runnable` 和 `Callable` 都是用于多线程编程的接口。主要区别在于：
-- `Runnable` 接口的 `run()` 方法没有返回值，也不能抛出异常。
-- `Callable` 接口的 `call()` 方法可以返回值，并且可以抛出异常。
+**回答：** Runnable 和 Callable 都是用于多线程编程的接口。主要区别在于：
+- Runnable 接口的 run() 方法没有返回值，也不能抛出异常。
+- Callable 接口的 call() 方法可以返回值，并且可以抛出异常。
 
 **代码示例：**
-```java
+```
 // Runnable 示例
 class MyRunnable implements Runnable {
     public void run() {
@@ -89,10 +89,10 @@ class MyCallable implements Callable<Integer> {
 
 ### 8. **什么是volatile关键字？它的作用是什么？**
 
-**回答：** `volatile` 关键字用于修饰变量，保证多个线程对该变量的操作是可见的，即一个线程对变量的修改会立即反映到其他线程中。它不提供原子性操作，只解决可见性问题。
+**回答：** volatile 关键字用于修饰变量，保证多个线程对该变量的操作是可见的，即一个线程对变量的修改会立即反映到其他线程中。它不提供原子性操作，只解决可见性问题。
 
 **代码示例：**
-```java
+```
 class SharedResource {
     private volatile boolean flag = false;
 
@@ -108,10 +108,10 @@ class SharedResource {
 
 ### 9. **Java中的同步机制是什么？**
 
-**回答：** 同步机制用于保护共享资源免受多线程的并发访问。Java中的主要同步机制包括`synchronized`关键字和`ReentrantLock`显示锁。
+**回答：** 同步机制用于保护共享资源免受多线程的并发访问。Java中的主要同步机制包括synchronized关键字和ReentrantLock显示锁。
 
 **代码示例：**
-```java
+```
 class Counter {
     private int count = 0;
 
@@ -126,7 +126,7 @@ class Counter {
 **回答：** CAS（Compare and Swap）是一种无锁并发算法，通过比较内存中的值和期望值是否相等来判断是否进行更新。它避免了锁的使用，从而减少了线程竞争和上下文切换的开销。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class CASExample {
@@ -148,27 +148,27 @@ public class CASExample {
 
 ### 12. **什么是线程优先级？如何设置线程优先级？**
 
-**回答：** 线程优先级是一个整数值，用于指定线程调度的顺序。Java中的线程优先级范围是1（最低优先级）到10（最高优先级）。可以使用`setPriority(int priority)`方法设置线程的优先级。
+**回答：** 线程优先级是一个整数值，用于指定线程调度的顺序。Java中的线程优先级范围是1（最低优先级）到10（最高优先级）。可以使用setPriority(int priority)方法设置线程的优先级。
 
 **代码示例：**
-```java
+```
 Thread thread = new Thread();
 thread.setPriority(Thread.MAX_PRIORITY); // 设置最高优先级
 ```
 
 ### 13. **什么是守护线程？如何创建守护线程？**
 
-**回答：** 守护线程是在后台运行的线程，当所有的非守护线程结束时，守护线程会自动终止。可以使用`setDaemon(true)`方法将线程设置为守护线程。
+**回答：** 守护线程是在后台运行的线程，当所有的非守护线程结束时，守护线程会自动终止。可以使用setDaemon(true)方法将线程设置为守护线程。
 
 **代码示例：**
-```java
+```
 Thread daemonThread = new Thread();
 daemonThread.setDaemon(true); // 设置为守护线程
 ```
 
 ### 14. **如何停止一个线程的执行？为什么不推荐使用stop()方法？**
 
-**回答：** 一般不推荐直接停止线程，因为这可能导致资源泄露或不稳定的状态。推荐的方式是通过设置标志位，让线程自行退出循环或执行。`stop()`方法已被废弃，因为它可能导致线程不释放锁等问题。
+**回答：** 一般不推荐直接停止线程，因为这可能导致资源泄露或不稳定的状态。推荐的方式是通过设置标志位，让线程自行退出循环或执行。stop()方法已被废弃，因为它可能导致线程不释放锁等问题。
 
 ### 15. **什么是线程组（ThreadGroup）？为什么不推荐使用它？**
 
@@ -179,7 +179,7 @@ daemonThread.setDaemon(true); // 设置为守护线程
 **回答：** 读写锁允许多个线程同时读取共享资源，但只允许一个线程写入。这可以提高读多写少场景下的并发性能，因为多个读操作可以并发执行，而写操作需要独占访问。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -209,18 +209,18 @@ public class ReadWriteLockExample {
 
 ### 17. **什么是线程间通信？如何实现线程间通信？**
 
-**回答：** 线程间通信是指多个线程之间交换信息或共享数据的过程。可以使用`wait()`、`notify()`和`notifyAll()`方法来实现线程间通信，也可以使用并发容器或其他同步机制。
+**回答：** 线程间通信是指多个线程之间交换信息或共享数据的过程。可以使用wait()、notify()和notifyAll()方法来实现线程间通信，也可以使用并发容器或其他同步机制。
 
 ### 18. **Java中的并发容器有哪些？**
 
-**回答：** Java中提供了许多并发容器，用于在多线程环境中安全地操作数据，如`ConcurrentHashMap`、`CopyOnWriteArrayList`、`BlockingQueue`等。
+**回答：** Java中提供了许多并发容器，用于在多线程环境中安全地操作数据，如ConcurrentHashMap、CopyOnWriteArrayList、BlockingQueue等。
 
 ### 19. **什么是线程局部变量（ThreadLocal）？有什么作用？**
 
 **回答：** 线程局部变量是一种特殊的变量，每个线程都有自己的独立副本，不同线程之间互不影响。它适用于需要在多个线程间隔离数据的情况。
 
 **代码示例：**
-```java
+```
 ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 0);
 threadLocal.set(42); // 在当前线程中设置值
 int value = threadLocal.get(); // 在当前线程中获取值
@@ -234,7 +234,7 @@ int value = threadLocal.get(); // 在当前线程中获取值
 
 ### 21. **什么是线程间的竞争条件（Race Condition）？如何避免它？**
 
-**回答：** 线程间竞争条件是指多个线程并发访问共享资源，导致结果的顺序或值不符合预期。可以通过同步机制（如`synchronized`、`ReentrantLock`）来避免竞争条件，确保只有一个线程访问资源。
+**回答：** 线程间竞争条件是指多个线程并发访问共享资源，导致结果的顺序或值不符合预期。可以通过同步机制（如synchronized、ReentrantLock）来避免竞争条件，确保只有一个线程访问资源。
 
 ### 22. **什么是线程的活跃性问题？主要有哪些类型？**
 
@@ -246,10 +246,10 @@ int value = threadLocal.get(); // 在当前线程中获取值
 
 ### 24. **Java中的原子操作是什么？为什么它们重要？**
 
-**回答：** 原子操作是指在多线程环境中不可被中断的操作，要么全部执行，要么不执行。Java提供了一些原子类（如`AtomicInteger`、`AtomicLong`）和原子方法，用于实现线程安全的自增、自减等操作。
+**回答：** 原子操作是指在多线程环境中不可被中断的操作，要么全部执行，要么不执行。Java提供了一些原子类（如AtomicInteger、AtomicLong）和原子方法，用于实现线程安全的自增、自减等操作。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicExample {
@@ -267,14 +267,14 @@ public class AtomicExample {
 
 ### 25. **什么是线程的上下文数据共享（Thread-Local Storage）？**
 
-**回答：** 线程的上下文数据共享是一种在线程内部存储数据的机制，使每个线程都有自己的数据副本。这可以避免线程之间的数据冲突，并提高性能。Java中的`ThreadLocal`类用于实现线程的上下文数据共享。
+**回答：** 线程的上下文数据共享是一种在线程内部存储数据的机制，使每个线程都有自己的数据副本。这可以避免线程之间的数据冲突，并提高性能。Java中的ThreadLocal类用于实现线程的上下文数据共享。
 
 ### 26. **如何处理线程池中的异常？**
 
 **回答：** 在线程池中，如果一个线程抛出异常而未捕获，线程将被终止，但线程池中的其他线程仍将继续运行。可以通过在任务中捕获异常来防止线程池中的异常影响其他线程。
 
 **代码示例：**
-```java
+```
 ExecutorService executor = Executors.newFixedThreadPool(5);
 executor.execute(() -> {
     try {
@@ -301,7 +301,7 @@ executor.execute(() -> {
 
 ### 30. **什么是线程的执行顺序保证？**
 
-**回答：** 线程的执行顺序保证是指程序在多线程环境下，保证特定操作的执行顺序，如`volatile`、`synchronized`等机制可以确保特定的指令顺序。
+**回答：** 线程的执行顺序保证是指程序在多线程环境下，保证特定操作的执行顺序，如volatile、synchronized等机制可以确保特定的指令顺序。
 
 ### 31. **什么是线程的线程栈和堆？有何区别？**
 
@@ -311,10 +311,10 @@ executor.execute(() -> {
 
 ### 32. **如何实现线程间的协作？**
 
-**回答：** 可以使用`wait()`、`notify()` 和 `notifyAll()` 方法来实现线程间的协作。这些方法用于在不同线程之间等待和通知。
+**回答：** 可以使用wait()、notify() 和 notifyAll() 方法来实现线程间的协作。这些方法用于在不同线程之间等待和通知。
 
 **代码示例：**
-```java
+```
 class SharedResource {
     private boolean flag = false;
 
@@ -349,7 +349,7 @@ class SharedResource {
 
 ### 37. **什么是ABA问题？如何避免它？**
 
-**回答：** ABA问题是指一个值在多线程环境下先被修改为其他值，然后又被修改回原始值的情况，导致检测值是否发生变化时出现误判。可以通过使用带有版本号的变量或使用`AtomicStampedReference`来避免ABA问题。
+**回答：** ABA问题是指一个值在多线程环境下先被修改为其他值，然后又被修改回原始值的情况，导致检测值是否发生变化时出现误判。可以通过使用带有版本号的变量或使用AtomicStampedReference来避免ABA问题。
 
 ### 38. **什么是乐观锁和悲观锁？**
 
@@ -372,10 +372,10 @@ class SharedResource {
 
 ### 42. **什么是闭锁（CountDownLatch）？如何使用它？**
 
-**回答：** 闭锁是一种同步辅助类，用于等待多个线程执行完毕后再继续执行。它通过一个初始计数值和`countDown()`方法来实现等待。
+**回答：** 闭锁是一种同步辅助类，用于等待多个线程执行完毕后再继续执行。它通过一个初始计数值和countDown()方法来实现等待。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.CountDownLatch;
 
 public class CountDownLatchExample {
@@ -406,7 +406,7 @@ public class CountDownLatchExample {
 **回答：** 信号量是一种同步工具，用于控制同时访问某个资源的线程数量。它通过维护一个许可证数量来实现。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample {
@@ -437,10 +437,10 @@ public class SemaphoreExample {
 
 ### 44. **什么是栅栏（CyclicBarrier）？如何使用它？**
 
-**回答：** 栅栏是一种同步辅助类，用于等待多个线程达到一个共同的屏障点，然后再继续执行。它通过指定等待的线程数量和`await()`方法来实现。
+**回答：** 栅栏是一种同步辅助类，用于等待多个线程达到一个共同的屏障点，然后再继续执行。它通过指定等待的线程数量和await()方法来实现。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.CyclicBarrier;
 
 public class CyclicBarrierExample {
@@ -471,10 +471,10 @@ public class CyclicBarrierExample {
 
 ### 45. **如何在多个线程间实现数据的有序输出？**
 
-**回答：** 可以使用`CountDownLatch`、`CyclicBarrier`或其他同步机制来确保线程的有序执行和输出。
+**回答：** 可以使用CountDownLatch、CyclicBarrier或其他同步机制来确保线程的有序执行和输出。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.CountDownLatch;
 
 public class OrderedOutputExample {
@@ -509,7 +509,7 @@ public class OrderedOutputExample {
 **回答：** 可以使用双重检查锁定、静态内部类等方式实现线程安全的单例模式。
 
 **代码示例：**
-```java
+```
 public class Singleton {
     private volatile static Singleton instance;
 
@@ -530,7 +530,7 @@ public class Singleton {
 
 ### 48. **如何在多线程环境下处理资源竞争问题？**
 
-**回答：** 可以使用同步机制（如`synchronized`、`ReentrantLock`）来保护共享资源的访问，避免多个线程同时修改资源导致的竞争问题。
+**回答：** 可以使用同步机制（如synchronized、ReentrantLock）来保护共享资源的访问，避免多个线程同时修改资源导致的竞争问题。
 
 ### 49. **什么是任务分解模式（Fork-Join Pattern）？**
 
@@ -543,7 +543,7 @@ public class Singleton {
 在类的内部定义一个私有静态内部类，该内部类持有一个外部类的实例，并在静态初始化时创建实例。这样可以保证懒加载的同时实现线程安全。
 
 **代码示例：**
-```java
+```
 public class Singleton {
     private Singleton() {}
 
@@ -563,10 +563,10 @@ public class Singleton {
 
 ### 52. **什么是ThreadLocalRandom？如何使用它生成随机数？**
 
-**回答：** `ThreadLocalRandom`是Java 7引入的一个类，用于在多线程环境下生成随机数，它比`Random`类更适合高并发环境。
+**回答：** ThreadLocalRandom是Java 7引入的一个类，用于在多线程环境下生成随机数，它比Random类更适合高并发环境。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomExample {
@@ -584,14 +584,14 @@ public class RandomExample {
 
 ### 54. **什么是线程的可见性问题？如何解决可见性问题？**
 
-**回答：** 线程的可见性问题是指当一个线程修改了共享变量的值，其他线程可能无法立即看到这个变化。可以使用`volatile`关键字、`synchronized`关键字、`Atomic`类等方式来解决可见性问题。
+**回答：** 线程的可见性问题是指当一个线程修改了共享变量的值，其他线程可能无法立即看到这个变化。可以使用volatile关键字、synchronized关键字、Atomic类等方式来解决可见性问题。
 
 ### 55. **什么是ForkJoinPool？如何使用它执行任务？**
 
-**回答：** `ForkJoinPool`是Java 7引入的一个线程池，专门用于执行任务分解模式。可以使用`ForkJoinTask`和`RecursiveTask`来实现任务的分解和执行。
+**回答：** ForkJoinPool是Java 7引入的一个线程池，专门用于执行任务分解模式。可以使用ForkJoinTask和RecursiveTask来实现任务的分解和执行。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.RecursiveTask;
 import java.util.concurrent.ForkJoinPool;
 
@@ -643,7 +643,7 @@ public class ForkJoinExample extends RecursiveTask<Integer> {
 **回答：** 阻塞队列是一种线程安全的队列，提供了阻塞操作，如在队列为空时等待元素的添加，或在队列满时等待元素的移除。可以使用阻塞队列实现生产者-消费者模式。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -686,10 +686,10 @@ public class ProducerConsumerExample {
 
 ### 57. **什么是Thread.interrupt()方法？如何使用它中断线程？**
 
-**回答：** `Thread.interrupt()`方法用于中断线程。可以在需要中断线程的地方调用该方法，然后在线程的任务中通过`Thread.isInterrupted()`来检查中断状态并采取相应的操作。
+**回答：** Thread.interrupt()方法用于中断线程。可以在需要中断线程的地方调用该方法，然后在线程的任务中通过Thread.isInterrupted()来检查中断状态并采取相应的操作。
 
 **代码示例：**
-```java
+```
 Thread thread = new Thread(() -> {
     while (!Thread.currentThread().isInterrupted()) {
         // 执行任务
@@ -703,12 +703,12 @@ thread.interrupt();
 
 ### 58. **什么是Java并发包中的StampedLock？如何使用它实现乐观读锁？**
 
-**回答：** `StampedLock`是Java并发包中引入的一种锁机制，支持读写锁和乐观读锁。可以使用`tryOptimisticRead()`方法获取乐观读锁，然
+**回答：** StampedLock是Java并发包中引入的一种锁机制，支持读写锁和乐观读锁。可以使用tryOptimisticRead()方法获取乐观读锁，然
 
-后通过`validate()`方法来验证读锁是否有效。
+后通过validate()方法来验证读锁是否有效。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.locks.StampedLock;
 
 public class StampedLockExample {
@@ -745,10 +745,10 @@ public class StampedLockExample {
 
 ### 59. **如何使用Java中的Exchanger来实现两个线程间的数据交换？**
 
-**回答：** `Exchanger`是Java并发包中的一个同步工具，用于实现两个线程间的数据交换。它通过`exchange()`方法来交换数据，并在交换完成后继续执行。
+**回答：** Exchanger是Java并发包中的一个同步工具，用于实现两个线程间的数据交换。它通过exchange()方法来交换数据，并在交换完成后继续执行。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.Exchanger;
 
 public class ExchangerExample {
@@ -788,10 +788,10 @@ public class ExchangerExample {
 
 ### 60. **什么是线程的优先级？如何设置线程的优先级？**
 
-**回答：** 线程的优先级是一个整数，用于指定线程在调度时的优先级顺序。可以使用`setPriority()`方法来设置线程的优先级。
+**回答：** 线程的优先级是一个整数，用于指定线程在调度时的优先级顺序。可以使用setPriority()方法来设置线程的优先级。
 
 **代码示例：**
-```java
+```
 Thread thread1 = new Thread(() -> {
     // 任务代码
 });
@@ -805,7 +805,7 @@ thread2.setPriority(Thread.MIN_PRIORITY); // 设置最低优先级
 
 ### 61. **什么是CopyOnWrite容器？它在什么情况下比较适用？**
 
-**回答：** `CopyOnWrite`容器是Java并发包中的一种线程安全容器，它在修改时创建一个新的副本，从而避免了修改和读取的竞争。它在读多写少的场景下比较适用，因为写操作会导致复制整个容器，开销较大。
+**回答：** CopyOnWrite容器是Java并发包中的一种线程安全容器，它在修改时创建一个新的副本，从而避免了修改和读取的竞争。它在读多写少的场景下比较适用，因为写操作会导致复制整个容器，开销较大。
 
 ### 62. **什么是线程堆栈溢出？如何避免它？**
 
@@ -813,20 +813,20 @@ thread2.setPriority(Thread.MIN_PRIORITY); // 设置最低优先级
 
 ### 63. **什么是内存一致性问题？如何使用volatile解决内存一致性问题？**
 
-**回答：** 内存一致性问题是指多线程环境下，由于内存读写操作的不同步，导致共享变量的值在不同线程之间看起来是不一致的。使用`volatile`关键字可以确保在写入一个`volatile`变量时，会将变量的值刷新到主内存，并在读取`volatile`变量时，会从主内存中读取最新值。
+**回答：** 内存一致性问题是指多线程环境下，由于内存读写操作的不同步，导致共享变量的值在不同线程之间看起来是不一致的。使用volatile关键字可以确保在写入一个volatile变量时，会将变量的值刷新到主内存，并在读取volatile变量时，会从主内存中读取最新值。
 
 ### 64. **什么是ThreadGroup？它有何作用？**
 
-**回答：** `ThreadGroup`是一个线程组，用于将多个线程组织在一起，方便管理。它可以用来设置线程组的优先级、设置线程组的非捕获异常处理器等。
+**回答：** ThreadGroup是一个线程组，用于将多个线程组织在一起，方便管理。它可以用来设置线程组的优先级、设置线程组的非捕获异常处理器等。
 
 ### 65. **什么是线程池的拒绝策略？如何自定义线程池的拒绝策略？**
 
-**回答：** 线程池的拒绝策略是指在线程池无法继续接受新任务时，如何处理新提交的任务。常见的拒绝策略有：`AbortPolicy`（默认，抛出异常）、`CallerRunsPolicy`（使用调用线程执行任务）、`DiscardPolicy`（直接丢弃任务）和`DiscardOldestPolicy`（丢弃队列中最老的任务）。
+**回答：** 线程池的拒绝策略是指在线程池无法继续接受新任务时，如何处理新提交的任务。常见的拒绝策略有：AbortPolicy（默认，抛出异常）、CallerRunsPolicy（使用调用线程执行任务）、DiscardPolicy（直接丢弃任务）和DiscardOldestPolicy（丢弃队列中最老的任务）。
 
-可以通过实现`RejectedExecutionHandler`接口来自定义拒绝策略。
+可以通过实现RejectedExecutionHandler接口来自定义拒绝策略。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.*;
 
 public class CustomThreadPoolExample {
@@ -857,10 +857,10 @@ public class CustomThreadPoolExample {
 
 ### 66. **如何在多线程环境下实现定时任务？**
 
-**回答：** 可以使用`ScheduledExecutorService`接口来在多线程环境下实现定时任务。通过`schedule()`方法可以安排任务在固定延迟或固定周期执行。
+**回答：** 可以使用ScheduledExecutorService接口来在多线程环境下实现定时任务。通过schedule()方法可以安排任务在固定延迟或固定周期执行。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -887,10 +887,10 @@ public class ScheduledTaskExample {
 
 ### 67. **如何在多线程环境下处理不可中断的任务？**
 
-**回答：** 可以通过捕获`InterruptedException`异常并在异常处理中继续执行任务，以达到不可中断的效果。
+**回答：** 可以通过捕获InterruptedException异常并在异常处理中继续执行任务，以达到不可中断的效果。
 
 **代码示例：**
-```java
+```
 Thread thread = new Thread(() -> {
     try {
         while (!Thread.currentThread().isInterrupted()) {
@@ -909,12 +909,12 @@ thread.interrupt();
 
 ### 68. **如何使用Java中的Phaser实现多阶段并行任务？**
 
-**回答：** `Phaser`是Java并发包中的一个同步工具，可以用于多阶段并行任务的同步。它可以分阶段同步线程的执行，当每个阶段的任务都完成时，线程才能
+**回答：** Phaser是Java并发包中的一个同步工具，可以用于多阶段并行任务的同步。它可以分阶段同步线程的执行，当每个阶段的任务都完成时，线程才能
 
 继续执行下一个阶段。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.Phaser;
 
 public class PhaserExample {
@@ -957,7 +957,7 @@ public class PhaserExample {
 
 **回答：** 非阻塞算法是指在多线程环境下，不使用传统的锁机制，而是使用原子操作等方法来实现对共享资源的访问。它可以避免线程的阻塞和竞争，从而提高并发性能。
 
-在使用非阻塞算法时，通常会使用原子变量、`CAS`操作、乐观锁等技术来实现线程安全的访问。然而，非阻塞算法也比较复杂，适用于特定场景，需要仔细的设计和测试。
+在使用非阻塞算法时，通常会使用原子变量、CAS操作、乐观锁等技术来实现线程安全的访问。然而，非阻塞算法也比较复杂，适用于特定场景，需要仔细的设计和测试。
 
 ### 71. **什么是锁消除和锁膨胀？如何避免它们？**
 
@@ -973,11 +973,11 @@ public class PhaserExample {
 
 ### 73. **什么是线程泄漏？如何避免线程泄漏？**
 
-**回答：** 线程泄漏是指在多线程程序中，某个线程被创建后没有被正确关闭，导致该线程的资源无法被释放，最终可能导致系统性能下降。可以通过合理地使用线程池、及时关闭线程、使用`try-with-resources`来避免线程泄漏。
+**回答：** 线程泄漏是指在多线程程序中，某个线程被创建后没有被正确关闭，导致该线程的资源无法被释放，最终可能导致系统性能下降。可以通过合理地使用线程池、及时关闭线程、使用try-with-resources来避免线程泄漏。
 
 ### 74. **什么是ThreadLocal的使用场景？有何优缺点？**
 
-**回答：** `ThreadLocal`是一个线程局部变量，它提供了在每个线程中存储数据的方式。常见的使用场景包括：
+**回答：** ThreadLocal是一个线程局部变量，它提供了在每个线程中存储数据的方式。常见的使用场景包括：
 
 - 在多线程环境下，每个线程需要
 
@@ -993,16 +993,16 @@ public class PhaserExample {
 
 缺点包括：
 
-- 内存泄漏：如果不及时清理`ThreadLocal`中的数据，可能会导致内存泄漏。
+- 内存泄漏：如果不及时清理ThreadLocal中的数据，可能会导致内存泄漏。
 
-- 可能增加上下文切换：当线程数过多时，`ThreadLocal`可能会增加上下文切换的开销。
+- 可能增加上下文切换：当线程数过多时，ThreadLocal可能会增加上下文切换的开销。
 
 ### 75. **什么是守护线程（Daemon Thread）？如何创建守护线程？**
 
-**回答：** 守护线程是一种在后台运行的线程，当所有非守护线程结束后，守护线程会随着JVM的退出而结束。可以通过调用`setDaemon(true)`方法将线程设置为守护线程。
+**回答：** 守护线程是一种在后台运行的线程，当所有非守护线程结束后，守护线程会随着JVM的退出而结束。可以通过调用setDaemon(true)方法将线程设置为守护线程。
 
 **代码示例：**
-```java
+```
 Thread daemonThread = new Thread(() -> {
     while (true) {
         // 执行后台任务
@@ -1016,10 +1016,10 @@ daemonThread.start();
 
 **回答：** CAS（Compare and Swap）操作是一种原子操作，用于实现无锁同步。它在多线程环境下用于解决并发访问共享资源的问题，通过比较内存中的值与期望值是否相等，如果相等则将新值写入内存，从而保证原子性。
 
-CAS操作通常由CPU提供的指令实现，例如`AtomicInteger`、`AtomicLong`等。
+CAS操作通常由CPU提供的指令实现，例如AtomicInteger、AtomicLong等。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class CASExample {
@@ -1056,9 +1056,9 @@ public class CASExample {
 
 - **设置超时时间：** 如果线程无法获取到锁，可以设置一个超时时间，超时后释放已经获取的锁。
 
-- **使用`tryLock()`方法：** 使用`tryLock()`方法来尝试获取锁，如果无法获取则放弃已经获取的锁。
+- **使用tryLock()方法：** 使用tryLock()方法来尝试获取锁，如果无法获取则放弃已经获取的锁。
 
-- **使用`Lock`接口的`tryLock()`方法：** 使用`Lock`接口的`tryLock()`方法来尝试获取多个锁，如果无法获取所有锁，则释放已经获取的锁。
+- **使用Lock接口的tryLock()方法：** 使用Lock接口的tryLock()方法来尝试获取多个锁，如果无法获取所有锁，则释放已经获取的锁。
 
 ### 78. **什么是线程调度算法？常见的线程调度算法有哪些？**
 
@@ -1110,10 +1110,10 @@ public class CASExample {
 
 **回答：** ABA问题是一种在无锁编程中出现的问题，指在多线程环境下，一个值先变成了A，然后变成了B，最后又变回了A，而线程可能无法察觉这个变化。这可能导致某些操作在判断值相等时出现误判。
 
-`AtomicStampedReference`是Java并发包中提供的一种解决ABA问题的工具。它通过引入版本号（Stamp）来解决问题，即除了比较引用值外，还需要比较版本号是否匹配。
+AtomicStampedReference是Java并发包中提供的一种解决ABA问题的工具。它通过引入版本号（Stamp）来解决问题，即除了比较引用值外，还需要比较版本号是否匹配。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 public class ABAProblemSolution {
@@ -1151,10 +1151,10 @@ public class ABAProblemSolution {
 
 **回答：** Fork-Join框架是Java并发包中的一个工具，用于实现任务的并行处理。它基于“分而治之”的思想，将大任务分割成小任务，然后并行处理小任务，最后合并结果。
 
-使用Fork-Join框架，需要继承`RecursiveTask`（有返回结果）或`RecursiveAction`（无返回结果），并实现`compute()`方法来处理任务。
+使用Fork-Join框架，需要继承RecursiveTask（有返回结果）或RecursiveAction（无返回结果），并实现compute()方法来处理任务。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.RecursiveTask;
 import java.util.concurrent.ForkJoinPool;
 
@@ -1205,10 +1205,10 @@ public class ForkJoinExample {
 
 **回答：** 并行流是Java 8引入的一种特性，可以在多核处理器上并行处理流中的数据。并行流将数据分成多个部分，分别在多个线程上进行处理，从而提高处理速度。
 
-使用并行流，只需将流对象通过`parallel()`方法转换为并行流，然后进行流操作即可。
+使用并行流，只需将流对象通过parallel()方法转换为并行流，然后进行流操作即可。
 
 **代码示例：**
-```java
+```
 import java.util.Arrays;
 import java.util.List;
 
@@ -1250,21 +1250,21 @@ public class ParallelStreamExample {
 
 - **阻塞队列：** 使用阻塞队列作为共享数据结构，生产者线程往队列中放数据，消费者线程从队列中取数据。
 
-- **条件变量（Condition）：** 使用`Condition`对象实现线程间的等待和通知。
+- **条件变量（Condition）：** 使用Condition对象实现线程间的等待和通知。
 
 - **信号量（Semaphore）：** 使用信号量来控制对共享资源的访问。
 
-- **线程间的信号：** 使用`wait()`和`notify()`或`notifyAll()`来实现线程间的等待和通知。
+- **线程间的信号：** 使用wait()和notify()或notifyAll()来实现线程间的等待和通知。
 
 
 ### 86. **什么是线程池？如何创建和使用线程池？**
 
-**回答：** 线程池是一种管理和复用线程的机制，可以避免频繁地创建和销毁线程，从而提高程序的性能和资源利用率。Java中的线程池由`Executor`框架提供，主要有`ThreadPoolExecutor`实现。
+**回答：** 线程池是一种管理和复用线程的机制，可以避免频繁地创建和销毁线程，从而提高程序的性能和资源利用率。Java中的线程池由Executor框架提供，主要有ThreadPoolExecutor实现。
 
-可以通过`Executors`类提供的工厂方法来创建不同类型的线程池，如`newFixedThreadPool()`、`newCachedThreadPool()`和`newScheduledThreadPool()`等。
+可以通过Executors类提供的工厂方法来创建不同类型的线程池，如newFixedThreadPool()、newCachedThreadPool()和newScheduledThreadPool()等。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -1288,13 +1288,13 @@ public class ThreadPoolExample {
 
 **回答：** 线程池的核心线程数是线程池中保持活动状态的线程数量，最大线程数是线程池允许的最大线程数量。工作队列是用来存储等待执行的任务的队列。
 
-可以通过调用`ThreadPoolExecutor`的构造函数来创建自定义的线程池，并通过调整核心线程数、最大线程数和工作队列的容量来调整线程池的性能和行为。
+可以通过调用ThreadPoolExecutor的构造函数来创建自定义的线程池，并通过调整核心线程数、最大线程数和工作队列的容量来调整线程池的性能和行为。
 
 ### 88. **什么是线程池的拒绝策略？如何选择合适的拒绝策略？**
 
 **回答：** 线程池的拒绝策略是在线程池无法继续接受新任务时，决定如何处理新提交的任务。常见的拒绝策略有：
 
-- **AbortPolicy（默认）：** 抛出`RejectedExecutionException`异常。
+- **AbortPolicy（默认）：** 抛出RejectedExecutionException异常。
 
 - **CallerRunsPolicy：** 使用调用线程执行任务。
 
@@ -1308,10 +1308,10 @@ public class ThreadPoolExample {
 
 **回答：** 线程池的预启动策略是指在线程池创建后，提前创建一定数量的核心线程，并放入工作队列中，以缩短任务执行的启动时间。
 
-可以通过调用`prestartAllCoreThreads()`方法来使用预启动策略，它会创建所有核心线程并放入工作队列中。
+可以通过调用prestartAllCoreThreads()方法来使用预启动策略，它会创建所有核心线程并放入工作队列中。
 
 **代码示例：**
-```java
+```
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -1346,7 +1346,7 @@ public class PrestartCoreThreadsExample {
 
 - **悲观锁：** 假设多个线程之间会发生冲突，每个线程在操作前会获取锁，以防止其他线程同时修改数据。一旦线程获得锁，其他线程必须等待。
 
-乐观锁通常使用版本号、时间戳等机制来实现，而悲观锁则使用锁机制，如Java中的`synchronized`和`ReentrantLock`。
+乐观锁通常使用版本号、时间戳等机制来实现，而悲观锁则使用锁机制，如Java中的synchronized和ReentrantLock。
 
 ### 92. **什么是CAS操作的ABA问题？如何使用版本号解决ABA问题？**
 
@@ -1354,7 +1354,7 @@ public class PrestartCoreThreadsExample {
 
 使用版本号可以解决CAS操作的ABA问题。在每次更新时，不仅需要比较值是否相等，还需要比较版本号是否匹配。这样，即使值回到了A，但版本号已经发生了变化，其他线程仍可以正确识别出这种情况。
 
-Java中的`AtomicStampedReference`可以用来解决ABA问题，它引入了版本号机制。
+Java中的AtomicStampedReference可以用来解决ABA问题，它引入了版本号机制。
 
 ### 93. **什么是线程的上下文类加载器（Context Class Loader）？它有何作用？**
 
@@ -1366,7 +1366,7 @@ Java中的`AtomicStampedReference`可以用来解决ABA问题，它引入了版�
 
 **回答：** Java内存模型（JMM）是一种规范，用于定义多线程程序中各个线程之间如何访问共享内存。JMM定义了各种操作的顺序和可见性，以及如何防止出现不正确的重排序。
 
-JMM通过使用同步锁、`volatile`关键字、`final`关键字等来保证线程安全。同步锁可以确保多个线程之间的互斥访问，`volatile`关键字可以确保变量的可见性和禁止重排序，而`final`关键字可以确保不会出现对象被修改的情况。
+JMM通过使用同步锁、volatile关键字、final关键字等来保证线程安全。同步锁可以确保多个线程之间的互斥访问，volatile关键字可以确保变量的可见性和禁止重排序，而final关键字可以确保不会出现对象被修改的情况。
 
 ### 95. **什么是线程安全性？如何评估一个类是否是线程安全的？**
 
@@ -1386,7 +1386,7 @@ JMM通过使用同步锁、`volatile`关键字、`final`关键字等来保证线
 
 - **懒汉模式（Double-Checked Locking）：** 使用双重检查锁定，在首次获取实例时进行同步，以避免多次创建实例。
 
-```java
+```
 public class Singleton {
     private static volatile Singleton instance;
 
@@ -1405,9 +1405,9 @@ public class Singleton {
 }
 ```
 
-- **静态内部类：** 利用静态内部类的加载机制，只有在调用`getInstance()`方法时才会加载内部类，从而实现懒加载。
+- **静态内部类：** 利用静态内部类的加载机制，只有在调用getInstance()方法时才会加载内部类，从而实现懒加载。
 
-```java
+```
 public class Singleton {
     private Singleton() {}
 
@@ -1423,7 +1423,7 @@ public class Singleton {
 
 - **枚举单例：** 利用枚举类型的特性，保证只有一个实例。
 
-```java
+```
 public enum Singleton {
     INSTANCE;
 
@@ -1437,17 +1437,17 @@ public enum Singleton {
 
 **回答：** 线程安全集合是多线程环境下可以安全操作的数据结构，可以确保在并发访问时不会出现数据不一致或竞态条件。一些常见的线程安全集合类包括：
 
-- **`ConcurrentHashMap`：** 线程安全的哈希表，用于替代`HashMap`。
+- **ConcurrentHashMap：** 线程安全的哈希表，用于替代HashMap。
 
-- **`CopyOnWriteArrayList`：** 线程安全的动态数组，适用于读多写少的场景。
+- **CopyOnWriteArrayList：** 线程安全的动态数组，适用于读多写少的场景。
 
-- **`CopyOnWriteArraySet`：** 基于`CopyOnWriteArrayList`实现的线程安全的集合。
+- **CopyOnWriteArraySet：** 基于CopyOnWriteArrayList实现的线程安全的集合。
 
-- **`ConcurrentLinkedQueue`：** 线程安全的无界非阻塞队列。
+- **ConcurrentLinkedQueue：** 线程安全的无界非阻塞队列。
 
-- **`BlockingQueue`：** 一系列阻塞队列，如`ArrayBlockingQueue`、`LinkedBlockingQueue`等。
+- **BlockingQueue：** 一系列阻塞队列，如ArrayBlockingQueue、LinkedBlockingQueue等。
 
-- **`ConcurrentSkipListMap`：** 线程安全的跳表实现的有序映射。
+- **ConcurrentSkipListMap：** 线程安全的跳表实现的有序映射。
 
 这些线程安全集合类在多线程环境下可以安全地进行操作，不需要额外的同步措施。
 
@@ -1469,7 +1469,7 @@ public enum Singleton {
 
 **回答：** 线程Dump是当前JVM中所有线程的状态快照，Heap Dump是当前JVM堆内存的快照。它们可以帮助开发者分析程序的运行状态和内存使用情况，尤其在出现死锁、内存泄漏等问题时非常有用。
 
-生成线程Dump和Heap Dump的方式有多种，包括使用JVM自带的`jstack`命令、`jmap`命令，或者在代码中使用`ThreadMXBean`和`MemoryMXBean`进行动态获取。分析这些信息可以使用工具如Eclipse Memory Analyzer（MAT）等。
+生成线程Dump和Heap Dump的方式有多种，包括使用JVM自带的jstack命令、jmap命令，或者在代码中使用ThreadMXBean和MemoryMXBean进行动态获取。分析这些信息可以使用工具如Eclipse Memory Analyzer（MAT）等。
 
 ### 100. **在Java中如何处理并发性能问题？**
 

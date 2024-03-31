@@ -1,6 +1,8 @@
-机器学习之:机器学习引导
+---
+slug: /01-machine-learning-overview
+---
 
-[toc]
+# 机器学习之:机器学习引导
 
 # 简介
 

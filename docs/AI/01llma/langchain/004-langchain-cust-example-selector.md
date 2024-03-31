@@ -1,4 +1,8 @@
-在langchain中使用自定义example selector
+---
+slug: /004-langchain-cust-example-selector
+---
+
+# 4. 在langchain中使用自定义example selector
 
 # 简介
 

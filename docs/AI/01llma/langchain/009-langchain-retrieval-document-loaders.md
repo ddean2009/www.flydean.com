@@ -1,4 +1,8 @@
-使用langchain的Document loaders加载外部数据
+---
+slug: /009-langchain-retrieval-document-loaders
+---
+
+# 9. 使用langchain的Document loaders加载外部数据
 
 # 简介
 

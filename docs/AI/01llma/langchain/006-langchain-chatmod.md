@@ -1,4 +1,8 @@
-langchain中的chat models介绍和使用
+---
+slug: /006-langchain-chatmod
+---
+
+# 6. langchain中的chat models介绍和使用
 
 # 简介
 

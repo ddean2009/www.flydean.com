@@ -1,4 +1,8 @@
-langchain:Prompt在手,天下我有
+---
+slug: /002-langchain-Prompts
+---
+
+# 2. langchain:Prompt在手,天下我有
 
 # 简介
 
