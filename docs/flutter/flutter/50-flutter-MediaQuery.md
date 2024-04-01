@@ -1,6 +1,10 @@
-flutter系列之:查询设备信息的利器:MediaQuery
+---
+slug: /50-flutter-MediaQuery
+---
 
-[toc]
+# 43. 查询设备信息的利器:MediaQuery
+
+
 
 # 简介
 

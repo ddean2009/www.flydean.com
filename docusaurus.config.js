@@ -35,6 +35,12 @@ const config = {
     locales: ['zh-Hans'],
   },
 
+  customFields: {
+    // image: '',
+    description:'AIGC,chatgpt,stable diffusion,人工智能,大数据,区块链,java,javascript,python,算法,flutter系列教程',
+    keywords: [],
+  },
+
   presets: [
     [
       'classic',

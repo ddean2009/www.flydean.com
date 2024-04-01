@@ -12,14 +12,14 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className="hero__title" id="animateMe">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/AI/llma/langchain">
             开启你的AIGC之旅 - 5min ⏱️
           </Link>
         </div>
@@ -32,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="AIGC,chatgpt,stable diffusion,人工智能,大数据,区块链,java,javascript,python,算法,flutter系列教程">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
@@ -41,3 +41,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+
