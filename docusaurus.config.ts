@@ -462,7 +462,15 @@ const config = {
           {name: 'referrer',content:'no-referrer'},
         {
           name: 'keywords',
-          content: 'flydean,程序那些事,AIGC,AI,人工智能,java,javascript,python,区块链,blockchain,算法,数据结构,大数据,spring,spring boot, spring cloud',
+          content: 'flydean,程序那些事',
+        },
+        {
+          name: 'keywords',
+          content: 'AIGC,AI,人工智能,java,javascript,python,区块链,blockchain,算法,数据结构,大数据',
+        },
+        {
+          name: 'keywords',
+          content: 'spring,spring boot, spring cloud',
         },
       ]
       ,
