@@ -7,6 +7,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import { GiscusConfig } from './src/components/Comment'
 import mermaid from "mermaid";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -50,6 +52,8 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -81,7 +85,14 @@ const config = {
         },
       }),
     ],
-  ],
+  ],// end preset
+  //begin stylesheets
+  stylesheets: [
+    {
+      href: '/katex/katex.min.css',
+      type: 'text/css',
+    },
+  ],//stylesheets ends
   themes: ['@docusaurus/theme-mermaid'],
   markdown: {
     format: 'detect',
@@ -100,7 +111,7 @@ const config = {
     //   admonitions: true,
     //   headingIds: true,
     // },
-  },
+  },// markdown ends
 
   plugins: [
     'docusaurus-plugin-sass',
@@ -132,8 +143,10 @@ const config = {
             title: 'flydean',
             copyright: `Copyright © ${new Date().getFullYear()} 程序那些事.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">粤ICP备19017836号</a></p>`,
           },
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         }]
-      ],
+      ],//end plugin
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -359,8 +372,6 @@ const config = {
               },
             ],
           },
-
-
         ],
         // logo: {
         //   alt: '加我好友',
@@ -420,10 +431,11 @@ const config = {
           'java',
           'python',
           'php',
-          'graphql',
-          'rust',
-          'toml',
+          'sql',
+          'go',
+          'php',
           'protobuf',
+          'javascript',
         ],
         defaultLanguage: 'java',
         magicComments: [
@@ -454,7 +466,7 @@ const config = {
         },
       ]
       ,
-    }),
+    }),//end themconfig
 };
 
 export default config;
