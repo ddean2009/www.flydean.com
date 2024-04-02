@@ -158,7 +158,7 @@ ssl_ciphers EECDH+CHACHA20:EECDH+AES128:RSA+AES128:EECDH+AES256:RSA+AES256:EECDH
 
 ServerKeyExchange的内容可能包含两种形式：
 
-* 如果选择的是RSA协议，那么传递的就是RSA构建公钥密码的参数（E，N）。我们回想一下RSA中构建公钥的公式：$密文=明文^E\ mod\ N$， 只要知道了E和N，那么就知道了RSA的公钥，这里传递的就是E，N两个数字。
+* 如果选择的是RSA协议，那么传递的就是RSA构建公钥密码的参数（E，N）。我们回想一下RSA中构建公钥的公式：$ciphertext=plaintext^E\ mod\ N$， 只要知道了E和N，那么就知道了RSA的公钥，这里传递的就是E，N两个数字。
 
 * 如果选择的是Diff-Hellman密钥交换协议，那么传递的就是密钥交换的参数.
 
