@@ -14,7 +14,7 @@ slug: /algorithm-suffix-array
 
 后缀数组和后缀树一样都是一个单词所有后缀的集合。只不过后缀数组把所有的后缀按照字母的顺序进行排序。
 
-我们还是举之前的BANANA的例子，我们给这个单词一个加上一个后缀 $ , 假设 $ 按字母表排序是排在最上面的。那么我们的所有后缀如下图所示：
+我们还是举之前的BANANA的例子，我们给这个单词一个加上一个后缀 `$` , 假设 `$` 按字母表排序是排在最上面的。那么我们的所有后缀如下图所示：
 
 ![](https://img-blog.csdnimg.cn/20201109171735382.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_25,color_8F8F8F,t_70)
 
