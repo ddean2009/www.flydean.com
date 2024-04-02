@@ -1,0 +1,122 @@
+.blogGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.postGridItem {
+  position: relative;
+  min-width: 24rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
+    'title title'
+    'tags date';
+  gap: 1em 2em;
+  align-items: center;
+  padding: 1em 1.2em;
+  background: var(--blog-item-background-color);
+  border-radius: 6px;
+  transition: all 0.3s;
+
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: var(--blog-item-shadow);
+    background: var(--blog-item-shade);
+  }
+
+  .itemTitle {
+    color: inherit;
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    grid-area: title;
+
+    &:hover {
+      color: var(--ifm-color-primary);
+    }
+  }
+
+  .itemStick {
+    grid-area: stick;
+    justify-self: end;
+    color: #6ebdff;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    display: inline-block;
+    font-size: 1.5rem;
+
+    &::before {
+      content: '\e62b';
+    }
+  }
+
+  .itemTags {
+    grid-area: tags;
+    /* overflow-x: auto; */
+
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 0.9em;
+
+    a {
+      padding: 0 1px;
+      border: 0 !important;
+      color: inherit;
+
+      &:hover {
+        color: var(--ifm-color-primary);
+      }
+    }
+  }
+
+  .itemDate {
+    font-size: 0.8rem;
+    grid-area: date;
+    justify-self: end;
+    color: var(--ifm-color-emphasis-600);
+  }
+}
+
+.spotlight {
+  --lighting-size: 300px;
+  --lighting-color: var(--ifm-color-primary);
+  --lighting-highlight-color: var(--ifm-color-primary-lightest);
+
+  background-image: radial-gradient(
+    var(--lighting-highlight-color),
+    var(--lighting-color),
+    var(--lighting-color)
+  );
+  background-size: var(--lighting-size) var(--lighting-size);
+  background-repeat: no-repeat;
+
+  background-position-x: calc(var(--x) - var(--mouse-x) - calc(var(--lighting-size) / 2));
+  background-position-y: calc(var(--y) - var(--mouse-y) - calc(var(--lighting-size) / 2));
+
+  background-color: var(--lighting-color);
+
+  color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .postGridItem {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogGrid {
+    grid-template-columns: minmax(0, max-content);
+  }
+
+  .postGridItem {
+    max-width: 100%;
+    min-width: 28rem;
+  }
+}

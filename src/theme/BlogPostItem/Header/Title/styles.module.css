@@ -1,0 +1,29 @@
+.titleLink {
+  position: relative;
+  font-weight: 500;
+  color: var(--ifm-heading-color);
+  transition: 0.5s;
+}
+
+.titleLink:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: none;
+}
+
+.titleLink:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.titleLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--ifm-color-primary);
+  visibility: hidden;
+  transition: all 0.3s linear;
+  transform: scaleX(0);
+}

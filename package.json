@@ -18,17 +18,25 @@
     "@docusaurus/plugin-ideal-image": "^3.2.0",
     "@docusaurus/preset-classic": "3.2.0",
     "@docusaurus/theme-mermaid": "^3.2.0",
+    "@giscus/react": "^3.0.0",
+    "@iconify/react": "^4.1.1",
     "@mdx-js/react": "^3.0.0",
     "anime": "^0.1.2",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-baidu-tongji": "^0.0.0-beta.4",
+    "docusaurus-plugin-sass": "^0.2.5",
+    "framer-motion": "^11.0.24",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-popper": "^2.3.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.2.0",
-    "@docusaurus/types": "3.2.0"
+    "@docusaurus/types": "3.2.0",
+    "@types/node-sass": "^4.11.7",
+    "@types/sass": "^1.45.0"
   },
   "browserslist": {
     "production": [

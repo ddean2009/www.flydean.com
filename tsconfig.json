@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": ".",
+    "types": ["docusaurus-plugin-sass"],
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+}

@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import { GiscusConfig } from './src/components/Comment'
 import mermaid from "mermaid";
 
 /** @type {import('@docusaurus/types').Config} */
@@ -54,13 +55,14 @@ const config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
+        blog: false,
+            // {
+          // showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -99,6 +101,39 @@ const config = {
     //   headingIds: true,
     // },
   },
+
+  plugins: [
+    'docusaurus-plugin-sass',
+    ['docusaurus-plugin-baidu-tongji', {
+    token: '09b5e994e1e3872ac77bb501a1857c31' }
+    ],
+      ['@docusaurus/plugin-ideal-image',{
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      }],
+      ['./src/plugin/plugin-content-blog', // 为了实现全局 blog 数据，必须改写 plugin-content-blog 插件
+        {
+          path: 'blog',
+          // editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
+          //     `https://github.com/ddean2009/www.flydean.com/edit/main/${blogDirPath}/${blogPath}`,
+          editLocalizedFiles: false,
+          blogDescription: '程序那些事',
+          blogSidebarCount: 10,
+          blogSidebarTitle: '最近博客',
+          postsPerPage: 10,
+          showReadingTime: true,
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+              defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+          feedOptions: {
+            type: 'all',
+            title: 'flydean',
+            copyright: `Copyright © ${new Date().getFullYear()} 程序那些事.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">粤ICP备19017836号</a></p>`,
+          },
+        }]
+      ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -184,12 +219,11 @@ const config = {
             label: '密码学',
             position: 'left',
           },
-
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'search',
             position: 'right',
           },
+          {to: '/blog', label: '博客', position: 'right'},
           {
             type: 'docSidebar',
             sidebarId: 'interviewSidebar',
@@ -337,7 +371,17 @@ const config = {
         // },
         copyright: `Copyright © ${new Date().getFullYear()} 程序那些事.<a target="_blank" rel="noopener noreferrer" href="http://www.beian.miit.gov.cn/">粤ICP备19017836号</a>.`,
       },
-
+      //评论
+      giscus: {
+        repo: 'ddean2009/blog-discussions',
+        repoId: 'R_kgDOLoUaIA',
+        category: 'Announcements',
+        // category: 'General',
+        categoryId: 'DIC_kwDOLoUaIM4CeYKC',
+        theme: 'light',
+        darkTheme: 'dark',
+      } satisfies Partial<GiscusConfig>,
+      //搜索
       algolia: {
         // The application ID provided by Algolia
         appId: 'YOUR_APP_ID',
@@ -370,7 +414,29 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: [
+          'bash',
+          'json',
+          'java',
+          'python',
+          'php',
+          'graphql',
+          'rust',
+          'toml',
+          'protobuf',
+        ],
         defaultLanguage: 'java',
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: { start: 'highlight-start', end: 'highlight-end' },
+          },
+          {
+            className: 'code-block-error-line',
+            line: 'This will error',
+          },
+        ],
       },
       announcementBar: {
         id: 'support_us',
@@ -380,7 +446,13 @@ const config = {
         textColor: '#091E42',
         isCloseable: false,
       },
-      metadata: [{name: 'referrer',content:'no-referrer'}]
+      metadata: [
+          {name: 'referrer',content:'no-referrer'},
+        {
+          name: 'keywords',
+          content: 'flydean,程序那些事,AIGC,AI,人工智能,java,javascript,python,区块链,blockchain,算法,数据结构,大数据,spring,spring boot, spring cloud',
+        },
+      ]
       ,
     }),
 };

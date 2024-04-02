@@ -1,0 +1,55 @@
+.blogContainer {
+  max-width: 1280px;
+}
+
+.list {
+  margin: 0;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  max-height: 640px;
+  border-radius: var(--ifm-card-border-radius);
+
+  li {
+    display: flex;
+    width: 100%;
+    background: var(--blog-item-background-color);
+    box-shadow: var(--blog-item-shadow);
+  }
+
+  .image {
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 240px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: smaller;
+  }
+
+  h4 {
+    font-size: 1rem;
+
+    a {
+      position: relative;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .blogContainer {
+    max-width: 768px;
+  }
+
+  .list {
+    max-height: none;
+  }
+}

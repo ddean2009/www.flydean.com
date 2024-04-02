@@ -1,0 +1,34 @@
+:root {
+  --border-color: hsla(240, 6%, 90%, 0.7);
+}
+
+html[data-theme='dark'] {
+  --border-color: #262626;
+}
+
+.article {
+  position: relative;
+  padding: 1em 1.25em 0.75em;
+  /* border: 1px solid var(--border-color); */
+}
+
+.cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 224px;
+}
+
+.coverMask {
+  border-radius: var(--ifm-pagination-nav-border-radius);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(180deg, #fff -17.19%, #00000000 92.43%);
+  mask-image: linear-gradient(180deg, #fff -17.19%, #00000000 92.43%);
+}

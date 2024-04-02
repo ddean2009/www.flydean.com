@@ -1,0 +1,40 @@
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.read {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tagInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tagList {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tagList a {
+  padding: 1px 2px;
+  color: var(--ifm-text-color);
+
+  border: 0 !important;
+}
+
+.tagList a:hover {
+  color: var(--ifm-color-primary);
+}
