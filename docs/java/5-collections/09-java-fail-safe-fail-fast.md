@@ -170,7 +170,7 @@ Fail-fast 和 Fail-safe 是集合遍历的重要概念，希望大家能够掌�
 ](https://github.com/ddean2009/learn-java-streams)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

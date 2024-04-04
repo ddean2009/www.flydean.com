@@ -14,7 +14,7 @@ slug: /io-directory
 
 F师兄:小师妹真勇气可嘉呀，敢于质疑权威是从小工到专家的最重要的一步。想想F师兄我，从小没人提点，老师讲什么我就信什么，专家说什么我就听什么:股市必上一万点，房子是给人住的不是给人炒的,原油宝当然是小白理财必备产品....然后，就没有然后了。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 虽然java中没有目录的概念只有File文件，而File其实是可以表示目录的：
 
@@ -172,7 +172,7 @@ public void useFileWalkToDelete() throws IOException {
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -232,7 +232,7 @@ public class FinalSafe {
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/reorder](https://github.com/ddean2009/learn-java-concurrency/tree/master/reorder)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)
 
 
 

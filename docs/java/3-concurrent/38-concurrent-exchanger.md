@@ -141,7 +141,7 @@ Exchanger在两个线程需要交换对象的时候非常好用。大家可以�
 本文的例子[https://github.com/ddean2009/learn-java-concurrency/tree/master/Exchanger](https://github.com/ddean2009/learn-java-concurrency/tree/master/Exchanger)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

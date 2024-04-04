@@ -91,4 +91,4 @@ B：transferMoneyDeadLock（accountB, accountA, 10）
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/accountTransferLock](https://github.com/ddean2009/learn-java-concurrency/tree/master/accountTransferLock)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)

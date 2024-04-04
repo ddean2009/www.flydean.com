@@ -131,7 +131,7 @@ Operand Stack中的任何操作都必须要确保其类型匹配。像之前提�
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -150,7 +150,7 @@ Stream是java 8中的非常强大和实用的功能，大家一定要熟练掌�
 
 本文的例子[https://github.com/ddean2009/learn-java-streams/tree/master/java-8-streams-Introduction](https://github.com/ddean2009/learn-java-streams/tree/master/java-8-streams-Introduction)
 
-更多内容请访问 [www.flydean.com](www.flydean.com)
+更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

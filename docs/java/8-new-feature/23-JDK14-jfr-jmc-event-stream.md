@@ -18,7 +18,7 @@ JFR是一个基于事件的低开销的分析引擎，具有高性能的后端�
 
 而在今天的JDK 14中，引入了一个新的JFR特性叫做JFR Event Streaming，我们将在本文中详细讲解。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 先介绍一下JFR和JMC。
 
@@ -269,7 +269,7 @@ public class JFREvent {
 ](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

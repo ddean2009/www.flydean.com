@@ -326,7 +326,7 @@ public class TerminatedThread implements Runnable{
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/thread-lifecycle](https://github.com/ddean2009/learn-java-concurrency/tree/master/thread-lifecycle)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 
 
 

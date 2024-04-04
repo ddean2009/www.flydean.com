@@ -335,7 +335,7 @@ Strict模式为JS的后续发展和现有编程模式的规范都起到了非常
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

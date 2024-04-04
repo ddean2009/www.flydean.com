@@ -12,7 +12,7 @@ slug: /JDK10-var-anonymous-class
 
 本文主要介绍var和匿名类之间的一些平时没有注意到的问题。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 匿名类中自定义变量
 
@@ -74,4 +74,4 @@ learn-java-base-9-to-20](https://github.com/
 ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)

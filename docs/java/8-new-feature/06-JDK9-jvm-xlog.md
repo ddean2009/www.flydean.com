@@ -14,7 +14,7 @@ JVM是java程序运行的基础，JVM中各种事件比如：GC,class loading,JP
 
 通过xlog，JDK将JVM中的各种事件统一起来，以统一的形式对外输出。通过tag参数来区分子系统，通过log level来区分事件的紧急性，通过logging output来配置输出的地址。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # xlog的使用
 
@@ -136,5 +136,5 @@ time (t), utctime (utc), uptime (u), timemillis (tm), uptimemillis (um), timenan
 xlog是JDK9中提供的非常有用的一个功能。大家可以在日常的工作中使用。
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 

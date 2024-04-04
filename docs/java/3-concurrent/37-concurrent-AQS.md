@@ -119,7 +119,7 @@ ReentrantLock只支持独占锁。所以它需要实现tryAcquire方法。除此
 
 本文的例子请参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/AQS](https://github.com/ddean2009/learn-java-concurrency/tree/master/AQS)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)
 
 
 

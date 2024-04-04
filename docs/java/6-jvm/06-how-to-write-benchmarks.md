@@ -144,7 +144,7 @@ JIT在下面的几个特殊的情况下，需要对代码进行返优化：
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

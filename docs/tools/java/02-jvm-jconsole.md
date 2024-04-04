@@ -12,7 +12,7 @@ slug: /jvm-jconsole
 
 JMC现在已经和JDK的版本独立出来了，详情请参考我之前的文章：[JDK 14的新特性:JFR,JMC和JFR事件流](http://www.flydean.com/jdk14-jfr-jmc-event-stream/),今天我们将会重点讲解Jconsole的使用。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # JConsole
 
@@ -97,7 +97,7 @@ JConsole是一个比较简单但是也很实用的profile工具，希望大家�
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

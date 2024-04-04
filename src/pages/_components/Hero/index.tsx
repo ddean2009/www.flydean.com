@@ -85,17 +85,17 @@ function Name() {
       }}
     >
       <Translate id="homepage.hero.greet">程序那些事</Translate>
-      <span
-        className={styles.name}
-        onMouseMove={e => {
-          const bounding = e.currentTarget.getBoundingClientRect()
-          e.currentTarget.style.setProperty('--mouse-x', `${bounding.x}px`)
-          e.currentTarget.style.setProperty('--mouse-y', `${bounding.y}px`)
-        }}
-      >
-        {/*<Translate id="homepage.hero.name">flydean</Translate>*/}
-      </span>
-      <span className={styles.wave}></span>
+      {/*<span*/}
+      {/*  className={styles.name}*/}
+      {/*  onMouseMove={e => {*/}
+      {/*    const bounding = e.currentTarget.getBoundingClientRect()*/}
+      {/*    e.currentTarget.style.setProperty('--mouse-x', `${bounding.x}px`)*/}
+      {/*    e.currentTarget.style.setProperty('--mouse-y', `${bounding.y}px`)*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <Translate id="homepage.hero.name">flydean</Translate>*/}
+      {/*</span>*/}
+      {/*<span className={styles.wave}></span>*/}
     </motion.div>
   )
 }
@@ -108,7 +108,7 @@ export default function Hero() {
         <BlogSection />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants}>
           <Translate id="homepage.hero.text">
-            {`这里没有极限! 定期分享学习心得和体会:人工智能,AIGC,后端,前端。你想要的这里都有~`}
+            {`定期分享学习心得和体会:人工智能,AIGC,后端,前端。你想要的这里都有~`}
           </Translate>
         </motion.p>
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>

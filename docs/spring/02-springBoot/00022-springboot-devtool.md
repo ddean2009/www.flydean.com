@@ -59,4 +59,4 @@ spring-boot-devtools 提供了一个全局配置文件，方便你的开发环�
 
 本文的例子可以参考 [https://github.com/ddean2009/learn-springboot2/tree/master/springboot-devtool](https://github.com/ddean2009/learn-springboot2/tree/master/springboot-devtool)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

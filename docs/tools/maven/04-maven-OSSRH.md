@@ -198,7 +198,7 @@ SCM是你项目的地址，如果使用的svn可以这样写：
 > 如果选择使用Nexus Staging Maven插件或Ant任务进行部署，可以直接在命令行进行。
 
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

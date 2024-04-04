@@ -73,4 +73,4 @@ Si也是用Merkle tree来表示的，既然key是256bit，那么整个Merkle tre
 
 和账户一样，事件也是使用Merkle tree来存储的，并被包含在TransactionInfo中。
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

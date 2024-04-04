@@ -12,7 +12,7 @@ jmap(Java Memory Map)是JDK自带的工具，用来将某个java程序的内存�
 
 接下来进入我们的jmap和jhat之旅吧。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # jmap
 
@@ -157,7 +157,7 @@ Snapshot resolved.
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

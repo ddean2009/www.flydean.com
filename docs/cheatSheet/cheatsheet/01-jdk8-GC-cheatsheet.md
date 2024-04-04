@@ -118,7 +118,7 @@ G1中的垃圾收集过程：年轻代收集和混合收集交替进行，背后
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

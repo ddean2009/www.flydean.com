@@ -74,7 +74,7 @@ CAS的主要缺点就是需要调用者自己来处理竞争问题（重试，�
 
 本文的例子请参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/CAS](https://github.com/ddean2009/learn-java-concurrency/tree/master/CAS)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)
 
 
 

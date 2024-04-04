@@ -123,7 +123,7 @@ chat models下消息构建确实比直接使用LLM要复杂点，大家在使用
 
 chat models是LLM的高阶表现形式。如果我们需要进行对话模型的话，就可以考虑使用这个。
 
-> 更多内容请参考 [www.flydean.com](www.flydean.com)
+> 更多内容请参考 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

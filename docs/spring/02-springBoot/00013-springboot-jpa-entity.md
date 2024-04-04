@@ -101,5 +101,5 @@ public class Article {
 @Query(“select * from MyArticle”)
 ~~~
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 

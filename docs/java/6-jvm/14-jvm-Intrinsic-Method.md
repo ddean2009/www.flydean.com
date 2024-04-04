@@ -163,7 +163,7 @@ Intrinsic方法是一个非常有用的特性，希望大家能够喜欢。
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

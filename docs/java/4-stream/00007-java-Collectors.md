@@ -196,7 +196,7 @@ Collectors是一个非常强大的工具类，希望大家能够灵活使用。
 本文的例子[https://github.com/ddean2009/learn-java-streams/tree/master/Collectors](https://github.com/ddean2009/learn-java-streams/tree/master/Collectors)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

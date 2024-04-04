@@ -181,4 +181,4 @@ Main-Class: org.springframework.boot.loader.PropertiesLauncher
 
 本文的代码请参考[https://github.com/ddean2009/learn-springboot2/tree/master/springboot-fatwar](https://github.com/ddean2009/learn-springboot2/tree/master/springboot-fatwar)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

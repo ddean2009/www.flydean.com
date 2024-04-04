@@ -246,7 +246,7 @@ public interface FunctionWithThrow<T, R> {
 
 本文的例子[https://github.com/ddean2009/learn-java-base-9-to-20/tree/master/lambda-and-checked-exception/](https://github.com/ddean2009/learn-java-base-9-to-20/tree/master/lambda-and-checked-exception/)
 
-> 更多文章请看 [www.flydean.com](www.flydean.com)
+> 更多文章请看 [www.flydean.com](http://www.flydean.com)
 
 
 

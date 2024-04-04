@@ -496,7 +496,7 @@ public class ConcurrentTestExample {
 
 了解不同类型的锁以及它们的用途对于编写多线程程序至关重要。通过谨慎选择和正确使用锁，开发人员可以确保应用程序的正确性、性能和可伸缩性。在多线程编程中，锁是实现线程安全的关键工具，也是高效并发的基础。
 
-> 更多内容请参考 [www.flydean.com](www.flydean.com)
+> 更多内容请参考 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

@@ -167,6 +167,6 @@ jstatd是一个RMI服务程序，用来远程监控JVM。
 以上的31个工具就是JDK14提供的。后面我们会挑其中几个对我们的程序调试和定位问题非常有用的几个工具来讲解。
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 

@@ -8,7 +8,7 @@ slug: /lambda-closure
 
 我们通常讲到闭包，一般都是指在javascript的环境中。闭包是JS中一个非常重要的也非常常用的概念。闭包产生的原因就是变量的作用域范围不同。一般来说函数内部的定义的变量只有函数内部可见。如果我们想要在函数外部操作这个变量就需要用到闭包了。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # JS中的闭包
 
@@ -142,7 +142,7 @@ learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
 > 
-> 更多系列内容请访问我的博客: [www.flydean.com](www.flydean.com)
+> 更多系列内容请访问我的博客: [www.flydean.com](http://www.flydean.com)
 
 
 

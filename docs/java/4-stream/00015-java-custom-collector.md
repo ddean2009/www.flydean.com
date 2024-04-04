@@ -10,7 +10,7 @@ slug: /java-custom-collector
 
 今天我们介绍一下怎么自定义一个Collector。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # Collector介绍
 
@@ -113,5 +113,5 @@ INFO com.flydean.ImmutableSetCollector - [a, b, c, d]
 本文的例子[https://github.com/ddean2009/learn-java-streams/tree/master/customCollector](https://github.com/ddean2009/learn-java-streams/tree/master/customCollector)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 

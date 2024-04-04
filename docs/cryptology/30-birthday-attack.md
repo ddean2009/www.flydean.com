@@ -64,7 +64,7 @@ slug: /birthday-attack
 
 怎么抵御这种攻击呢？根据我们生日攻击的公式，当然是将签名方案使用的哈希函数的输出长度选择得足够大，以使生日攻击在计算上变得不可行。
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

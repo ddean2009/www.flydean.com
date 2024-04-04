@@ -182,7 +182,7 @@ map方法接收一个Function作为入参. Function是有返回值的, 这就表
 
 本文的例子[https://github.com/ddean2009/learn-java-base-9-to-20/tree/master/peek-and-map/](https://github.com/ddean2009/learn-java-base-9-to-20/tree/master/peek-and-map/)
 
-> 更多文章请看 [www.flydean.com](www.flydean.com)
+> 更多文章请看 [www.flydean.com](http://www.flydean.com)
 
 
 

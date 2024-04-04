@@ -50,7 +50,7 @@ crib这个词源自于一句关于抄袭的谚语：“I cribbed my answer from 
 
 美国加入第二次世界大战后，许多美国密码学家也被被派往Bletchley Park，从1943年5月开始，英美情报部门之间进行了密切合作。相反，苏联从未被正式告知布莱奇利公园及其活动-这反映了即使在纳粹威胁实施的美英苏同盟期间，丘吉尔也不信任苏联。
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

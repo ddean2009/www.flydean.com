@@ -282,7 +282,7 @@ build.gradle中的repositories指明的是使用的仓库选项。
 
 本文只是一个很简单的gradle介绍，让大家对gradle有一个基本的了解，后面我们会详细的介绍gradle的各种用法，敬请期待。
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

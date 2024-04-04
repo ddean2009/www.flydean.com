@@ -266,7 +266,7 @@ public class Consumer implements Runnable {
 本文介绍了Queue接口和它的三大分类，这三大分类又有非常多的实现类，我们将会在后面的文章中再详细介绍。
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

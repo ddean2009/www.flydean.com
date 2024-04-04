@@ -56,5 +56,5 @@ Maven Wrapper的使用和maven命令是一样的，比如：
 ./mvnw spring-boot:run
 ~~~
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 

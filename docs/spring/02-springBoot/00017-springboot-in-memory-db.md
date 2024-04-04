@@ -118,4 +118,4 @@ password=sa
 
 使用Spring Boot可以很方便的使用上面提到的内存数据库。
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

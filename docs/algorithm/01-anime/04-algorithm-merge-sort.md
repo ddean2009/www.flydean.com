@@ -125,7 +125,7 @@ divide方法将排序分成了logN层，每层都可以看做是对N个元素的
 
 [learn-algorithm](https://github.com/ddean2009/learn-algorithm/tree/master/sorting)
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

@@ -14,7 +14,7 @@ JVM也叫Java Virtual Machine，它是java程序运行的基础，负责将java 
 
 其实吧，JVM只是一种标准，就像是一种协议，只要是实现和满足这种协议的都可以称为JVM。当然，java现在是Oracle公司的，所以这些所谓的JVM标准也是由Oracle来颁布的，如果你去查看Oracle的文档，就会发现有一个专门的Java SE Specifications栏目，这个栏目中列出了JVM的实现标准，最新的标准就是The Java Virtual Machine Specification, Java SE 14 Edition。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 既然JVM是一个标准，就可能有很多种实现。各大公司在满足JVM标准的基础上，开发了很多个不同的版本。
 
@@ -195,7 +195,7 @@ GC用来回收Heap Area，他是一个Daemon thread。
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -16,7 +16,7 @@ AppCDS的全称是Application Class-Data Sharing。主要是用来在不同的JV
 
 AppCDS的作用就是将这些能够共享的数据归类成一个存储文件，在不同的JVM中共享。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 基本步骤
 
@@ -169,5 +169,5 @@ AppCDS是一个新特性，在特别关注java启动时间的情况下可以考�
 本文的例子[https://github.com/ddean2009/learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 

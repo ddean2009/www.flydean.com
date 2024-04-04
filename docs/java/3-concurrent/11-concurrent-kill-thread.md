@@ -127,4 +127,4 @@ public class KillThread implements Runnable {
 
 本文的例子请参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/kill-thread](https://github.com/ddean2009/learn-java-concurrency/tree/master/kill-thread)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

@@ -18,7 +18,7 @@ JDK9引入了一个新的特性叫做JPMS（Java Platform Module System），也
 
 最后，我们可以通过显示声明来描述模块之间的依赖关系。从而让开发者更好的理解系统的应用逻辑。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # JDK9中模块的实现
 
@@ -277,7 +277,7 @@ learn-java-base-9-to-20](https://github.com/
 ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

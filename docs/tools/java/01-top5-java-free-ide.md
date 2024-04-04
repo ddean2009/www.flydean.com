@@ -78,7 +78,7 @@ Visual Studio Code (VSCode) 是一款免费开源的现代化轻量级代码编�
 
 最最重要的是Visual Studio Code是微软出品的，微软出品必属精品，从它的宇宙最强IDE Visual Studio到称霸客厅的Xbox。微软良心之作。
 
-更多内容请访问 [www.flydean.com](www.flydean.com)
+更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

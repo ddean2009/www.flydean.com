@@ -18,7 +18,7 @@ slug: /io-filesystem-watchservice
 
 别绕弯子了小师妹，是不是又遇到问题了。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 小师妹：还是F师兄懂我，这不上次的Properties文件用得非常上手，每次修改Properties文件都要重启java应用程序，真的是很痛苦。有没有什么其他的办法呢？
 
@@ -184,7 +184,7 @@ private void startWatcher(String dirPath, String file) throws IOException {
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -12,7 +12,7 @@ slug: /io-file
 
 早上刚到公司，小师妹就凑过来神神秘秘的问我：F师兄，我在服务器上面放了一些重要的文件，是非常非常重要的那种，有没有什么办法给它加个保护，还兼顾一点隐私？
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 什么文件这么重要呀？不会是你的照片吧，放心没人会感兴趣的。
 
@@ -188,7 +188,7 @@ public void fileWithPromission() throws IOException {
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -209,7 +209,7 @@ with get_openai_callback() as cb:
 
 LLM是大语言模型最基础的模式，chat模式的底层就是基于LLM实现的。后续我们会详细介绍chat模式，尽请期待。
 
-> 更多内容请参考 [www.flydean.com](www.flydean.com)
+> 更多内容请参考 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

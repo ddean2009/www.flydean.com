@@ -133,4 +133,4 @@ public class InterruptThread extends Thread {
 
 本文的例子参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/interrupt](https://github.com/ddean2009/learn-java-concurrency/tree/master/interrupt)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

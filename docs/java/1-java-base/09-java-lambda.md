@@ -15,7 +15,7 @@ slug: /java-lambda
 
 函数就是对输入的值进行处理，返回另外的值。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 ## Lambda表达式
 
@@ -286,7 +286,7 @@ List list = getList(ArrayList::new);
 ~~~
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

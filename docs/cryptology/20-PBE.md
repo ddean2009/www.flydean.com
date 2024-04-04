@@ -49,4 +49,4 @@ slug: /PBE
 
 salt主要是为了防御字典攻击，因为用户自己的口令不具备随机性，很容易被暴力破解。加了salt之后，被暴力破解的难度大大加大。
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)

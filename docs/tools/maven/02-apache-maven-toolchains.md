@@ -10,7 +10,7 @@ Maven是java中非常有用和常用的构建工具，基本上现在大型的ja
 
 因为JDK的版本现在以每半年一次的速度在飞速发展。不同的JDK版本就有不同的java路径，我们在使用Maven的过程中，可能经常会需要切换JDK的版本。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 一般来说我们可以在maven-compiler-plugin中配置好executable的路径。如下所示：
 
@@ -124,7 +124,7 @@ Toolchains是需要和pom中的plugin一起使用的，下面的图中列出了t
 本文介绍了Apache Maven中toolchain的使用，希望大家能够在实际工作中用起来。
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

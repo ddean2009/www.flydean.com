@@ -114,4 +114,4 @@ public class LinkedQueue<E> {
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/nonblock](https://github.com/ddean2009/learn-java-concurrency/tree/master/nonblock)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)

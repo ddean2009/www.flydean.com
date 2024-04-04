@@ -248,7 +248,7 @@ Out[122]: (1, 2, 3)
 Student(name=b'raymond   ', serialnum=4658, school=264, gradelevel=8)
 ~~~
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

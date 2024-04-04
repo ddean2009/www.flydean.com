@@ -225,7 +225,7 @@ public class ProductController {
 
 在本教程中，我们深入研究了Spring多级缓存的工作原理，并提供了配置示例和代码示例，以帮助开发者了解如何在Spring应用程序中实现多级缓存。
 
-> 更多内容请参考 [www.flydean.com](www.flydean.com)
+> 更多内容请参考 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

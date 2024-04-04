@@ -488,7 +488,7 @@ WeakMap,WeakSet和Map于Set的区别在于，WeakMap的key只能是Object对象�
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

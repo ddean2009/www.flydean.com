@@ -104,4 +104,4 @@ java代码中我们通常会用到Random类，但是这个类是不能用来生�
 
 之前的证书一文中，我们可以通过CRL列表来保存废弃的密钥。
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)

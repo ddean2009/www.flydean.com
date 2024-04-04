@@ -140,6 +140,6 @@ Join()还有个happen-before的特性，这就是如果thread t1调用 t2.join()
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/join](https://github.com/ddean2009/learn-java-concurrency/tree/master/join)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 
 

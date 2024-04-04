@@ -794,7 +794,7 @@ JS中的面向对象主要有构造函数，原型链，类三种方式，希望
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

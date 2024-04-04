@@ -250,7 +250,7 @@ public class SpringBootMailTest {
 
 本文介绍了一些常用的starts，具体例子可以参考 [spring-boot-starts](https://github.com/ddean2009/learn-springboot2/tree/master/spring-boot-starts)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 
 
 

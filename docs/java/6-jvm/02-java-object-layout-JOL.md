@@ -14,7 +14,7 @@ slug: /java-object-layout-JOL
 
 今天，小F给大家介绍一款工具JOL，可以满足大家对java对象的所有想象。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 ## JOL简介
 
@@ -243,7 +243,7 @@ learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

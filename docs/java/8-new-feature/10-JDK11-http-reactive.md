@@ -10,7 +10,7 @@ slug: /JDK11-http-reactive
 
 今天我们想探讨一下这些同步或者异步请求和响应和reactive streams的关系。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 怎么在java中使用reactive streams
 
@@ -140,7 +140,7 @@ learn-java-base-9-to-20](https://github.com/
 ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

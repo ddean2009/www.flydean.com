@@ -160,5 +160,5 @@ slug: /run-Fabric-on-ibm-Cloud
 
 好了，智能合约完美的部署到了IBM Cloud上面。
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 

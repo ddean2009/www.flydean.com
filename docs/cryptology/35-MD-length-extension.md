@@ -99,7 +99,7 @@ SHA-512/224 和 SHA-512/256 只是简单的丢弃掉一半数据。
 
 和wide pipe不同的是，它的主要思想是将前一个链接值的一半转发给XOR，然后将其与压缩函数的输出进行XOR。
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

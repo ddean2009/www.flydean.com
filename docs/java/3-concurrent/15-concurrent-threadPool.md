@@ -237,7 +237,7 @@ public  class CountingTask extends RecursiveTask<Integer> {
 
 本文的例子请参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/threadPool](https://github.com/ddean2009/learn-java-concurrency/tree/master/threadPool)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 
 
 

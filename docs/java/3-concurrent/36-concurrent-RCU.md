@@ -18,7 +18,7 @@ RCU(Read-copy update)是一种同步机制，并在2002年被加入了Linux内�
 
 RCU可以支持一个写操作和多个读操作同时进行。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 ## Copy on Write和RCU
 
@@ -156,7 +156,7 @@ reclaimerVersion存储的是修改的数据，它的值将会在synchronize_rcu�
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

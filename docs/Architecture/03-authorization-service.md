@@ -123,7 +123,7 @@ Policy定义了要授予对象访问权限必须满足的条件。Policy并没�
 
 > 本文作者：flydean程序那些事
 >
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 >
 > 本文来源：flydean的博客
 >

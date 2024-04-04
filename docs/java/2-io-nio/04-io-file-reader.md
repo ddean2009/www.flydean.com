@@ -20,7 +20,7 @@ F师兄，你是不是迷糊了，我在问你java，你扯什么哲学。
 
 你看计算机中代码的本质是什么？代码的本质就是0和1组成的一串长长的二进制数，这么多二进制数组合起来就成了计算机中的代码，也就是JVM可以识别可以运行的二进制代码。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 小师妹一脸崇拜：F师兄说的好像很有道理，但是这和Reader，InputStream有什么关系呢？
 
@@ -205,7 +205,7 @@ public void useLineNumberReader() throws IOException {
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

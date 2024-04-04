@@ -441,7 +441,7 @@ console.log(`半径为 4 的圆的面积是 ${circle.area(4)}`);
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -10,7 +10,7 @@ slug: /JDK10-var-genericity-multiple-implements
 
 今天我们来深入的考虑一下var和泛型，多个接口实现的问题。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 实现多个接口
 
@@ -120,4 +120,4 @@ learn-java-base-9-to-20](https://github.com/
 ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)

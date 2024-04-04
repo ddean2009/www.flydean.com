@@ -12,7 +12,7 @@ JDK12为java.util.stream.Collectors添加了一个新的teeing方法，怎么翻
 
 我最喜欢的就是一言不合上代码，文字的描述总是让人有点摸不着头脑，程序员还是要用程序说话。有了程序就有了逻辑，有了逻辑一切都有了。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 各大网站上的例子都喜欢举maxBy和minBy的例子，我这里偏不，下面举一个统计学生平均分数和总分数的例子，希望大家能够喜欢：
 
@@ -96,7 +96,7 @@ Characteristics是为了更好的执行collector的reduce操作。
 本文的例子[https://github.com/ddean2009/learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

@@ -14,7 +14,7 @@ java的赋值都是传值的，对于基础类型来说，会拷贝具体的内�
 
 本文将会深入的探讨一下在拷贝对象中会出现的浅拷贝和深拷贝的情况。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 拷贝接口
 
@@ -182,7 +182,7 @@ this.cars= Arrays.copyOf(custUserDeep.getCars(),custUserDeep.getCars().length);
 ](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

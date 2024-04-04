@@ -99,4 +99,4 @@ java -jar -Dserver.port=8083 spring-5.jar
 3. property文件
 4. @SpringBootApplication配置的主函数
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)

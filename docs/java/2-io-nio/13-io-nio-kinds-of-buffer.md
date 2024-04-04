@@ -12,7 +12,7 @@ slug: /io-nio-kinds-of-buffer
 
 小师妹：F师兄不都说JDK源码是最好的java老师吗？为程不识源码，就称牛人也枉然。但是我最近在学习NIO的时候竟然发现有些Buffer类居然没有注释，就那么突兀的写在哪里，让人好生心烦。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 居然还有这样的事情？快带F师兄去看看。
 
@@ -204,7 +204,7 @@ public short get() {
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

@@ -170,5 +170,5 @@ public class SemaphoreUsage {
 
 本文的例子可参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/rejectPolicy](https://github.com/ddean2009/learn-java-concurrency/tree/master/rejectPolicy)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)
 

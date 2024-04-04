@@ -146,7 +146,7 @@ List总共有1000条数据，调用一次trySplit之后，将List分成了两部
 本文的例子[https://github.com/ddean2009/learn-java-streams/tree/master/Spliterator](https://github.com/ddean2009/learn-java-streams/tree/master/Spliterator)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

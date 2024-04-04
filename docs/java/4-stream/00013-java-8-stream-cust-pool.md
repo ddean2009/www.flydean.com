@@ -57,5 +57,5 @@ INFO com.flydean.CustThreadPool - 499500
 本文的例子[https://github.com/ddean2009/learn-java-streams/tree/master/stream-cust-threadpool](https://github.com/ddean2009/learn-java-streams/tree/master/stream-cust-threadpool)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 

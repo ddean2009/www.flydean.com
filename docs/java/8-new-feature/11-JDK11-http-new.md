@@ -10,7 +10,7 @@ JDK11之前，java的HTTP功能很弱，只提供了HttpURLConnection来进行HT
 
 一切在JDK11的时候完全变了，在java.net.http包，最新的HttpClient, HttpRequest 和 HttpResponse完全可以满足你的需求。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 使用HTTP Client请求的基本流程
 
@@ -135,7 +135,7 @@ learn-java-base-9-to-20](https://github.com/
 ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

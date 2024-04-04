@@ -10,7 +10,7 @@ JDK12引入了新的格式化数字的类叫做CompactNumberFormat。主要方�
 
 本文将会讲解CompactNumberFormat的基本构成和使用方法，最后在实际的例子中结束文章的讲解。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # CompactNumberFormat详解
 
@@ -142,5 +142,5 @@ learn-java-base-9-to-20](https://github.com/ddean2009/
 learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 

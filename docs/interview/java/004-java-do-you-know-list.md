@@ -131,7 +131,7 @@ System.out.println("取出元素：" + element);
 
 Java提供了多种支持并发的容器，如ArrayList、CopyOnWriteArrayList、ConcurrentLinkedDeque。了解它们的用法和性能特点对于编写高效的多线程程序至关重要。选择正确的容器可以显著提高应用程序的性能和可靠性。
 
-> 更多内容请参考 [www.flydean.com](www.flydean.com)
+> 更多内容请参考 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

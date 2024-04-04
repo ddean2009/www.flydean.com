@@ -80,4 +80,4 @@ INFO com.flydean.InfiniteStreamUsage - [IntegerWrapper(integer=46), IntegerWrapp
 本文介绍了两个生成无限stream的例子。本文的代码[learn-java-streams](https://github.com/ddean2009/learn-java-streams)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)

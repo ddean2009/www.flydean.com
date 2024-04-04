@@ -12,7 +12,7 @@ slug: /io-try-with
 
 这一天，小师妹一脸郁闷的问我：F师兄，我学Java IO也有好多天了，最近写了一个例子，读取一个文件没有问题，但是读取很多个文件就会告诉我：”Can't open so many files“，能帮我看看是什么问题吗？
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 小师妹的要求当然不能拒绝，我立马响应：可能打开文件太多了吧，教你两个命令，查看最大文件打开限制。
 
@@ -167,7 +167,7 @@ public class CustResource implements AutoCloseable {
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

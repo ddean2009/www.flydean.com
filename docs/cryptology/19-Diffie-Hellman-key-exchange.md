@@ -39,4 +39,4 @@ P是一个非常大的质数，而G是P的生成元（生成元的乘方结果�
 
 这个问题涉及到了离散对数问题，要解决是非常困难的。所以，我们可以相信Diffie-Hellman算法是非常安全的。
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)

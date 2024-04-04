@@ -119,6 +119,6 @@ Callable的Call（）方法抛出了throws Exception，所以可以在call（）
 
 本文的例子可以参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/runnable-callable](https://github.com/ddean2009/learn-java-concurrency/tree/master/runnable-callable)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 
 

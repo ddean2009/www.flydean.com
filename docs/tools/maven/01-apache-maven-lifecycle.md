@@ -12,7 +12,7 @@ Maven为我们封装了很多构建中非常有用的操作，我们只需要执
 
 今天我们要讨论一下mvn命令之下的生命周期的构建。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # lifecycle和Phases
 
@@ -156,7 +156,7 @@ learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

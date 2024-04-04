@@ -89,7 +89,7 @@ var isIE = (window.ActiveXObject !== undefined);
 
 上面的例子就是非常简单的客户端嗅探，通过判断window是否有ActiveXObject 这个属性来确定这个浏览器是否是IE浏览器。
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

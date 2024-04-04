@@ -74,7 +74,7 @@ GC的运行是一个比较复杂的过程，大家可以细细体会。本文如
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

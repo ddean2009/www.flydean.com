@@ -10,7 +10,7 @@ slug: /jvm-jstack
 
 jstack工具主要用来打印java堆栈信息，主要是java的class名字，方法名，字节码索引，行数等信息。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # jstack的命令格式
 
@@ -210,7 +210,7 @@ jstack是分析线程的非常强大的工具，希望大家能够使用起来�
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

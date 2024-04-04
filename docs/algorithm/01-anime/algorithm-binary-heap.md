@@ -236,7 +236,7 @@ insert直接向数组最后插入一个元素，然后遍历该元素的父节�
 
 [learn-algorithm](https://github.com/ddean2009/learn-algorithm/tree/master/heap)
 
-> 本文收录于 [www.flydean.com](www.flydean.com)
+> 本文收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

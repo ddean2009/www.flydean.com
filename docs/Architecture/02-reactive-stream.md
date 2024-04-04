@@ -20,7 +20,7 @@ Stream大家应该都很熟悉了，java8中为所有的集合类都引入了Str
 
 而reactive stream的目的就是用来管理异步服务的流数据交换，并能够让接收方自主决定接受数据的频率。back-pressure就是reactive stream中不可或缺的一部分。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 什么是reactive stream
 
@@ -134,7 +134,7 @@ Flow从JDK9就开始有了。我们看下它的结构：
 reactive stream的出现有效的解决了异步系统中的背压问题。只不过reactive stream只是一个接口标准或者说是一种协议，具体的实现还需要自己去实现。
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

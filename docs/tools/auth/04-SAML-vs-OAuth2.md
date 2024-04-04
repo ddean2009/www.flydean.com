@@ -227,7 +227,7 @@ CAS内部集成了CAS1,2,3，SAML1,2，OAuth2,OpenID和OpenID Connect协议，�
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

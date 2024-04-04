@@ -12,7 +12,7 @@ slug: /marker-interface-annotation-processor
 
 除了Spring之外，其实JDK本身自带注解，本文将会深入探讨注解的起源和两种不同的使用方式。
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 # 注解的起源和marker interfaces
 
@@ -315,7 +315,7 @@ proc是设置是否需要在本项目中启用processor。对于processor项目�
 learn-java-base-9-to-20](https://github.com/ddean2009/learn-java-base-9-to-20)
 
 > 欢迎关注我的公众号:程序那些事，更多精彩等着您！
-> 更多内容请访问 [www.flydean.com](www.flydean.com)
+> 更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

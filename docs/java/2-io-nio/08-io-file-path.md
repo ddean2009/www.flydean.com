@@ -12,7 +12,7 @@ slug: /io-file-path
 
 小师妹：F师兄我有一个问题，java中的文件File是一个类可以理解，因为文件里面包含了很多其他的信息，但是路径Path为什么也要单独一个类出来？只用一个String表示不是更简单？
 
-> 更多内容请访问[www.flydean.com](www.flydean.com)
+> 更多内容请访问[www.flydean.com](http://www.flydean.com)
 
 万物皆有因，没有无缘无故的爱，也没有无缘无故的恨。一切真的是妙不可言啊。
 
@@ -129,7 +129,7 @@ public void getPathWithFileSystem(){
 
 > 本文作者：flydean程序那些事
 > 
-> 本文链接：[www.flydean.com](www.flydean.com)
+> 本文链接：[www.flydean.com](http://www.flydean.com)
 > 
 > 本文来源：flydean的博客
 > 

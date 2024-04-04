@@ -274,7 +274,7 @@ Functional Interface是一个非常有用的新特性，希望大家能够掌握
 
 本文的例子：[https://github.com/ddean2009/learn-java-streams/tree/master/functional-interface](https://github.com/ddean2009/learn-java-streams/tree/master/functional-interface)
 
-更多内容请访问 [www.flydean.com](www.flydean.com)
+更多内容请访问 [www.flydean.com](http://www.flydean.com)
 
 
 

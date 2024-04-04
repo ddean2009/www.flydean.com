@@ -55,7 +55,7 @@ spring.banner.image.invert= //TODO
 
 本文的例子可以参考[https://github.com/ddean2009/learn-springboot2/tree/master/springboot-customer-banner](https://github.com/ddean2009/learn-springboot2/tree/master/springboot-customer-banner)
 
-更多教程请参考 [flydean的博客](www.flydean.com)
+更多教程请参考 [flydean的博客](http://www.flydean.com)
 
 
 

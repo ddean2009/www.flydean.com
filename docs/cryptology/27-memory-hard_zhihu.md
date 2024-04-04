@@ -96,7 +96,7 @@ dMHFs的例子是scrypt和Argon2d。iMHFs的例子是Argon2i和catena。
 
 上面就是MHF的密码学意义。
 
-> 本文已收录于 [www.flydean.com](www.flydean.com)
+> 本文已收录于 [www.flydean.com](http://www.flydean.com)
 >
 > 最通俗的解读，最深刻的干货，最简洁的教程，众多你不知道的小技巧等你来发现！
 > 

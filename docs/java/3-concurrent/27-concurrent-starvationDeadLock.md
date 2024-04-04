@@ -44,5 +44,5 @@ public class ThreadPoolDeadlock {
 
 本文的例子请参考[https://github.com/ddean2009/learn-java-concurrency/tree/master/ThreadPoolDeadlock](https://github.com/ddean2009/learn-java-concurrency/tree/master/ThreadPoolDeadlock)
 
-更多内容请访问 [flydean的博客](www.flydean.com)
+更多内容请访问 [flydean的博客](http://www.flydean.com)
 
