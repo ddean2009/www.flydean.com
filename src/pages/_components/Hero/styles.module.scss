@@ -33,8 +33,9 @@
 .hero_text {
   font-size: calc(1.0em + 1.2vw);
   text-align: center;
+  font-weight: bold;
+  color: #1a8870;
 }
-
 .name {
   --lighting-size: 300px;
   --lighting-color: var(--ifm-color-primary);

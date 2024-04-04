@@ -79,6 +79,7 @@ function Name() {
       initial="hidden"
       animate="visible"
       variants={variants}
+      whileHover={{ scale: 1.1 }}
       onMouseMove={e => {
         e.currentTarget.style.setProperty('--x', `${e.clientX}px`)
         e.currentTarget.style.setProperty('--y', `${e.clientY}px`)
