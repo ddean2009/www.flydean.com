@@ -15,7 +15,7 @@ const chunk = (arr, size) =>
     arr.slice(i * size, i * size + size),
   )
 
-const BLOG_POSTS_COUNT = 6
+const BLOG_POSTS_COUNT = 4
 const BLOG_POSTS_PER_ROW = 2
 
 export function BlogItem({ post }: { post: BlogPost }) {

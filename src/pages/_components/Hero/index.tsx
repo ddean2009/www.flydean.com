@@ -10,6 +10,7 @@ import SocialLinks from '@site/src/components/SocialLinks'
 import skills from '@site/src/data/skills'
 
 import { Icon } from '@iconify/react'
+import BlogSection from "../BlogSection";
 
 const variants: Variants = {
   visible: i => ({
@@ -104,6 +105,7 @@ export default function Hero() {
     <motion.div className={styles.hero}>
       <div className={styles.intro}>
         <Name />
+        <BlogSection />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants}>
           <Translate id="homepage.hero.text">
             {`这里没有极限! 定期分享学习心得和体会:人工智能,AIGC,后端,前端。你想要的这里都有~`}
