@@ -31,12 +31,12 @@ function Skills() {
   const { scrollYProgress } = useScroll()
 
   // 往下滚动 元素向上移动
-  const y1 = useTransform(scrollYProgress, [0, 1], ['0%', '-500%'], {
+  const y1 = useTransform(scrollYProgress, [0, 1], ['0%', '-400%'], {
     clamp: false,
   })
 
   // 往下滚动 元素向下移动
-  const y2 = useTransform(scrollYProgress, [0, 1], ['0%', '500%'], {
+  const y2 = useTransform(scrollYProgress, [0, 1], ['0%', '400%'], {
     clamp: false,
   })
 
