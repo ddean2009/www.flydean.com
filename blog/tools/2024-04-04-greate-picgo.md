@@ -36,6 +36,8 @@ image: https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMHtPziczLC
 
 今天给大家介绍一个非常强大的软件picgo和对应的免费图床服务。
 
+<!-- truncate -->
+
 ## PICGO
 
 Picgo是一个用于快速上传图片并获取图片 URL 链接的工具。 
