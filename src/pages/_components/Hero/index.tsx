@@ -7,7 +7,7 @@ import HeroMain from './img/hero_main.svg'
 
 import styles from './styles.module.scss'
 import SocialLinks from '@site/src/components/SocialLinks'
-import skills from '@site/src/data/skills'
+import skills from '@site/config/skills'
 
 import { Icon } from '@iconify/react'
 import BlogSection from "../BlogSection";

@@ -5,6 +5,7 @@ import BlogSection from './_components/BlogSection'
 import FeaturesSection from './_components/FeaturesSection'
 import HomepageProject from './_components/ProjectSection'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import DocsSection from "./_components/DocsSection";
 
 export default function Home(): JSX.Element {
   const {
@@ -17,7 +18,7 @@ export default function Home(): JSX.Element {
       <main>
         <Hero />
         <div className="container-wrapper">
-          {/*<BlogSection />*/}
+          <DocsSection />
           {/*<HomepageProject />*/}
           {/*<FeaturesSection />*/}
         </div>

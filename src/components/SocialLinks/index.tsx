@@ -2,7 +2,7 @@ import * as React from 'react'
 import Tooltip from '@site/src/components/Tooltip'
 import { Icon } from '@iconify/react'
 import styles from './styles.module.scss'
-import social from '@site/src/data/social'
+import social from '@site/config/social'
 
 export type Social = {
   github?: string

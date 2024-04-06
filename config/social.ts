@@ -19,14 +19,10 @@ type SocialValue = {
 
 const social: Social = {
   github: 'https://github.com/ddean2009',
-  // twitter: 'https://twitter.com/kuizuo',
   juejin: 'https://juejin.cn/user/3913917124584142',
-  // qq: 'https://img.kuizuo.cn/qq.png',
   wx: '/img/qrcode2.jpeg',
   zhihu: 'https://www.zhihu.com/people/flydean2020',
-  // cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
   email: 'mailto:flydean@163.com',
-  // discord: 'https://discord.gg/M8cVcjDxkz',
 }
 
 const socialSet: Record<keyof Social | 'rss', SocialValue> = {

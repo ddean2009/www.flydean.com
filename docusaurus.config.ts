@@ -54,6 +54,8 @@ const config = {
           sidebarPath: './sidebars.js',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
