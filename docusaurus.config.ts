@@ -138,7 +138,7 @@ const config = {
           blogSidebarTitle: '最近博客',
           postsPerPage: 10,
           showReadingTime: true,
-          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+          readingTime: ({ content , defaultReadingTime }) =>
               defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
           feedOptions: {
             type: 'all',
@@ -168,6 +168,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'aigcSidebar',
+            label: 'AIGC',
+            position: 'left',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'aiSidebar',

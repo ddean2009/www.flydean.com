@@ -63,7 +63,7 @@ export default function DocsSection(): JSX.Element {
 
   return (
     <section className={clsx('container padding-vert--sm', styles.blogContainer)}>
-      <SectionTitle icon="ri:quill-pen-line" href={'/AI/llma/'}>
+      <SectionTitle icon="ri:quill-pen-line" href={'/AIGC/stable-diffusion'}>
         <Translate id="homepage.blog.title">最新文章</Translate>
       </SectionTitle>
       <div ref={ref} className={clsx('row', styles.list)}>
