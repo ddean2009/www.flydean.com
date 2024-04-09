@@ -8,9 +8,7 @@ type Props = WrapperProps<typeof DocRootType>;
 export default function DocRootWrapper(props: Props): JSX.Element {
   return (
     <>
-        <div id='9527article'>
       <DocRoot {...props} />
-        </div>
     </>
   );
 }
