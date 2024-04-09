@@ -232,6 +232,8 @@ VScode中不同操作系统的自动上传方式是不同的，大家可以参�
 
 好啦，今天的无限图床的分享就到这里了，喜欢的小伙伴记得点赞关注哦！
 
+本文链接:[greate-picgo](http://www.flydean.com/blog/tools/greate-picgo)
+
 
 
 

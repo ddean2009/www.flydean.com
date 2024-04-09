@@ -53,6 +53,7 @@ A witch
 ```
 
 <img src="https://s2.loli.net/2024/04/08/hMXzCBGfclY86ds.png" alt="image-20240408230334016" style="zoom:50%;" />
+
 你会得到一些还不错的图像，但这个提示留下了太多想象的空间。
 你希望女巫的样子是怎样的？你有没有一些**关键词**来更具体地描述她？她穿着什么？她施展的是什么样的魔法？她是站着、跑步还是漂浮在空中？背景是什么样的？
 Stable Diffusion 无法读取我们的想法。我们必须明确地表达我们想要的。
@@ -75,6 +76,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 ```
 
 <img src="https://s2.loli.net/2024/04/08/bMiSfOFPJWTEUXh.png" alt="image-20240408230653305" style="zoom:50%;" />
+
 这些图像从逼真的绘画风格转变为更像是计算机图形。那么还能不能做更多的修改呢？
 
 ### 风格
@@ -86,6 +88,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 ```
 
 <img src="https://s2.loli.net/2024/04/08/ND6Krkyax5qoChc.png" alt="image-20240408230836042" style="zoom: 50%;" />
+
 现在，场景变得更加阴暗和忧郁。
 
 ### 艺术分享网站
@@ -98,6 +101,7 @@ artstation
 ```
 
 <img src="https://s2.loli.net/2024/04/08/bTzH7jKIZFlRLEM.png" style="zoom:50%;" />
+
 这个变化并不大，但这些图片看起来确实像你在Artstation上找到的内容。
 
 ### 分辨率
@@ -110,6 +114,7 @@ artstation,Highly detailed,clear focus
 ```
 
 <img src="https://s2.loli.net/2024/04/08/64jiWDpMnOtVhzE.png" alt="image-20240408231220028" style="zoom:50%;" />
+
 嗯，效果并不是很明显，也许是因为之前的图像已经相当清晰和详细了。但添加一些也无妨。
 
 
@@ -136,6 +141,7 @@ artstation,Highly detailed,clear focus,Science fiction, dystopia,Glitter gold
 ```
 
 <img src="https://s2.loli.net/2024/04/08/EaAW6iLre1vCdHN.png" alt="image-20240408231518031" style="zoom:50%;" />
+
 金色在一些地方表现得非常出色！
 
 ### 灯光
@@ -152,8 +158,6 @@ artstation,Highly detailed,clear focus,Science fiction, dystopia,Glitter gold,St
 备注
 
 您可能已经注意到，这些图片只需添加一些关键词就已经相当不错了。在构建提示时，并不总是越多越好。通常情况下，您并不需要太多关键词来获得好的图片。
-
-
 
 ## 使用负面提示
 
@@ -223,7 +227,10 @@ Misshapen, misshapen, ugly
 
 <img src="https://s2.loli.net/2024/04/08/RrHntXQNTF2kwGb.png" alt="image-20240408232627367" style="zoom:50%;" />
 
-<img src="https://s2.loli.net/2024/04/08/GXy7VnukEsN432Q.png" alt="image-20240408232814543" style="zoom:50%;" />增加`dog`的权重倾向于生成更多的狗。减少它倾向于生成更少。对于每张图片来说并不总是正确的，但从统计意义上来说是正确的。
+<img src="https://s2.loli.net/2024/04/08/GXy7VnukEsN432Q.png" alt="image-20240408232814543" style="zoom:50%;" />
+
+增加`dog`的权重倾向于生成更多的狗。减少它倾向于生成更少。对于每张图片来说并不总是正确的，但从统计意义上来说是正确的。
+
 这种技术可以应用于主题关键词和所有类别，比如风格和光线。
 
 ### （）和[]语法
@@ -264,36 +271,53 @@ Oil painting portrait of Joe biden
 Oil painting portrait of donald trump
 因子确定了关键词何时改变。
 改变因子的效果是以不同程度混合两位总统。
+
 <img src="https://s2.loli.net/2024/04/08/qOiVQWfCU1dSnIs.png" alt="image-20240408233239023" style="zoom:50%;" />
-**第一个关键词决定了全局构图。**早期扩散步骤确定了整体构图。后续步骤完善细节。
+
+第一个关键词决定了全局构图。早期扩散步骤确定了整体构图。后续步骤完善细节。
 
 #### 混合面孔
 一个常见的用例是创建一个具有特定外表的新面孔，借鉴演员和女演员的特点。例如，[Emma Watson: Amber heard: 0.85]:
+
 <img src="https://s2.loli.net/2024/04/08/KJqfLRc8a3GVHkU.png" alt="image-20240408233443109" style="zoom:50%;" />
+
 当仔细选择两个名字并调整因子时，我们可以精确地得到想要的外表。
 另外，你可以使用**多个名人的名字**和关键词权重来调整面部特征。例如：
 (Emma Watson:0.5), (Tara Reid:0.9), (Ana de Armas:1.2)
+
 <img src="https://s2.loli.net/2024/04/08/MxNfW93T2vpGPbA.png" alt="image-20240408233558748" style="zoom:50%;" />
 
 
 
 #### 从提示到提示
 
-通过关键词混合，你可以实现类似于提示到提示的效果，生成一对高度相似的图像并进行编辑。以下两幅图像是使用相同的提示生成的，除了一个地方不同，那就是使用了`apple 和fire混合。种子和步数保持不变。
+通过关键词混合，你可以实现类似于提示到提示的效果，生成一对高度相似的图像并进行编辑。以下两幅图像是使用相同的提示生成的，除了一个地方不同，那就是使用了apple 和fire混合。种子和步数保持不变。
 
 <img src="https://s2.loli.net/2024/04/08/HCNO9BrQl2dqYeU.png" alt="image-20240408233958055" style="zoom:50%;" />
-**拿着一个[apple: fire: 0.3]
+
+拿着一个[apple: fire: 0.3]
+
 <img src="https://s2.loli.net/2024/04/08/RjL2a3MD4bqoiJI.png" alt="image-20240408234105072" style="zoom:50%;" />
+
 这背后的理论是图像的整体构图是由早期的扩散过程设定的。一旦扩散被困在一个小空间里，交换任何关键词对整体图像的影响不会很大。它只会改变一个小部分。
 
 
 
 ## 保持一致的面孔
 使用多个名人的名字是混合两个或更多面孔的简单方法。混合在不同的图片上都是一致的。当你使用多个名字时，Stable diffusion会理解为生成一个人，但具有这些面部特征。
+
 下面的短语使用多个名字来混合三个具有不同权重的面孔。
+
+```
 (Emma Watson:0.5), (Tara Reid:0.9), (Ana de Armas:1.2)
-将这种技术付诸实践，提示是：
+```
+
+我们试下这种方式的效果，提示是：
+
+```
 (Emma Watson:0.5), (Tara Reid:0.9), (Ana de Armas:1.2)，Photo of a young lady, prominent hair, sitting outside a restaurant, wearing a dress, edge lighting, studio lighting, looking into the lens, DSLR camera, Ultra High quality, Clear focus, depth of field, film grain, Fujifilm XT3, Crystal clear, 8K Ultra HD, Highly detailed shiny eyes, Highly detailed skin, skin pores
+```
+
 以下是具有相同提示的图片：
 
 <img src="https://s2.loli.net/2024/04/08/qUIHnSeQ4BzVpTL.png" alt="image-20240408234310867" style="zoom:50%;" />
@@ -329,6 +353,7 @@ Blue skirt
 ```
 
 <img src="https://s2.loli.net/2024/04/08/uGhRmFCcyxpobg2.png" alt="image-20240408234739884" style="zoom:50%;" />
+
 如果没有使用BREAK，Stable Diffusion更有可能混淆帽子和裙子的颜色。
 
 <img src="https://s2.loli.net/2024/04/08/FJEnTisGDl1PNap.png" alt="image-20240408234909833" style="zoom:50%;" />

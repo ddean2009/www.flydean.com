@@ -483,6 +483,17 @@ const config = {
       ]
       ,
     }),//end themconfig
+
+  scripts: [
+    {
+      src: 'https://my.openwrite.cn/js/readmore.js',
+      defer: true,
+    },
+    {
+      src: '/js/readmorelocal.js',
+      defer: true,
+    },
+  ],
 };
 
 export default config;
