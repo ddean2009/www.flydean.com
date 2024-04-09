@@ -486,8 +486,8 @@ const config = {
 
   scripts: [
     {
-      src: 'https://readmore.openwrite.cn/js/readmore-2.0.js',
-      // src: 'https://readmore.openwrite.cn/js/readmore.js',
+      // src: 'https://readmore.openwrite.cn/js/readmore-2.0.js',
+      src: 'https://readmore.openwrite.cn/js/readmore.js',
       defer: true,
     },
     // {
