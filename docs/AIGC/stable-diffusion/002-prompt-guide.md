@@ -52,7 +52,9 @@ A cyberpunk-style digital artwork, displaying neon lights and flying cars in the
 A witch
 ```
 
-<img src="https://s2.loli.net/2024/04/08/hMXzCBGfclY86ds.png" alt="image-20240408230334016" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/hMXzCBGfclY86ds.png)
+
+
 
 你会得到一些还不错的图像，但这个提示留下了太多想象的空间。
 你希望女巫的样子是怎样的？你有没有一些**关键词**来更具体地描述她？她穿着什么？她施展的是什么样的魔法？她是站着、跑步还是漂浮在空中？背景是什么样的？
@@ -63,7 +65,9 @@ Stable Diffusion 无法读取我们的想法。我们必须明确地表达我们
 A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning magic, hat, detailed leather costume complete with gems, skirt, castle background
 ```
 
-<img src="https://s2.loli.net/2024/04/08/aHCKBTmw2nyWLvs.png" alt="image-20240408230504557" style="zoom:50%;" />
+
+
+![](https://s2.loli.net/2024/04/08/aHCKBTmw2nyWLvs.png)
 
 现在，我们生成更**具体**的图像。服装、姿势和背景在图像间保持一致。
 
@@ -75,7 +79,7 @@ Medium是制作艺术作品所使用的材料。一些例子包括插画、油�
 A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning magic, hat, detailed leather costume complete with gems, skirt, castle background, Digital Art
 ```
 
-<img src="https://s2.loli.net/2024/04/08/bMiSfOFPJWTEUXh.png" alt="image-20240408230653305" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/bMiSfOFPJWTEUXh.png)
 
 这些图像从逼真的绘画风格转变为更像是计算机图形。那么还能不能做更多的修改呢？
 
@@ -87,7 +91,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning magic, hat, detailed leather costume complete with gems, skirt, castle background, Digital Art,Hyperrealistic, fantasy, dark art
 ```
 
-<img src="https://s2.loli.net/2024/04/08/ND6Krkyax5qoChc.png" alt="image-20240408230836042" style="zoom: 50%;" />
+![](https://s2.loli.net/2024/04/08/ND6Krkyax5qoChc.png)
 
 现在，场景变得更加阴暗和忧郁。
 
@@ -100,7 +104,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 artstation
 ```
 
-<img src="https://s2.loli.net/2024/04/08/bTzH7jKIZFlRLEM.png" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/bTzH7jKIZFlRLEM.png)
 
 这个变化并不大，但这些图片看起来确实像你在Artstation上找到的内容。
 
@@ -113,7 +117,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 artstation,Highly detailed,clear focus 
 ```
 
-<img src="https://s2.loli.net/2024/04/08/64jiWDpMnOtVhzE.png" alt="image-20240408231220028" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/64jiWDpMnOtVhzE.png)
 
 嗯，效果并不是很明显，也许是因为之前的图像已经相当清晰和详细了。但添加一些也无妨。
 
@@ -128,7 +132,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 artstation,Highly detailed,clear focus,Science fiction, dystopia
 ```
 
-<img src="https://s2.loli.net/2024/04/08/SriqN21zb4E7VYW.png" alt="image-20240408231356070" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/SriqN21zb4E7VYW.png)
 
 ### 颜色
 
@@ -140,7 +144,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 artstation,Highly detailed,clear focus,Science fiction, dystopia,Glitter gold
 ```
 
-<img src="https://s2.loli.net/2024/04/08/EaAW6iLre1vCdHN.png" alt="image-20240408231518031" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/EaAW6iLre1vCdHN.png)
 
 金色在一些地方表现得非常出色！
 
@@ -153,7 +157,7 @@ A beautiful and powerful mysterious witch, smiling, sitting on a rock, lightning
 artstation,Highly detailed,clear focus,Science fiction, dystopia,Glitter gold,Studio lighting
 ```
 
-<img src="https://s2.loli.net/2024/04/08/LOqsG7TN4cYpWmk.png" alt="image-20240408231644691" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/LOqsG7TN4cYpWmk.png)
 
 备注
 
@@ -169,7 +173,7 @@ artstation,Highly detailed,clear focus,Science fiction, dystopia,Glitter gold,St
 Misshapen, misshapen, ugly
 ```
 
-<img src="https://s2.loli.net/2024/04/08/pzoZMHyFAhviJLO.png" alt="image-20240408231924843" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/pzoZMHyFAhviJLO.png)
 
 ## 构建一个优秀promot的过程
 
@@ -225,9 +229,9 @@ Misshapen, misshapen, ugly
 (Dog:1),mist,smoke,fire,chimney,rain,damp,primitive,puddle,melting,dripping water,snow,stream,lush,ice,bridge,forest,rose,flower,Stanley Artgerm Lau,Greg Rutkowski,Thomas Kincade,Alphonse Mucha,Loish,Norman Rockwell.,
 ```
 
-<img src="https://s2.loli.net/2024/04/08/RrHntXQNTF2kwGb.png" alt="image-20240408232627367" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/RrHntXQNTF2kwGb.png)
 
-<img src="https://s2.loli.net/2024/04/08/GXy7VnukEsN432Q.png" alt="image-20240408232814543" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/GXy7VnukEsN432Q.png)
 
 增加`dog`的权重倾向于生成更多的狗。减少它倾向于生成更少。对于每张图片来说并不总是正确的，但从统计意义上来说是正确的。
 
@@ -272,20 +276,20 @@ Oil painting portrait of donald trump
 因子确定了关键词何时改变。
 改变因子的效果是以不同程度混合两位总统。
 
-<img src="https://s2.loli.net/2024/04/08/qOiVQWfCU1dSnIs.png" alt="image-20240408233239023" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/qOiVQWfCU1dSnIs.png)
 
 第一个关键词决定了全局构图。早期扩散步骤确定了整体构图。后续步骤完善细节。
 
 #### 混合面孔
 一个常见的用例是创建一个具有特定外表的新面孔，借鉴演员和女演员的特点。例如，[Emma Watson: Amber heard: 0.85]:
 
-<img src="https://s2.loli.net/2024/04/08/KJqfLRc8a3GVHkU.png" alt="image-20240408233443109" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/KJqfLRc8a3GVHkU.png)
 
 当仔细选择两个名字并调整因子时，我们可以精确地得到想要的外表。
 另外，你可以使用**多个名人的名字**和关键词权重来调整面部特征。例如：
 (Emma Watson:0.5), (Tara Reid:0.9), (Ana de Armas:1.2)
 
-<img src="https://s2.loli.net/2024/04/08/MxNfW93T2vpGPbA.png" alt="image-20240408233558748" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/MxNfW93T2vpGPbA.png)
 
 
 
@@ -293,11 +297,11 @@ Oil painting portrait of donald trump
 
 通过关键词混合，你可以实现类似于提示到提示的效果，生成一对高度相似的图像并进行编辑。以下两幅图像是使用相同的提示生成的，除了一个地方不同，那就是使用了apple 和fire混合。种子和步数保持不变。
 
-<img src="https://s2.loli.net/2024/04/08/HCNO9BrQl2dqYeU.png" alt="image-20240408233958055" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/HCNO9BrQl2dqYeU.png)
 
 拿着一个[apple: fire: 0.3]
 
-<img src="https://s2.loli.net/2024/04/08/RjL2a3MD4bqoiJI.png" alt="image-20240408234105072" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/RjL2a3MD4bqoiJI.png)
 
 这背后的理论是图像的整体构图是由早期的扩散过程设定的。一旦扩散被困在一个小空间里，交换任何关键词对整体图像的影响不会很大。它只会改变一个小部分。
 
@@ -320,7 +324,7 @@ Oil painting portrait of donald trump
 
 以下是具有相同提示的图片：
 
-<img src="https://s2.loli.net/2024/04/08/qUIHnSeQ4BzVpTL.png" alt="image-20240408234310867" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/qUIHnSeQ4BzVpTL.png)
 
 看到这张脸在不同的图片上重复出现了吧！
 使用多个名人的名字和关键词权重来精心调整你想要的面部特征。你还可以在负面提示中使用名人的名字来避免你不想要的面部特征。
@@ -340,7 +344,7 @@ AUTOMATIC1111没有token限制。如果一个提示包含超过75个token，也�
 每个75个token的块都是独立处理的，处理后的表示会在输入到Stable diffusion的U-Net之前进行连接。
 在AUTOMATIC1111中，您可以通过查看提示输入框右上角的小框来检查令牌的数量。
 
-<img src="https://s2.loli.net/2024/04/08/S9J5fu72NQGcyOP.png" alt="image-20240408234607888" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/S9J5fu72NQGcyOP.png)
 
 ### 开始一个新的提示块
 如果你想在达到75个token之前开始一个新的提示块怎么办？有时候你想这样做是因为提示块开头的标记更有效，而且你可能想将相关关键词分组在一个提示块中。
@@ -352,14 +356,11 @@ BREAK
 Blue skirt
 ```
 
-<img src="https://s2.loli.net/2024/04/08/uGhRmFCcyxpobg2.png" alt="image-20240408234739884" style="zoom:50%;" />
+![](https://s2.loli.net/2024/04/08/uGhRmFCcyxpobg2.png)
 
 如果没有使用BREAK，Stable Diffusion更有可能混淆帽子和裙子的颜色。
 
-<img src="https://s2.loli.net/2024/04/08/FJEnTisGDl1PNap.png" alt="image-20240408234909833" style="zoom:50%;" />
-
-
-
+![](https://s2.loli.net/2024/04/08/FJEnTisGDl1PNap.png)
 
 
 ### 名人姓名的关联
