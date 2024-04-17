@@ -253,7 +253,6 @@ const config = {
                 type: 'docSidebar',
                 sidebarId: 'scalaSidebar',
                 label: 'SCALA',
-                position: 'left',
               },
               {
                 type: 'docSidebar',
