@@ -188,12 +188,6 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'scalaSidebar',
-            label: 'SCALA',
-            position: 'left',
-          },
-          {
-            type: 'docSidebar',
             sidebarId: 'springSidebar',
             label: 'SPRING',
             position: 'left',
@@ -255,6 +249,12 @@ const config = {
             label: '其他',
             position: 'right',
             items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'scalaSidebar',
+                label: 'SCALA',
+                position: 'left',
+              },
               {
                 type: 'docSidebar',
                 sidebarId: 'architSidebar',
