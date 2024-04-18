@@ -2,7 +2,7 @@
 slug: /0004-java-do-you-know-lock
 ---
 
-# 7. 深入理解锁
+# 深入理解锁机制
 
 # 简介
 

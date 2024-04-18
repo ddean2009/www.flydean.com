@@ -4,7 +4,7 @@
 
 毕生的收藏都在这了,看得上的小伙伴点个star吧 ![Github stars](https://img.shields.io/github/stars/ddean2009/www.flydean.com.svg)
 
-要想更好的阅读本站的文章，可以访问：[www.flydean.com](http://www.flydean.com) 或者 [https://docs.flydean.com/www.flydean.com/](https://docs.flydean.com/www.flydean.com/)
+要想更好的阅读本站的文章，可以访问：[www.flydean.com](http://www.flydean.com) 
 
 > 小技巧： 如何更有效率的查看github上的文件
 > 小伙伴可以下载一个插件叫做：Octotree,可以在左侧以树状的形式展示github中目录结构和文件列表，非常好用！
