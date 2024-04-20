@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0.5rem 0;
   overflow: hidden;
-  max-height: 640px;
+  max-height: 540px;
   border-radius: var(--ifm-card-border-radius);
 
   li {
@@ -19,7 +19,7 @@
   .image {
     overflow: hidden;
     object-fit: cover;
-    max-height: 100px;
+    max-height: 50px;
     cursor: pointer;
 
     img {

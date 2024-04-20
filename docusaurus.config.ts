@@ -9,6 +9,7 @@ import { GiscusConfig } from './src/components/Comment'
 import mermaid from "mermaid";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import * as fs from "fs";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,12 +19,8 @@ const config = {
 
   // Set the production url of your site here
   url: 'http://www.flydean.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ddean2009', // Usually your GitHub org/user name.
   projectName: 'www.flydean.com', // Usually your repo name.
 
@@ -55,20 +52,10 @@ const config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          showLastUpdateTime: true,
+          sidebarCollapsible: true,
         },
         blog: false,
-            // {
-          // showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -99,24 +86,11 @@ const config = {
   markdown: {
     format: 'detect',
     mermaid: true,
-    // preprocessor: ({filePath, fileContent}) => {
-    //   return fileContent.replaceAll('{{MY_VAR}}', 'MY_VALUE');
-    // },
-    // parseFrontMatter: async (params) => {
-    //   const result = await params.defaultParseFrontMatter(params);
-    //   result.frontMatter.description =
-    //       result.frontMatter.description?.replaceAll('{{MY_VAR}}', 'MY_VALUE');
-    //   return result;
-    // },
-    // mdx1Compat: {
-    //   comments: true,
-    //   admonitions: true,
-    //   headingIds: true,
-    // },
   },// markdown ends
 
   plugins: [
     'docusaurus-plugin-sass',
+    // '@babel/plugin-syntax-jsx',
     ['docusaurus-plugin-baidu-tongji', {
     token: '09b5e994e1e3872ac77bb501a1857c31' }
     ],
@@ -155,7 +129,7 @@ const config = {
     ({
       docs: {
         sidebar: {
-          hideable: false,
+          hideable: true,
           autoCollapseCategories: true,
         },
       },
@@ -337,6 +311,7 @@ const config = {
                 html: `
                  <img src="/img/qrcode.jpg" alt="关注公众号" width="55" height="55" />
                  <img src="/img/qrcode2.jpeg" alt="加我好友" width="55" height="55" />
+                 <img src="/img/zhishixingqiu.jpg" alt="加入星球" width="55" height="55" />
               `,
               },
             ],

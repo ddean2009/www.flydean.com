@@ -4,6 +4,7 @@ export type Social = {
   juejin?: string
   qq?: string
   wx?: string
+  zhishixingqiu?: string
   cloudmusic?: string
   zhihu?: string
   email?: string
@@ -21,6 +22,7 @@ const social: Social = {
   github: 'https://github.com/ddean2009',
   juejin: 'https://juejin.cn/user/3913917124584142',
   wx: '/img/qrcode2.jpeg',
+  zhishixingqiu: '/img/zhishixingqiu.jpg',
   zhihu: 'https://www.zhihu.com/people/flydean2020',
   email: 'mailto:flydean@163.com',
 }
@@ -60,6 +62,12 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
     href: social.wx,
     title: '微信',
     icon: 'ri:wechat-2-line',
+    color: '#07c160',
+  },
+  zhishixingqiu: {
+    href: social.zhishixingqiu,
+    title: '知识星球',
+    icon: 'game-icons:gift-of-knowledge',
     color: '#07c160',
   },
   zhihu: {

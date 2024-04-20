@@ -1,4 +1,4 @@
-# Java异常常见面试题
+# Java异常面试题
 
 ## 1. Error 和 Exception 区别是什么？
 

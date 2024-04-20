@@ -109,27 +109,36 @@ export default function Hero() {
         <BlogSection />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants}>
           <Translate id="homepage.hero.text">
-            {`定期分享学习心得和体会:人工智能,AIGC,后端,前端。你想要的这里都有~`}
+            {`定期分享学习心得和体会:人工智能,AIGC,后端,前端;你想要的这里都有~`}
           </Translate>
         </motion.p>
-        <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
+        <motion.p custom={3} initial="hidden" animate="visible" variants={variants}>
+          <Translate>
+            {`欢迎加入`}
+          </Translate>
+          <a href={'https://t.zsxq.com/19Rfrc3L9'}>「flydean的程序圈」</a>
+          <Translate>
+            {`技术探索/工作问题解决/职业规划/人生经验分享，让你少走十年弯路`}
+          </Translate>
+        </motion.p>
+        <motion.div custom={4} initial="hidden" animate="visible" variants={variants}>
           <SocialLinks />
         </motion.div>
 
-        <motion.div
-          className={styles.buttonGroup}
-          custom={4}
-          initial="hidden"
-          animate="visible"
-          variants={variants}
-        >
+        {/*<motion.div*/}
+        {/*  className={styles.buttonGroup}*/}
+        {/*  custom={5}*/}
+        {/*  initial="hidden"*/}
+        {/*  animate="visible"*/}
+        {/*  variants={variants}*/}
+        {/*>*/}
           {/*<div className={styles.outer}>*/}
           {/*  <div className={styles.gradient} />*/}
           {/*  <a className={styles.button} href={'./about'}>*/}
           {/*    <Translate id="hompage.hero.introduce">自我介绍</Translate>*/}
           {/*  </a>*/}
           {/*</div>*/}
-        </motion.div>
+        {/*</motion.div>*/}
       </div>
       <motion.div className={styles.background}>
         <Skills />
