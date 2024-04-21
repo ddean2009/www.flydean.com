@@ -51,7 +51,7 @@ Picgo是一个用于快速上传图片并获取图片 URL 链接的工具。
 
 它的界面大概是长这个样子:
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMHtPziczLCEgr9a4wGGEGkIO7CpUtwzRD0XHPdAic2xd8J0Gn59blHotg/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210858573.png" alt="图片" style="zoom:33%;" />
 
 可以分为上传区，相册，图床设置，PicGO设置和插件设置这几个部分。
 
@@ -75,7 +75,7 @@ Picgo是一个用于快速上传图片并获取图片 URL 链接的工具。
 
 先看下图床，在PocGo设置中，目前支持腾讯云，SMMS，七牛云，又拍云，阿里云，gitlab和Imgur这几种图床：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMdpAr3VB46f4wBzqYvw5I76q8ibICXlegbWAy7VOWggCXcMs7qIBDfpQ/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210858121.png" alt="图片" style="zoom:33%;" />
 
 
 
@@ -109,11 +109,11 @@ Picgo是一个用于快速上传图片并获取图片 URL 链接的工具。
 
 
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbM3yBNRg577o7RZ6WbFicMiaR4SfbBdqo4AgO60BNPmx0tQZiaCnT6icgt3Q/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210858074.png" alt="图片" style="zoom:33%;" />
 
 点击安装之后，就可以对这个插件进行配置了。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMzERvPhBvZzy0ic0OKoEx5C2FyRarVxYpaa1DyplE0oeDEPX7Jfassfw/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210858869.png" alt="图片" style="zoom:33%;" />
 
 这个插件目前支持三种压缩方式。
 
@@ -174,7 +174,7 @@ smms的官方网站是https://sm.ms/ , 如果内地用户访问不了的话，�
 
 注册之后，在User--》DashBoard中,可以找到API Token。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMF1CB0JHtDnjQByHkL2gIVKdialTZPAwUYGI8biavHlmW43JLxwJnbYWg/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210859405.png" alt="图片" style="zoom:33%;" />
 
 
 
@@ -182,7 +182,7 @@ smms的官方网站是https://sm.ms/ , 如果内地用户访问不了的话，�
 
 把它填到PicGO的图床设置里面即可：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMZiaYtUsibzjZ2VibLiaOwPG13Jo2Fia5993eiaCpoG9pgNz3ypOia3nTqXhoA/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210859755.png" alt="图片" style="zoom:33%;" />
 
 ## 在Vscode中使用PicGo
 
@@ -190,7 +190,7 @@ smms的官方网站是https://sm.ms/ , 如果内地用户访问不了的话，�
 
 首先在vscode的插件中找到这个PicGo的插件。
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMia4V5XhcdQnWbVeQm5VRmJc0tGibwyeJNuFciakgt1TV830cobvEkt5aw/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210859676.png" alt="图片" style="zoom:33%;" />
 
 在设置部分，我们可以看到可以设置很多支持的图床配置。
 
@@ -200,7 +200,7 @@ smms的官方网站是https://sm.ms/ , 如果内地用户访问不了的话，�
 
 
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMPdrC0agm7z2IUoL5E8RnK69CFVCgWbK5JjOsWcV4NG35s1MgS2ciazQ/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210859258.png" alt="图片" style="zoom:33%;" />
 
 
 
@@ -208,7 +208,7 @@ smms的官方网站是https://sm.ms/ , 如果内地用户访问不了的话，�
 
 
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbM1iaJ3Ndz0RkPiaqsUEnjl0p8RJhmoLxiaZG4WPPAIiaW0DicSOAuFZM4Yiaw/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:50%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210859430.png" alt="图片" style="zoom:50%;" />
 
 VScode中不同操作系统的自动上传方式是不同的，大家可以参考我的图自行取用。
 
@@ -222,7 +222,7 @@ VScode中不同操作系统的自动上传方式是不同的，大家可以参�
 
 
 
-<img src="https://mmbiz.qpic.cn/mmbiz_png/cgBQ3XFy0lp2sFjhDIhzdCv2Bdy9NNbMvHjBicKOgnicP3PNp44LzSqbCE3KLFqd9iajngfued7QYiapCiaaod2TpGw/640?wx_fmt=png&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" style="zoom:33%;" />
+<img src="https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404210859576.png" alt="图片" style="zoom:33%;" />
 
 好了，设置完成了，你只需要在Typora中复制粘贴对应的图片，图片就会自动上传到服务器上，然后转换成对应的markdown格式啦。
 

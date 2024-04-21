@@ -18,6 +18,7 @@ image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404101359
 
 说干就干。接下来我会介绍如何在picgo中进行配置，给上传的图片加上水印。
 
+<!-- truncate -->
 
 
 ## picgo水印插件 
