@@ -48,7 +48,7 @@ const config = {
   customFields: {
     // image: '',
     description:'AIGC,chatgpt,stable diffusion,人工智能,大数据,区块链,java,javascript,python,算法,flutter系列教程',
-    keywords: [],
+    keywords: ['AIGC','chatgpt','stable diffusion','人工智能','大数据','区块链','java','javascript','python','算法','flutter'],
   },
 
   presets: [
@@ -218,7 +218,7 @@ const config = {
             label: '系统架构',
             type: 'dropdown',
             position: 'left',
-            to: '/architecture/common',
+            to: '/Architecture/common',
             className: 'dyte-dropdown',
             items: [
               {
@@ -287,17 +287,6 @@ const config = {
               },
             ],
           },
-          // {
-          //   label: '其他',
-          //   position: 'right',
-          //   items: [
-          //     {
-          //       type: 'docSidebar',
-          //       sidebarId: 'dbSidebar',
-          //       label: '数据库集锦',
-          //     },
-          //   ],
-          // },
           {
             href: 'https://github.com/ddean2009/www.flydean.com',
             label: 'GitHub',
