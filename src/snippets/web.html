@@ -1,0 +1,91 @@
+<script>
+    function showMenu(menu) {
+        document.body.classList.remove('web', 'mobile', 'desktop', 'plugin');
+        document.body.classList.add(menu);
+    }
+
+    window.showMenu = showMenu;
+</script>
+<div class="sdks-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[768px]">
+    <div class="flex flex-col bg-secondary-800 p-4 lg:min-h-[300px] lg:flex-row">
+        <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-6">
+            <a data-dropdown-sdks-menu="web" onfocus="document.body.setAttribute('data-sdk-menu', 'web')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'web')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/javascript/ecmascript">
+                <div class="flex-shrink-0">
+                    <span class="icon-[vscode-icons--file-type-light-js]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">JavaScript</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        JS就是一切,有了它一切皆有可能
+                    </p>
+                </div>
+            </a>
+            <a data-dropdown-sdks-menu="mobile" onfocus="document.body.setAttribute('data-sdk-menu', 'mobile')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'mobile')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/web-tech">
+                <div class="flex-shrink-0">
+                    <span class="icon-[ph--planet-bold]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">Web和前端技术</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        Web和前端技术是所有美好的开始
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="flex-1 p-6">
+            <div class="flex flex-col gap-2" data-dropdown-sdks="web">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">JS核心</h3>
+                    <span class="none hidden text-sm font-normal lg:block">JavaScript的核心</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/javascript/ecmascript" class="sdk-link">
+                                <span class="icon-[vscode-icons--file-type-light-js]" style="width: 1.2em; height: 1.2em;"></span>
+                                ES基础和新特性
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/javascript/nodejs" class="sdk-link">
+                                <span class="icon-[teenyicons--nodejs-outline]" style="width: 1.2em; height: 1.2em;"></span>
+                                NodeJS后端开发神器
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">JS开发框架</h3>
+                    <span class="hidden text-sm font-normal lg:block">用好框架,休闲半生</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/react-ui-kit" class="sdk-link">
+                                <span class="icon-[mdi--koala]" style="width: 1.2em; height: 1.2em;"></span>
+                                KOA web框架
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2" data-dropdown-sdks="mobile">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">核心web技术</h3>
+                    <span class="none hidden text-sm font-normal lg:block">绝对是核心中的核心</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/web-tech" class="sdk-link">
+                                <span class="icon-[ph--planet-bold]" style="width: 1.2em; height: 1.2em;"></span>
+                                前端必须掌握的核心web技术
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

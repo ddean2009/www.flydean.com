@@ -1,0 +1,193 @@
+<script>
+    function showMenu(menu) {
+        document.body.classList.remove('web', 'mobile', 'desktop', 'plugin');
+        document.body.classList.add(menu);
+    }
+
+    window.showMenu = showMenu;
+</script>
+<div class="sdks-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[768px]">
+    <div class="flex flex-col bg-secondary-800 p-4 lg:min-h-[300px] lg:flex-row">
+        <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-6">
+            <a data-dropdown-sdks-menu="web" onfocus="document.body.setAttribute('data-sdk-menu', 'web')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'web')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/java/java-roadmap">
+                <div class="flex-shrink-0">
+                    <span class="icon-[ri--java-line]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">JAVA</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        宇宙第一大编程语言,你想要的这里都有
+                    </p>
+                </div>
+            </a>
+            <a data-dropdown-sdks-menu="mobile" onfocus="document.body.setAttribute('data-sdk-menu', 'mobile')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'mobile')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/learn-spring">
+                <div class="flex-shrink-0">
+                    <span class="icon-[ic--baseline-eco]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">Spring</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        最流行的java框架，你不能不会
+                    </p>
+                </div>
+            </a>
+            <a data-dropdown-sdks-menu="plugin" onfocus="document.body.setAttribute('data-sdk-menu', 'plugin')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'plugin')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/01-reactive-system">
+                <div class="flex-shrink-0">
+                    <span class="icon-[carbon--logo-react]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">响应式框架</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        最流行的响应式框架和理论知识,深入了解响应式架构
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="flex-1 p-6">
+            <div class="flex flex-col gap-2" data-dropdown-sdks="web">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">JAVA核心</h3>
+                    <span class="none hidden text-sm font-normal lg:block">JAVA核心知识,值得反复学习</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/java/java-base" class="sdk-link">
+                                <span class="icon-[fluent--document-java-16-filled]" style="width: 1.2em; height: 1.2em;"></span>
+                                Java基础
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/io-nio" class="sdk-link">
+                                <span class="icon-[vscode-icons--file-type-io]" style="width: 1.2em; height: 1.2em;"></span>
+                                IO-NIO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/stream" class="sdk-link">
+                                <span class="icon-[fluent--stream-output-20-regular]" style="width: 1.2em; height: 1.2em;"></span>
+                                Stream流
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/collections" class="sdk-link">
+                                <span class="icon-[bi--collection-fill]" style="width: 1.2em; height: 1.2em;"></span>
+                                JAVA集合
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">深入JAVA</h3>
+                    <span class="hidden text-sm font-normal lg:block">JAVA更深入,更高级的内容</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/java/jvm" class="sdk-link">
+                                <span class="icon-[carbon--logo-vmware]" style="width: 1.2em; height: 1.2em;"></span>
+                                深入理解JVM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/concurrent" class="sdk-link">
+                                <span class="icon-[carbon--chart-parallel]" style="width: 1.2em; height: 1.2em;"></span>
+                                并发和多线程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/security" class="sdk-link">
+                                <span class="icon-[ic--twotone-security]" style="width: 1.2em; height: 1.2em;"></span>
+                                安全编码规范
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/new-feature" class="sdk-link">
+                                <span class="icon-[material-symbols--view-in-ar-new]" style="width: 1.2em; height: 1.2em;"></span>
+                                各个版本新特性
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/java/netty" class="sdk-link">
+                                <span class="icon-[icon-park-outline--planet]" style="width: 1.2em; height: 1.2em;"></span>
+                                Netty:最强NIO框架,没有之一
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/jni-overview" class="sdk-link">
+                                <span class="icon-[carbon--wifi-bridge-alt]" style="width: 1.2em; height: 1.2em;"></span>
+                                JNI(Java native interface)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2" data-dropdown-sdks="mobile">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">Spring系列</h3>
+                    <span class="none hidden text-sm font-normal lg:block">轻量开发框架，简化Java编程，促进业务逻辑实现</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/learn-spring" class="sdk-link">
+                                <span class="icon-[ic--baseline-eco]" style="width: 1.2em; height: 1.2em;"></span>
+                                Spring 5.X系列教程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/learn-springboot2" class="sdk-link">
+                                <span class="icon-[akar-icons--bootstrap-fill]" style="width: 1.2em; height: 1.2em;"></span>
+                                Spring Boot2系列教程
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/spring/springBoot3" class="sdk-link">
+                                <span class="icon-[tabler--brand-bootstrap]" style="width: 1.2em; height: 1.2em;"></span>
+                                Spring Boot3系列教程
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">Spring Cloud</h3>
+                    <span class="hidden text-sm font-normal lg:block">微服务框架，简化分布式系统开发</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/spring/springCloud" class="sdk-link">
+                                <span class="icon-[ri--cloud-fill]" style="width: 1.2em; height: 1.2em;"></span>
+                                Spring Cloud
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2" data-dropdown-sdks="plugin">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">响应式框架</h3>
+                    <span class="none hidden text-sm font-normal lg:block">响应式的本质就是Observer+Iterator+函数编程+异步</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/reactive/r2dbc" class="sdk-link">
+                                <span class="icon-[carbon--ibm-db2-warehouse]" style="width: 1.2em; height: 1.2em;"></span>
+                                r2dbc:响应式关系式数据库
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/reactive/reactor" class="sdk-link">
+                                <span class="icon-[carbon--navaid-ndb-dme]" style="width: 1.2em; height: 1.2em;"></span>
+                                Reactor:响应式编程
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

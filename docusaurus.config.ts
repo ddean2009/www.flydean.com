@@ -11,6 +11,16 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import * as fs from "fs";
 
+const tailwindPlugin = require('./src/plugin/tailwind-plugin.cjs');
+const javaHTML = fs.readFileSync('./src/snippets/java.html', 'utf-8');
+const interviewHTML = fs.readFileSync('./src/snippets/interview.html', 'utf-8');
+const pythonHTML = fs.readFileSync('./src/snippets/python.html', 'utf-8');
+const aiHTML = fs.readFileSync('./src/snippets/ai.html', 'utf-8');
+const blockchainHTML = fs.readFileSync('./src/snippets/blockchain.html', 'utf-8');
+const mobileDevHTML = fs.readFileSync('./src/snippets/mobile-dev.html', 'utf-8');
+const webHTML = fs.readFileSync('./src/snippets/web.html', 'utf-8');
+const archHTML = fs.readFileSync('./src/snippets/arch.html', 'utf-8');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '程序那些事',
@@ -52,7 +62,7 @@ const config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           showLastUpdateAuthor: false,
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           sidebarCollapsible: true,
         },
         blog: false,
@@ -87,8 +97,8 @@ const config = {
     format: 'detect',
     mermaid: true,
   },// markdown ends
-
   plugins: [
+    tailwindPlugin,
     'docusaurus-plugin-sass',
     // '@babel/plugin-syntax-jsx',
     ['docusaurus-plugin-baidu-tongji', {
@@ -143,40 +153,80 @@ const config = {
         },
         items: [
           {
+            label: 'JAVA',
+            type: 'dropdown',
+            position: 'left',
+            to: '/java/java-roadmap',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: javaHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'aigcSidebar',
             label: 'AIGC',
             position: 'left',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'aiSidebar',
             label: 'AI',
+            type: 'dropdown',
             position: 'left',
+            to: '/AI/llma/langchain',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: aiHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'javaSidebar',
-            position: 'left',
-            label: 'JAVA',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'springSidebar',
-            label: 'SPRING',
-            position: 'left',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'blockchainSidebar',
             label: '区块链',
+            type: 'dropdown',
             position: 'left',
+            to: '/blockchain',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: blockchainHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'flutterSidebar',
-            label: 'FLUTTER',
+            label: '移动开发',
+            type: 'dropdown',
             position: 'left',
+            to: '/flutter/dart',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: mobileDevHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
+          },
+          {
+            label: '系统架构',
+            type: 'dropdown',
+            position: 'left',
+            to: '/architecture/common',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: archHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
             type: 'docSidebar',
@@ -185,22 +235,32 @@ const config = {
             position: 'left',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'pythonSidebar',
             label: 'PYTHON',
+            type: 'dropdown',
             position: 'left',
+            to: '/python/python-base',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: pythonHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'reactiveSidebar',
-            label: '响应式框架',
+            label: 'JS和前端',
+            type: 'dropdown',
             position: 'left',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'jsSidebar',
-            label: 'JS',
-            position: 'left',
+            to: '/javascript/ecmascript',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: webHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
             type: 'docSidebar',
@@ -214,59 +274,30 @@ const config = {
           },
           {to: '/blog', label: '博客', position: 'right'},
           {
-            type: 'docSidebar',
-            sidebarId: 'interviewSidebar',
             label: '面试秘籍',
+            type: 'dropdown',
+            to:'/interview/prepare',
             position: 'right',
-          },
-          {
-            label: '其他',
-            position: 'right',
+            className: 'dyte-dropdown resources-dropdown',
             items: [
               {
-                type: 'docSidebar',
-                sidebarId: 'scalaSidebar',
-                label: 'SCALA',
+                type: 'html',
+                value: interviewHTML,
+                className: 'dyte-dropdown',
               },
-              {
-                type: 'docSidebar',
-                sidebarId: 'architSidebar',
-                label: '系统架构',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'cheatSidebar',
-                label: '秘诀和小贴士',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'csSidebar',
-                label: 'CS解密',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'toolsSidebar',
-                label: '服务器和工具',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'linuxSidebar',
-                label: 'linux实战',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'dbSidebar',
-                label: '数据库集锦',
-              },
-              // {
-              //   href: 'https://forum.ionicframework.com/',
-              //   label: 'Forum',
-              //   target: '_blank',
-              //   rel: null,
-              // },
             ],
-            // className: 'navbar__link--community',
           },
+          // {
+          //   label: '其他',
+          //   position: 'right',
+          //   items: [
+          //     {
+          //       type: 'docSidebar',
+          //       sidebarId: 'dbSidebar',
+          //       label: '数据库集锦',
+          //     },
+          //   ],
+          // },
           {
             href: 'https://github.com/ddean2009/www.flydean.com',
             label: 'GitHub',
@@ -453,8 +484,8 @@ const config = {
 
   scripts: [
     {
-      src: 'https://readmore.openwrite.cn/js/readmore-2.0.js',
-      // src: 'https://readmore.openwrite.cn/js/readmore.js',
+      // src: 'https://readmore.openwrite.cn/js/readmore-2.0.js',
+      src: 'https://readmore.openwrite.cn/js/readmore.js',
       defer: true,
     },
     // {

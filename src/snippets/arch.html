@@ -1,0 +1,199 @@
+<script>
+    function showMenu(menu) {
+        document.body.classList.remove('web', 'mobile', 'desktop', 'plugin');
+        document.body.classList.add(menu);
+    }
+
+    window.showMenu = showMenu;
+</script>
+<div class="sdks-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[768px]">
+    <div class="flex flex-col bg-secondary-800 p-4 lg:min-h-[300px] lg:flex-row">
+        <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-6">
+            <a data-dropdown-sdks-menu="web" onfocus="document.body.setAttribute('data-sdk-menu', 'web')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'web')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/Architecture/common">
+                <div class="flex-shrink-0">
+                    <span class="icon-[icon-park-outline--future-build-one]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">系统架构</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        每个系统都应该有一个架构,你的架构是什么
+                    </p>
+                </div>
+            </a>
+            <a data-dropdown-sdks-menu="mobile" onfocus="document.body.setAttribute('data-sdk-menu', 'mobile')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'mobile')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/server/computer-science">
+                <div class="flex-shrink-0">
+                    <span class="icon-[fluent--server-surface-16-filled]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">服务器,操作系统和其他语言</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        你需要一个操作系统和服务器来运行你的代码
+                    </p>
+                </div>
+            </a>
+            <a data-dropdown-sdks-menu="plugin" onfocus="document.body.setAttribute('data-sdk-menu', 'plugin')"
+               onmouseover="document.body.setAttribute('data-sdk-menu', 'plugin')"
+               class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+               href="/tools/java">
+                <div class="flex-shrink-0">
+                    <span class="icon-[fluent--window-dev-tools-16-regular]" style="width: 1.2em; height: 1.2em;"></span>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-1">
+                    <div class="text-base font-semibold">开发工具和秘籍</div>
+                    <p class="mb-0 text-left text-sm text-text-400">
+                        掌握这些开发工具,让你如虎添翼
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="flex-1 p-6">
+            <div class="flex flex-col gap-2" data-dropdown-sdks="web">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">架构漫谈</h3>
+                    <span class="none hidden text-sm font-normal lg:block">一些架构的心得和体会</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/architecture/common" class="sdk-link">
+                                <span class="icon-[icon-park-outline--future-build-one]" style="width: 1.2em; height: 1.2em;"></span>
+                                架构漫谈
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/architecture/distribution" class="sdk-link">
+                                <span class="icon-[fluent--align-distribute-right-16-regular]" style="width: 1.2em; height: 1.2em;"></span>
+                                分布式架构
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/architecture/rest" class="sdk-link">
+                                <span class="icon-[icon-park-outline--resting]" style="width: 1.2em; height: 1.2em;"></span>
+                                REST架构
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/architecture/auth" class="sdk-link">
+                                <span class="icon-[tabler--brand-auth0]" style="width: 1.2em; height: 1.2em;"></span>
+                                认证和授权框架
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2" data-dropdown-sdks="mobile">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">计算机理论和开发语言</h3>
+                    <span class="none hidden text-sm font-normal lg:block">一些关于计算机的有用理论和重要编程语言</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/server/computer-science" class="sdk-link">
+                                <span class="icon-[fluent--server-surface-16-filled]" style="width: 1.2em; height: 1.2em;"></span>
+                                计算机理论基础
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/scala/scala-oo" class="sdk-link">
+                                <span class="icon-[vscode-icons--file-type-scala]" style="width: 1.2em; height: 1.2em;"></span>
+                                Scala函数式编程语言
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/server/linux" class="sdk-link">
+                                <span class="icon-[carbon--linux]" style="width: 1.2em; height: 1.2em;"></span>
+                                linux技巧
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">服务器技术</h3>
+                    <span class="hidden text-sm font-normal lg:block">常用的一些服务器技术</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/server/server/nginx" class="sdk-link">
+                                <span class="icon-[vscode-icons--file-type-nginx]" style="width: 1.2em; height: 1.2em;"></span>
+                                nginx技术指南
+                            </a>
+                        </li>
+                            <li>
+                            <a href="/server/server/tomcat" class="sdk-link">
+                                <span class="icon-[bxs--cat]" style="width: 1.2em; height: 1.2em;"></span>
+                                tomcat详解
+                            </a>
+                            </li>
+                        <li>
+                            <a href="/server/server/wildfly" class="sdk-link">
+                                <span class="icon-[mdi--wildfire]" style="width: 1.2em; height: 1.2em;"></span>
+                                wildfly技术指南
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2" data-dropdown-sdks="plugin">
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">开发工具</h3>
+                    <span class="none hidden text-sm font-normal lg:block">顺手的常用的开发工具技巧</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/tools/maven" class="sdk-link">
+                                <span class="icon-[vscode-icons--file-type-maven]" style="width: 1.2em; height: 1.2em;"></span>
+                                maven使用技巧
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tools/java" class="sdk-link">
+                                <span class="icon-[fluent--document-java-16-regular]" style="width: 1.2em; height: 1.2em;"></span>
+                                JAVA开发工具
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tools/gradle" class="sdk-link">
+                                <span class="icon-[vscode-icons--folder-type-gradle]" style="width: 1.2em; height: 1.2em;"></span>
+                                gradle技术解析
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tools/protocolbuf" class="sdk-link">
+                                <span class="icon-[ion--logo-buffer]" style="width: 1.2em; height: 1.2em;"></span>
+                                protocolbuf序列化
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-1 flex-col">
+                    <h3 class="!mb-0.5">技术秘籍</h3>
+                    <span class="none hidden text-sm font-normal lg:block">秘籍在手,开发我有</span>
+                    <ul class="sdk-ul">
+                        <li>
+                            <a href="/cheatSheet/cheatsheet" class="sdk-link">
+                                <span class="icon-[mingcute--paper-fill]" style="width: 1.2em; height: 1.2em;"></span>
+                                各类技术秘籍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/cheatSheet/mindmap" class="sdk-link">
+                                <span class="icon-[icon-park-outline--mindmap-map]" style="width: 1.2em; height: 1.2em;"></span>
+                                技术学习思维导图
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/cheatSheet/tips" class="sdk-link">
+                                <span class="icon-[icon-park-solid--tips]" style="width: 1.2em; height: 1.2em;"></span>
+                                开发小技巧
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

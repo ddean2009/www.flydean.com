@@ -1,16 +1,8 @@
----
-slug: /java-roadmap-2020
----
+
 
 # java程序员从小工到专家成神之路（2024版）
 
-java作为第一大编程语言，可谓源远流长，一代又一代的java程序员前仆后继走在java学习的路上。java程序员的学习之路在2020年又有什么变化呢？本文详细附上了每一个部分所需知识的教程链接地址，并会持续更新，希望能够和大家一起进步！
-
-先上图：
-
-![](https://img-blog.csdnimg.cn/20200408145430519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_0,text_aHR0cDovL3d3dy5mbHlkZWFuLmNvbQ==,size_35,color_8F8F8F,t_70)
-
-上面的RoadMap图中列出了作为一个java程序员需要掌握的技术路线，所有技术都懂那当然非常好，如果还没掌握也没关系，just keep learning!
+java作为第一大编程语言，可谓源远流长，一代又一代的java程序员前仆后继走在java学习的路上。java程序员的学习之路在2024年又有什么变化呢？本文详细附上了每一个部分所需知识的教程链接地址，并会持续更新，希望能够和大家一起进步！
 
 ## 必须掌握的基础知识
 

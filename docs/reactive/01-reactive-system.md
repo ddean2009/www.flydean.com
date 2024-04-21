@@ -1,8 +1,7 @@
 ---
 slug: /01-reactive-system
+title: reactive system初探
 ---
-
-# 响应式系统reactive system初探
 
 # 初识响应式系统
 
