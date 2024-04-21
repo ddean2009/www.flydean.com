@@ -218,7 +218,7 @@ nav.menu {
 .footer__copyright {
   margin-top: 32px;
   font-size: 14px;
-  @apply text-text-400;
+  @apply text-indigo-50;
 }
 
 .footer__row {
@@ -258,9 +258,9 @@ nav.menu {
 }
 
 .footer__title {
-  font-size: 14px;
-  font-weight: normal;
-  @apply mb-2 text-text-400;
+  font-size: 16px;
+  font-weight: bold;
+  @apply mb-2 text-indigo-50;
 }
 
 .footer__item {
