@@ -1,4 +1,4 @@
-# 2. 构建一个优秀的Prompt
+# 构建一个优秀的Prompt
 
 在使用Stable Diffusion AI时，构建一个有效的提示（Prompt）是至关重要的第一步。这个过程涉及到创造性的尝试和对AI行为的理解。这里我会对如何构建一个好的Prompt进行一个总结。
 

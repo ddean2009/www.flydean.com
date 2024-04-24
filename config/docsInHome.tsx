@@ -7,6 +7,18 @@ type DocPost = {
 
 export const docPostList: DocPost[] = [
   {
+    permalink: '/AIGC/stable-diffusion/embedding',
+    description: '嵌入，也称为文本反转，是在 Stable Diffusion 中控制图像样式的另一种方法。在这篇文章中，我们将学习什么是嵌入，在哪里可以找到它们，以及如何使用它们。',
+    title: 'Stable Diffusion中的embedding',
+    image: 'https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404102022700.png'
+  },
+  {
+    permalink: '/AIGC/stable-diffusion/know-these-important-parameters-for-stunning-ai-images',
+    description: '有了这些参数，你将无往不利',
+    title: 'Stable diffusion中这些重要的参数你一定要会用',
+    image: 'https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404101809033.png'
+  },
+  {
     permalink: '/AIGC/stable-diffusion/stable-difussion-glossary',
     description: '介绍Stable Diffusion中的常用术语和他们的涵义',
     title: 'Stable Diffusion中的常用术语解析',
@@ -18,18 +30,5 @@ export const docPostList: DocPost[] = [
     title: '轻松复现一张AI图片',
     image: 'https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404092330523.png'
   },
-  {
-    permalink: '/AIGC/stable-diffusion/prompt-guide',
-    description: '在使用Stable Diffusion AI时，构建一个有效的提示（Prompt）是至关重要的第一步。这个过程涉及到创造性的尝试和对AI行为的理解。这里我会对如何构建一个好的Prompt进行一个总结。',
-    title: '构建一个优秀的Prompt',
-    image: 'https://s2.loli.net/2024/04/08/MxNfW93T2vpGPbA.png'
-  },
-  {
-    permalink: '/AIGC/stable-diffusion/beginners-guide',
-    description: '想掌握Stable Diffusion AI技术吗？这份初学者指南专为完全没接触过Stable Diffusion或任何AI图像生成器的新手设计。跟随本指南，你将了解Stable Diffusion的基本情况，并获得一些实用的入门技巧。',
-    title: 'Stable diffusion 初学者指南',
-    image: 'https://s2.loli.net/2024/04/08/boWljDcBURLTPm4.png'
-  },
-
 
 ]

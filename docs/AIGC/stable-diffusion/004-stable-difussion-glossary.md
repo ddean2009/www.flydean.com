@@ -1,5 +1,5 @@
 
-# 4. Stable Diffusion中的常用术语解析
+# Stable Diffusion中的常用术语解析
 
 对于很多初学者来说，会对Stable Diffusion中的很多术语感到困惑，当然你不是唯一的那个。
 

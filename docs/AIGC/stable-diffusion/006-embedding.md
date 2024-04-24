@@ -1,4 +1,4 @@
-# 6. Stable Diffusion中的embedding
+# Stable Diffusion中的embedding
 
 
 

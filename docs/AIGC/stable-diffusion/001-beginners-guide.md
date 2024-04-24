@@ -1,5 +1,5 @@
 
-# 1. Stable diffusion 初学者指南
+# Stable diffusion 初学者指南
 
 想掌握Stable Diffusion AI技术吗？
 
@@ -14,6 +14,8 @@ Stable Diffusion AI是一种基于潜在扩散模型的AI图像生成技术，�
 
 
 要开始使用Stable Diffusion AI，你只需要具备一台性能足够的PC，并按照官方提供的指南进行安装和配置。一旦设置完成，你就可以开始尝试输入各种文本提示，观察并调整生成的图像，以满足你的创作需求。
+
+云端环境推荐【仙宫云】[点我直达仙宫云](https://www.xiangongyun.com/register/ARS7ZN)这个平台非常强大，性价比也很高。它支持GeForce GTX 4090,3090,3080ti等多种主流高性能计算GPU。并且平台提供了Stable Diffusion WebUI,ComfyUI,Fooocus等多款AI应用。注册就送免费算力。
 
 ## 如何使用 Stable Diffusion？
 

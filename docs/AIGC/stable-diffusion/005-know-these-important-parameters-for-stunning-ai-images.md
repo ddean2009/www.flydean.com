@@ -1,4 +1,4 @@
-# 5. Stable diffusion中这些重要的参数你一定要会用
+# Stable diffusion中这些重要的参数你一定要会用
 
 
 
@@ -7,6 +7,10 @@
 ## 使用Stable diffusion软件
 
 Stable diffusion（AI）是一种强大的技术，它可以生成高质量的图像。虽然一些基本的参数可以在免费的在线AI生成器中调整，但为了获得更全面和精细的控制，我们通常会转向更专业的工具，如Stable diffusion web UI AUTOMATIC1111。这个平台提供了更多的选项和功能，使得用户能够更深入地探索和利用稳定扩散AI的潜力。
+
+
+
+云端环境推荐【仙宫云】[点我直达仙宫云](https://www.xiangongyun.com/register/ARS7ZN)这个平台非常强大，性价比也很高。它支持GeForce GTX 4090,3090,3080ti等多种主流高性能计算GPU。并且平台提供了Stable Diffusion WebUI,ComfyUI,Fooocus等多款AI应用。注册就送免费算力。
 
 
 

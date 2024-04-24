@@ -1,11 +1,13 @@
-# 3. 轻松复现一张AI图片
+# 轻松复现一张AI图片
 
 现在有一个非常漂亮的AI图片，你是不是想知道他是怎么生成的？
-
+    
 今天我会交给大家三种方法，学会了，什么图都可以手到擒来了。
 
 ## 需要的软件
 在本教程中，我们将使用AUTOMATIC1111 stable diffusion WebUI。这是一款流行且免费的软件。您可以在Windows、Mac或Google Colab上使用这个软件。
+
+云端环境推荐【仙宫云】[点我直达仙宫云](https://www.xiangongyun.com/register/ARS7ZN)这个平台非常强大，性价比也很高。它支持GeForce GTX 4090,3090,3080ti等多种主流高性能计算GPU。并且平台提供了Stable Diffusion WebUI,ComfyUI,Fooocus等多款AI应用。注册就送免费算力。
 
 ## 方法1: 通过阅读PNG信息从图像中获取提示
 如果AI图像是PNG格式，你可以尝试查看提示和其他设置信息是否写在了PNG元数据字段中。
