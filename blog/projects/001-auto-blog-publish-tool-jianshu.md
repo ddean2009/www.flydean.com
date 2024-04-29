@@ -27,7 +27,7 @@ image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404292318
 
 ## 这个工具是什么
 
-这个工具的全称叫做 blog-auto-publishing-tools博客自动发布工具,地址如下：https://github.com/ddean2009/blog-auto-publishing-tools。
+这个工具的全称叫做 blog-auto-publishing-tools博客自动发布工具,地址如下：https://github.com/ddean2009/blog-auto-publishing-tools
 
 
 
