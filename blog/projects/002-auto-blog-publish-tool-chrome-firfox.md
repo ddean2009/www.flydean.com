@@ -25,6 +25,8 @@ selenium本身就自带对chrome的支持，所以在selenium中使用chrome也�
 
 1. 首先你需要下载安装chrome。
 
+<!-- truncate -->
+
 2. 然后使用pip来安装selenium:
 
 ```bash
