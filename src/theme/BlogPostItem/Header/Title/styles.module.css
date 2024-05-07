@@ -1,7 +1,8 @@
 .titleLink {
   position: relative;
-  font-weight: 500;
-  color: var(--ifm-heading-color);
+  font-weight: 1000;
+  font-size: 30px;
+  /*color: var(--ifm-heading-color);*/
   transition: 0.5s;
 }
 
