@@ -28,6 +28,8 @@ oschina和segmentfault一样，界面非常的清爽。
 
 所以我们的配置文件大概是这样的：
 
+<!-- truncate -->
+
 ```yaml
 site: https://my.oschina.net/flydean/blog/write
 #专辑
