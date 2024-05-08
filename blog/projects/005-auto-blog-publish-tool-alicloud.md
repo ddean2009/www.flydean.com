@@ -2,7 +2,7 @@
 title: 一键自动化博客发布工具,用过的人都说好(阿里云篇)
 authors: flydean
 tags: [工具,自动化,自动发布,程序那些事]
-image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202405062258801.png
+image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202405071608020.png
 description: 使用一键自动化博客发布工具blog-auto-publishing-tools把博客发布到阿里云上。
 ---
 
