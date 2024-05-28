@@ -3,6 +3,7 @@ title: 怎么使用Stable diffusion中的models
 authors: flydean
 tags: [stable diffusion,AI,程序那些事,AI绘画]
 image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202404102220114.png
+description: 详细介绍如何在Stable diffusion中使用models。
 ---
 
 # Stable diffusion中的models
