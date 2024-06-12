@@ -33,20 +33,8 @@ description: MoneyPrinterPlus使用AI大模型技术,一键批量生成各类短
 
 这个项目可以轻松实现各类视频的生成，横屏的是，竖屏的，正方形的。只有你想不到的没有它做不到的。
 
-<table>
-<thead>
-<tr>
-<th align="center">竖屏</th>
-<th align="center">横屏</th>
-<th align="center">正方形</th>
-</tr>
-</thead>
-<tr>
-<td align="center"><video  src="https://github.com/ddean2009/MoneyPrinterPlus/assets/13955545/d96e5e50-cfe7-4f55-a0db-75f3ac28b39f"></video></td>
-<td align="center"><video  src="https://github.com/ddean2009/MoneyPrinterPlus/assets/13955545/714b122d-d857-4132-bdd3-9f07c9aa787b"></video></td>
-<td align="center"><video  src="https://github.com/ddean2009/MoneyPrinterPlus/assets/13955545/2ec748c2-8145-4178-ae48-a3114290addd"></video></td>
-</tr>
-</table>
+![image-20240612151635072](https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202406121516250.png)
+
 
 # 使用方法
 
