@@ -2,7 +2,7 @@
 title: MoneyPrinterPlus:AI自动短视频生成工具,详细使用教程
 authors: flydean
 tags: [工具,AI,AIGC,程序那些事]
-image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202406121351010.png
+image: https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202406162108034.png
 description: 详细介绍如何使用MoneyPrinterPlus:AI自动短视频生成工具,一键批量生成各类短视频。一键混剪短视频。
 ---
 
