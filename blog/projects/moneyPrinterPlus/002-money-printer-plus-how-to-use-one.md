@@ -130,6 +130,10 @@ https://nls-portal.console.aliyun.com/
 
 这样阿里云的语音服务已经开启成功了。
 
+切记录音文件识别（极速版）没有免费版本，一定要升级到商业版。
+
+![image-20240617170539878](https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202406171705894.png)
+
 接下来到账号的AccessKey管理中创建一个新的AccessKey。记住对应的AccessKey ID 和 AccessKey Secret。 
 
 ![image-20240616212456323](https://flydean-1301049335.cos.ap-guangzhou.myqcloud.com/img/202406162124097.png)
