@@ -118,7 +118,7 @@ export default function Hero() {
           </Translate>
           <a href={'https://t.zsxq.com/19Rfrc3L9'}>「flydean的程序圈」</a>
           <Translate>
-            {`技术探索/工作问题解决/职业规划/人生经验分享，让你少走十年弯路`}
+            {`技术探索/工作问题解决/职业规划/人生经验分享`}
           </Translate>
         </motion.p>
         <motion.div custom={4} initial="hidden" animate="visible" variants={variants}>

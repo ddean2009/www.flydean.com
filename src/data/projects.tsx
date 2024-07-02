@@ -1,12 +1,21 @@
 export const projects: Project[] = [
   {
-    title: 'test',
-    description: 'test',
-    preview: '/img/project/blog.png',
-    website: '',
-    source: '',
-    tags: ['opensource', 'design', 'favorite'],
-    type: 'web',
+    title: 'MoneyPrinterPlus',
+    description: '使用AI大模型技术,一键批量生成各类短视频,自动批量混剪短视频,自动把视频发布到抖音,快手,小红书,视频号上!',
+    preview: '/img/moneyprinterplus.png',
+    website: 'https://github.com/ddean2009/MoneyPrinterPlus',
+    source: 'https://github.com/ddean2009/MoneyPrinterPlus',
+    tags: ['opensource', 'personal', 'favorite'],
+    type: 'personal',
+  },
+  {
+    title: 'blogAutoPublishingTools',
+    description: '博客自动发布工具，一键把你的博客发到CSDN,掘金,知乎,头条,51blog,腾讯云,公众号等等，支持GPT重写！',
+    preview: '/img/blogautopublishtool.png',
+    website: 'https://github.com/ddean2009/blog-auto-publishing-tools',
+    source: 'https://github.com/ddean2009/blog-auto-publishing-tools',
+    tags: ['opensource', 'personal', 'favorite'],
+    type: 'personal',
   },
 ]
 

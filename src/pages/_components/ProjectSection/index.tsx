@@ -88,6 +88,7 @@ const Slider = ({ items }: { items: Project[] }) => {
                 <img src={item.preview} alt={item.title} className={styles.image} loading="lazy" />
                 <div className={styles.slideBody}>
                   <h2 className={styles.title}>{item.title}</h2>
+                  <h4 className={styles.description}>{item.description}</h4>
                   <p className={styles.website}>{removeHttp(item.website)}</p>
                 </div>
               </a>
@@ -102,7 +103,7 @@ const Slider = ({ items }: { items: Project[] }) => {
 export default function ProjectSection() {
   return (
     <section className={clsx('container padding-vert--sm', styles.projectContainer)}>
-      <SectionTitle icon={'ri:projector-line'} href={'/project'}>
+      <SectionTitle icon={'ri:projector-line'} href={'https://github.com/ddean2009'}>
         <Translate id="homepage.project.title">项目展示</Translate>
       </SectionTitle>
       <div className={styles.content}>
