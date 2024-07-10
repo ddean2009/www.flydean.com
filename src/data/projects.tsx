@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: 'blogAutoPublishingTools',
     description: '博客自动发布工具，一键把你的博客发到CSDN,掘金,知乎,头条,51blog,腾讯云,公众号等等，支持GPT重写！',
-    preview: '/img/blogautopublishtool.png',
+    preview: '/img/blogautopublishtool.jpg',
     website: 'https://github.com/ddean2009/blog-auto-publishing-tools',
     source: 'https://github.com/ddean2009/blog-auto-publishing-tools',
     tags: ['opensource', 'personal', 'favorite'],
